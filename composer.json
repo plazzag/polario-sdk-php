@@ -1,0 +1,38 @@
+{
+    "description": "API for Polario  __Naming:__  * json properties are formatted in camel case (fooBar) besides of enums (FooBar) * route params are formatted in hyphen case (foo-bar) * query params are formatted in snake case (foo_bar) * query params could hold lists of elements if they are comma separated * enum properties are formatted in capitalized camel case (FooBar)  __Default values:__  * default values are specified for optional parameters do only apply to POST requests  __Types:__  * numbers are considered to be float values * strings that are not specified to be html formatted should be careful to interpreted them as html to avoid against xss attacks * timestamps are considered to be in unix time  __Headers:__  * ___Platform___: can be always set as header param to specify the platform of the request for the logging output",
+    "keywords": [
+        "openapitools",
+        "openapi-generator",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://openapi-generator.tech",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "OpenAPI",
+            "homepage": "https://openapi-generator.tech"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/psr7": "^1.7 || ^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": { "OpenAPI\\Client\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "OpenAPI\\Client\\Test\\" : "test/" }
+    }
+}
