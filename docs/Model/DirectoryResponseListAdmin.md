@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional]
 **is_system** | **bool** |  | [optional]
 **items** | **object** |  | [optional]
-**title** | **string** | the localized name of the directory | [optional]
+**title** | **string** |  | [optional]
 **type** | **string** |  | [optional]
 **type_reference_id** | **string** |  | [optional]
 

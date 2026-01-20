@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **show_map** | **bool** | only for TextAddress subtype | [optional]
 **show_title** | **bool** |  | [optional]
 **sub_type** | **string** |  | [optional]
-**title** | **string** | the localized name of a calendar item. | [optional]
+**title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\CalendarItemTranslationResponse[]**](CalendarItemTranslationResponse.md) |  | [optional]
 **type** | **string** |  | [optional]
 **zoom_level** | **string** | only for TextAddress subtype | [optional]

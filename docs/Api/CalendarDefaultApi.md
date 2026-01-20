@@ -19,7 +19,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 ## `calendarDefaultEntryGet()`
 
 ```php
-calendarDefaultEntryGet($cursor, $page, $accept_language, $limit, $session): \OpenAPI\Client\Model\ContentEntryResponseListDefault[]
+calendarDefaultEntryGet($cursor, $page, $limit, $accept_language, $session): \OpenAPI\Client\Model\ContentEntryResponseListDefault[]
 ```
 
 Get calendar entries list for cursor
@@ -41,12 +41,12 @@ $apiInstance = new OpenAPI\Client\Api\CalendarDefaultApi(
 );
 $cursor = 'cursor_example'; // string | id of the cursor used for pagination; required if page is set
 $page = 56; // int | current page index of the cursor used for pagination; required if cursor is set
-$accept_language = 'accept_language_example'; // string | client language(s)
 $limit = 56; // int | amount of results per page (1 ... 100)
+$accept_language = 'accept_language_example'; // string | client language(s)
 $session = 'session_example'; // string | JWT
 
 try {
-    $result = $apiInstance->calendarDefaultEntryGet($cursor, $page, $accept_language, $limit, $session);
+    $result = $apiInstance->calendarDefaultEntryGet($cursor, $page, $limit, $accept_language, $session);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CalendarDefaultApi->calendarDefaultEntryGet: ', $e->getMessage(), PHP_EOL;
@@ -59,8 +59,8 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **cursor** | **string**| id of the cursor used for pagination; required if page is set | |
 | **page** | **int**| current page index of the cursor used for pagination; required if cursor is set | |
-| **accept_language** | **string**| client language(s) | [optional] |
 | **limit** | **int**| amount of results per page (1 ... 100) | [optional] |
+| **accept_language** | **string**| client language(s) | [optional] |
 | **session** | **string**| JWT | [optional] |
 
 ### Return type
@@ -261,7 +261,7 @@ No authorization required
 ## `calendarDefaultIdContentGet()`
 
 ```php
-calendarDefaultIdContentGet($id, $accept_language, $cursor, $limit, $page, $session): \OpenAPI\Client\Model\ContentDeprecatedEntryResponseListDefault[]
+calendarDefaultIdContentGet($id, $cursor, $limit, $page, $accept_language, $session): \OpenAPI\Client\Model\ContentDeprecatedEntryResponseListDefault[]
 ```
 
 Get calendar entries list for calendar
@@ -282,14 +282,14 @@ $apiInstance = new OpenAPI\Client\Api\CalendarDefaultApi(
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string | Calendar ID
-$accept_language = 'accept_language_example'; // string | client language(s)
 $cursor = 'cursor_example'; // string | id of the cursor used for pagination; required if page is set
 $limit = 56; // int | amount of results per page (1 ... 100)
 $page = 56; // int | current page index of the cursor used for pagination; required if cursor is set
+$accept_language = 'accept_language_example'; // string | client language(s)
 $session = 'session_example'; // string | JWT
 
 try {
-    $result = $apiInstance->calendarDefaultIdContentGet($id, $accept_language, $cursor, $limit, $page, $session);
+    $result = $apiInstance->calendarDefaultIdContentGet($id, $cursor, $limit, $page, $accept_language, $session);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CalendarDefaultApi->calendarDefaultIdContentGet: ', $e->getMessage(), PHP_EOL;
@@ -301,10 +301,10 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Calendar ID | |
-| **accept_language** | **string**| client language(s) | [optional] |
 | **cursor** | **string**| id of the cursor used for pagination; required if page is set | [optional] |
 | **limit** | **int**| amount of results per page (1 ... 100) | [optional] |
 | **page** | **int**| current page index of the cursor used for pagination; required if cursor is set | [optional] |
+| **accept_language** | **string**| client language(s) | [optional] |
 | **session** | **string**| JWT | [optional] |
 
 ### Return type
@@ -387,7 +387,7 @@ No authorization required
 ## `calendarDefaultMyCalendarContentGet()`
 
 ```php
-calendarDefaultMyCalendarContentGet($session, $accept_language, $cursor, $limit, $page): \OpenAPI\Client\Model\ContentDeprecatedEntryResponseListDefault[]
+calendarDefaultMyCalendarContentGet($session, $cursor, $limit, $page, $accept_language): \OpenAPI\Client\Model\ContentDeprecatedEntryResponseListDefault[]
 ```
 
 Get calendar entries list for my calendar
@@ -408,13 +408,13 @@ $apiInstance = new OpenAPI\Client\Api\CalendarDefaultApi(
     new GuzzleHttp\Client()
 );
 $session = 'session_example'; // string | JWT
-$accept_language = 'accept_language_example'; // string | client language(s)
 $cursor = 'cursor_example'; // string | id of the cursor used for pagination; required if page is set
 $limit = 56; // int | amount of results per page (1 ... 100)
 $page = 56; // int | current page index of the cursor used for pagination; required if cursor is set
+$accept_language = 'accept_language_example'; // string | client language(s)
 
 try {
-    $result = $apiInstance->calendarDefaultMyCalendarContentGet($session, $accept_language, $cursor, $limit, $page);
+    $result = $apiInstance->calendarDefaultMyCalendarContentGet($session, $cursor, $limit, $page, $accept_language);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CalendarDefaultApi->calendarDefaultMyCalendarContentGet: ', $e->getMessage(), PHP_EOL;
@@ -426,10 +426,10 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **session** | **string**| JWT | |
-| **accept_language** | **string**| client language(s) | [optional] |
 | **cursor** | **string**| id of the cursor used for pagination; required if page is set | [optional] |
 | **limit** | **int**| amount of results per page (1 ... 100) | [optional] |
 | **page** | **int**| current page index of the cursor used for pagination; required if cursor is set | [optional] |
+| **accept_language** | **string**| client language(s) | [optional] |
 
 ### Return type
 

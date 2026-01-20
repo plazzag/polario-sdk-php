@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **period** | [**\OpenAPI\Client\Model\ModelDatePeriod**](ModelDatePeriod.md) |  | [optional]
 **project_id** | **string** |  | [optional]
 **selections** | [**\OpenAPI\Client\Model\SelectionAPIResponseDefault[]**](SelectionAPIResponseDefault.md) |  | [optional]
-**title** | **string** | the localized name of the calendar | [optional]
+**title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\CalendarTranslationResponse[]**](CalendarTranslationResponse.md) |  | [optional]
 **type** | **string** |  | [optional]
 

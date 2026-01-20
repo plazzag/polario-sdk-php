@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **published_at** | **int** |  | [optional]
 **settings** | [**\OpenAPI\Client\Model\PageResponseSettingsDefault**](PageResponseSettingsDefault.md) | the settings of the page | [optional]
 **status** | **string** |  | [optional]
-**title** | **string** | the localized name of the page | [optional]
+**title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\PageTranslationResponse[]**](PageTranslationResponse.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

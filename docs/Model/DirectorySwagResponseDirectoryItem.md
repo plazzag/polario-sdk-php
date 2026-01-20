@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **show_map** | **bool** | only for TextAddress subtype | [optional]
 **show_title** | **bool** |  | [optional]
 **sub_type** | **string** | for directory contentRowObjectType &#x3D; Account only MediaImage,SelectionMultipleResponse,SelectionSingleResponse,TextBlock,TextLink,TextMail,TextPhone,TextPlainLine are available | [optional]
-**title** | **string** | the localized name of a directory item. | [optional]
+**title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\DirectoryItemTranslationResponse[]**](DirectoryItemTranslationResponse.md) |  | [optional]
 **type** | **string** | for directory contentRowObjectType &#x3D; Account only Text,Media,Selection are available | [optional]
 **zoom_level** | **string** | only for TextAddress subtype | [optional]

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **project_id** | **string** |  | [optional]
 **published_at** | **int** |  | [optional]
 **status** | **string** |  | [optional]
-**title** | **string** | the localized name of the page | [optional]
+**title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\PageTranslationResponse[]**](PageTranslationResponse.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

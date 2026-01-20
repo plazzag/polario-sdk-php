@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **list_settings** | [**\OpenAPI\Client\Model\DirectoryResponseDefaultListSettings**](DirectoryResponseDefaultListSettings.md) |  | [optional]
 **project_id** | **string** |  | [optional]
 **selections** | [**\OpenAPI\Client\Model\SelectionAPIResponseDefault[]**](SelectionAPIResponseDefault.md) |  | [optional]
-**title** | **string** | the localized name of the directory | [optional]
+**title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\DirectoryTranslationResponse[]**](DirectoryTranslationResponse.md) |  | [optional]
 **type** | **string** |  | [optional]
 

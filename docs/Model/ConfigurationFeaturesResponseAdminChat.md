@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **domain_filter** | [**\OpenAPI\Client\Model\ConfigurationFeaturesResponseAdminChatDomainFilter**](ConfigurationFeaturesResponseAdminChatDomainFilter.md) |  | [optional]
 **enabled** | **bool** |  | [optional]
 **image_moderation** | [**\OpenAPI\Client\Model\ConfigurationFeaturesResponseAdminChatImageModeration**](ConfigurationFeaturesResponseAdminChatImageModeration.md) |  | [optional]
+**invisible_for_others_as_default** | **bool** |  | [optional]
 **own_channels** | **bool** |  | [optional]
 **profanity_filter** | [**\OpenAPI\Client\Model\ConfigurationFeaturesResponseAdminChatProfanityFilter**](ConfigurationFeaturesResponseAdminChatProfanityFilter.md) |  | [optional]
 **profanity_triggered_moderation** | [**\OpenAPI\Client\Model\ConfigurationFeaturesResponseAdminChatProfanityTriggeredModeration**](ConfigurationFeaturesResponseAdminChatProfanityTriggeredModeration.md) |  | [optional]

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **period** | [**\OpenAPI\Client\Model\ModelDatePeriod**](ModelDatePeriod.md) |  | [optional]
 **project_id** | **string** |  | [optional]
 **selections** | [**\OpenAPI\Client\Model\SelectionAPIResponseAdmin[]**](SelectionAPIResponseAdmin.md) |  | [optional]
-**title** | **string** | the localized name of the calendar | [optional]
+**title** | **string** |  | [optional]
 **type** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -315,6 +315,23 @@ Class | Method | HTTP request | Description
 *IndexDefaultApi* | [**indexDefaultGet**](docs/Api/IndexDefaultApi.md#indexdefaultget) | **GET** /index/default | Get index items for cursor
 *IndexDefaultApi* | [**indexDefaultObjectTypeObjectIdLinkedGet**](docs/Api/IndexDefaultApi.md#indexdefaultobjecttypeobjectidlinkedget) | **GET** /index/default/{objectType}/{objectId}/linked | Get linked items
 *IndexDefaultApi* | [**indexDefaultSearchPost**](docs/Api/IndexDefaultApi.md#indexdefaultsearchpost) | **POST** /index/default/search | Create cursor
+*JourneyAdminApi* | [**reactionAdminJourneyIdAttendeeDelete**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidattendeedelete) | **DELETE** /reaction/admin/journey/{id}/attendee | Remove attendees
+*JourneyAdminApi* | [**reactionAdminJourneyIdAttendeeGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidattendeeget) | **GET** /reaction/admin/journey/{id}/attendee | Get attendees
+*JourneyAdminApi* | [**reactionAdminJourneyIdAttendeePatch**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidattendeepatch) | **PATCH** /reaction/admin/journey/{id}/attendee | Update attendees
+*JourneyAdminApi* | [**reactionAdminJourneyIdAttendeePost**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidattendeepost) | **POST** /reaction/admin/journey/{id}/attendee | Add attendees
+*JourneyAdminApi* | [**reactionAdminJourneyIdDelete**](docs/Api/JourneyAdminApi.md#reactionadminjourneyiddelete) | **DELETE** /reaction/admin/journey/{id} | Delete journey
+*JourneyAdminApi* | [**reactionAdminJourneyIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidget) | **GET** /reaction/admin/journey/{id} | Get journey
+*JourneyAdminApi* | [**reactionAdminJourneyIdPatch**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidpatch) | **PATCH** /reaction/admin/journey/{id} | Update journey
+*JourneyAdminApi* | [**reactionAdminJourneyIdStagesGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidstagesget) | **GET** /reaction/admin/journey/{id}/stages | Get stages
+*JourneyAdminApi* | [**reactionAdminJourneyIdStagesPut**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidstagesput) | **PUT** /reaction/admin/journey/{id}/stages | Update stages
+*JourneyAdminApi* | [**reactionAdminJourneyPost**](docs/Api/JourneyAdminApi.md#reactionadminjourneypost) | **POST** /reaction/admin/journey | Create journey
+*JourneyAdminApi* | [**reactionAdminJourneyProjectIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyprojectidget) | **GET** /reaction/admin/journey/project/{id} | Get journey list for project
+*JourneyDefaultApi* | [**reactionDefaultJourneyGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyget) | **GET** /reaction/default/journey | Get journey processes list for cursor
+*JourneyDefaultApi* | [**reactionDefaultJourneyIdGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyidget) | **GET** /reaction/default/journey/{id} | Get journey
+*JourneyDefaultApi* | [**reactionDefaultJourneyIdProcessGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyidprocessget) | **GET** /reaction/default/journey/{id}/process | Get journey process
+*JourneyDefaultApi* | [**reactionDefaultJourneyIdStageStageIdPatch**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyidstagestageidpatch) | **PATCH** /reaction/default/journey/{id}/stage/{stageId} | Update stage status
+*JourneyDefaultApi* | [**reactionDefaultJourneySearchPost**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneysearchpost) | **POST** /reaction/default/journey/search | Create cursor
+*JourneyDefaultApi* | [**reactionDefaultJourneyStatsGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneystatsget) | **GET** /reaction/default/journey/stats | Get journey stats
 *KeywordAdminApi* | [**keywordAdminCategoryGet**](docs/Api/KeywordAdminApi.md#keywordadmincategoryget) | **GET** /keyword/admin/category | Get keyword category list
 *KeywordAdminApi* | [**keywordAdminCategoryIdDelete**](docs/Api/KeywordAdminApi.md#keywordadmincategoryiddelete) | **DELETE** /keyword/admin/category/{id} | Delete keyword category
 *KeywordAdminApi* | [**keywordAdminCategoryIdGet**](docs/Api/KeywordAdminApi.md#keywordadmincategoryidget) | **GET** /keyword/admin/category/{id} | Get keyword category
@@ -815,6 +832,26 @@ Class | Method | HTTP request | Description
 - [JobResponseAdmin](docs/Model/JobResponseAdmin.md)
 - [JobResponseListAdmin](docs/Model/JobResponseListAdmin.md)
 - [JobTestContentRequest](docs/Model/JobTestContentRequest.md)
+- [JourneyPatchRequest](docs/Model/JourneyPatchRequest.md)
+- [JourneyPostRequest](docs/Model/JourneyPostRequest.md)
+- [JourneyRequestStage](docs/Model/JourneyRequestStage.md)
+- [JourneyResponseAdmin](docs/Model/JourneyResponseAdmin.md)
+- [JourneyResponseDefault](docs/Model/JourneyResponseDefault.md)
+- [JourneyResponseListAdmin](docs/Model/JourneyResponseListAdmin.md)
+- [JourneyResponseStageAdmin](docs/Model/JourneyResponseStageAdmin.md)
+- [JourneyResponseStageDefault](docs/Model/JourneyResponseStageDefault.md)
+- [JourneyResponseStatsDefault](docs/Model/JourneyResponseStatsDefault.md)
+- [JourneyStageTranslationResponse](docs/Model/JourneyStageTranslationResponse.md)
+- [JourneyTranslationResponse](docs/Model/JourneyTranslationResponse.md)
+- [JourneyprocessCursorFilterOptionDefault](docs/Model/JourneyprocessCursorFilterOptionDefault.md)
+- [JourneyprocessCursorRequestDefault](docs/Model/JourneyprocessCursorRequestDefault.md)
+- [JourneyprocessPatchRequest](docs/Model/JourneyprocessPatchRequest.md)
+- [JourneyprocessPatchStageStatus](docs/Model/JourneyprocessPatchStageStatus.md)
+- [JourneyprocessPostEntry](docs/Model/JourneyprocessPostEntry.md)
+- [JourneyprocessResponseAdmin](docs/Model/JourneyprocessResponseAdmin.md)
+- [JourneyprocessResponseDefault](docs/Model/JourneyprocessResponseDefault.md)
+- [JourneyprocessResponseListDefault](docs/Model/JourneyprocessResponseListDefault.md)
+- [JourneyprocessTranslationResponse](docs/Model/JourneyprocessTranslationResponse.md)
 - [KeywordPatchRequest](docs/Model/KeywordPatchRequest.md)
 - [KeywordRequest](docs/Model/KeywordRequest.md)
 - [KeywordResponseAdmin](docs/Model/KeywordResponseAdmin.md)
@@ -891,6 +928,7 @@ Class | Method | HTTP request | Description
 - [ModelAppointmentReceiver](docs/Model/ModelAppointmentReceiver.md)
 - [ModelAppointmentSlotTimeConfig](docs/Model/ModelAppointmentSlotTimeConfig.md)
 - [ModelArticleSettings](docs/Model/ModelArticleSettings.md)
+- [ModelAutoTranslation](docs/Model/ModelAutoTranslation.md)
 - [ModelCalendarBodySection](docs/Model/ModelCalendarBodySection.md)
 - [ModelCalendarBodySectionLocalization](docs/Model/ModelCalendarBodySectionLocalization.md)
 - [ModelCalendarDetail](docs/Model/ModelCalendarDetail.md)
@@ -918,6 +956,9 @@ Class | Method | HTTP request | Description
 - [ModelFeatureEnabled](docs/Model/ModelFeatureEnabled.md)
 - [ModelFeaturePaidUntil](docs/Model/ModelFeaturePaidUntil.md)
 - [ModelGeoInformation](docs/Model/ModelGeoInformation.md)
+- [ModelJourneyProcessStageStatus](docs/Model/ModelJourneyProcessStageStatus.md)
+- [ModelJourneyStageStartCondition](docs/Model/ModelJourneyStageStartCondition.md)
+- [ModelJourneyStageStartConditionOffset](docs/Model/ModelJourneyStageStartConditionOffset.md)
 - [ModelKeywordCategorySettings](docs/Model/ModelKeywordCategorySettings.md)
 - [ModelKeywordCategoryTranslation](docs/Model/ModelKeywordCategoryTranslation.md)
 - [ModelKeywordTranslation](docs/Model/ModelKeywordTranslation.md)
@@ -1129,6 +1170,6 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `5.3.0`
-    - Generator version: `7.17.0`
+- API version: `5.5.0-pre`
+    - Generator version: `7.18.0`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

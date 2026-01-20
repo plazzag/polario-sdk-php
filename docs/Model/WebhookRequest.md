@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**action_key** | **string** | relates to attachAction | [optional]
-**actions** | [**\OpenAPI\Client\Model\ModelWebhookAction[]**](ModelWebhookAction.md) | null for listening for all actions | [optional]
+**action_key** | **string** |  | [optional]
+**actions** | [**\OpenAPI\Client\Model\ModelWebhookAction[]**](ModelWebhookAction.md) | relates to attachAction null for listening for all actions | [optional]
 **attach_action** | **string** |  | [optional]
 **enabled** | **bool** |  | [optional]
 **headers** | **array<string,string>** |  | [optional]

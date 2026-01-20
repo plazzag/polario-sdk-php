@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **list_settings** | [**\OpenAPI\Client\Model\ModelDirectoryListSettings**](ModelDirectoryListSettings.md) |  | [optional]
 **project_id** | **string** |  | [optional]
 **selections** | [**\OpenAPI\Client\Model\SelectionAPIResponseAdmin[]**](SelectionAPIResponseAdmin.md) |  | [optional]
-**title** | **string** | the localized name of the directory | [optional]
+**title** | **string** |  | [optional]
 **type** | **string** |  | [optional]
 **type_reference_id** | **string** |  | [optional]
 

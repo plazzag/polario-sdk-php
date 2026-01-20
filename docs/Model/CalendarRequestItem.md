@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **show_map** | **bool** | only for TextAddress subtype | [optional]
 **show_title** | **bool** | Default: &#x60;true&#x60; | [optional]
 **sub_type** | **string** | subtype must start with type for correct validation process | [optional]
-**title** | **string** | the localized name of a calendar item. | [optional]
+**title** | **string** |  | [optional]
 **type** | **string** |  | [optional]
 **zoom_level** | **string** | only for TextAddress subtype | [optional]
 

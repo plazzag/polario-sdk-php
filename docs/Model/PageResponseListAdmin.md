@@ -11,6 +11,6 @@ Name | Type | Description | Notes
 **keyword_ids** | **string[]** |  | [optional]
 **published_at** | **int** |  | [optional]
 **status** | **string** |  | [optional]
-**title** | **string** | the localized name of the page | [optional]
+**title** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
