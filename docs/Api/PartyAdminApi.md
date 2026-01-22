@@ -14,6 +14,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**partyAdminPost()**](PartyAdminApi.md#partyAdminPost) | **POST** /party/admin | Create party |
 | [**partyAdminReactionGet()**](PartyAdminApi.md#partyAdminReactionGet) | **GET** /party/admin/reaction | Get reaction list for cursor |
 | [**partyAdminReactionIdDelete()**](PartyAdminApi.md#partyAdminReactionIdDelete) | **DELETE** /party/admin/reaction/{id} | Delete reaction |
+| [**partyAdminReactionIdGet()**](PartyAdminApi.md#partyAdminReactionIdGet) | **GET** /party/admin/reaction/{id} | Get reaction |
 | [**partyAdminReactionIdPut()**](PartyAdminApi.md#partyAdminReactionIdPut) | **PUT** /party/admin/reaction/{id} | Update reaction |
 | [**partyAdminReactionSearchPost()**](PartyAdminApi.md#partyAdminReactionSearchPost) | **POST** /party/admin/reaction/search | Create cursor |
 | [**partyAdminSearchPost()**](PartyAdminApi.md#partyAdminSearchPost) | **POST** /party/admin/search | Create cursor |
@@ -481,6 +482,64 @@ try {
 ### Return type
 
 [**\OpenAPI\Client\Model\ModelSwagStatusOk**](../Model/ModelSwagStatusOk.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `partyAdminReactionIdGet()`
+
+```php
+partyAdminReactionIdGet($id, $session): \OpenAPI\Client\Model\ReactionResponseAdmin
+```
+
+Get reaction
+
+This endpoint is for receiving a specific reaction.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"` + `\"ManageContent\"` `\"ManageProjects\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\PartyAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | reaction id
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->partyAdminReactionIdGet($id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling PartyAdminApi->partyAdminReactionIdGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| reaction id | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ReactionResponseAdmin**](../Model/ReactionResponseAdmin.md)
 
 ### Authorization
 
