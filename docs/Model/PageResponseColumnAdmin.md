@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) |  | [optional]
 **background_color** | **string** |  | [optional]
 **background_color_dark** | **string** |  | [optional]
 **id** | **string** |  | [optional]

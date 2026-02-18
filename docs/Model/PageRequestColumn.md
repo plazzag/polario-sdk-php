@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | Default: &#x60;{\&quot;any\&quot;: \&quot;Read\&quot;, \&quot;user\&quot;: \&quot;Read\&quot;, \&quot;accounts\&quot;: {}, \&quot;groups\&quot;: {}}&#x60; | [optional]
 **background_color** | **string** | background color in light mode or null for transparent; hexcolor or enum: &#x60;\&quot;backgroundPrimary\&quot;&#x60; &#x60;\&quot;backgroundSecondary\&quot;&#x60; &#x60;\&quot;backgroundTertiary\&quot;&#x60; &#x60;\&quot;border\&quot;&#x60; &#x60;\&quot;contrast\&quot;&#x60; &#x60;\&quot;error\&quot;&#x60; &#x60;\&quot;primary\&quot;&#x60; &#x60;\&quot;secondary\&quot;&#x60; &#x60;\&quot;success\&quot;&#x60; &#x60;\&quot;textPrimary\&quot;&#x60; &#x60;\&quot;textSecondary\&quot;&#x60; | [optional]
 **background_color_dark** | **string** | background color in dark mode or null for transparent; hexcolor or enum: &#x60;\&quot;backgroundPrimary\&quot;&#x60; &#x60;\&quot;backgroundSecondary\&quot;&#x60; &#x60;\&quot;backgroundTertiary\&quot;&#x60; &#x60;\&quot;border\&quot;&#x60; &#x60;\&quot;contrast\&quot;&#x60; &#x60;\&quot;error\&quot;&#x60; &#x60;\&quot;primary\&quot;&#x60; &#x60;\&quot;secondary\&quot;&#x60; &#x60;\&quot;success\&quot;&#x60; &#x60;\&quot;textPrimary\&quot;&#x60; &#x60;\&quot;textSecondary\&quot;&#x60; | [optional]
 **id** | **string** | new columns do not have an id | [optional]

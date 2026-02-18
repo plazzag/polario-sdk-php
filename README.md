@@ -17,7 +17,7 @@ __Default values:__
 __Types:__
 
 * numbers are considered to be float values
-* strings that are not specified to be html formatted should be careful to interpreted them as html to avoid against xss attacks
+* strings that are not specified to be html formatted should not be interpreted as html to avoid unexpected bahavior, like xss attacks
 * timestamps are considered to be in unix time
 
 __Headers:__
@@ -315,6 +315,9 @@ Class | Method | HTTP request | Description
 *IndexDefaultApi* | [**indexDefaultGet**](docs/Api/IndexDefaultApi.md#indexdefaultget) | **GET** /index/default | Get index items for cursor
 *IndexDefaultApi* | [**indexDefaultObjectTypeObjectIdLinkedGet**](docs/Api/IndexDefaultApi.md#indexdefaultobjecttypeobjectidlinkedget) | **GET** /index/default/{objectType}/{objectId}/linked | Get linked items
 *IndexDefaultApi* | [**indexDefaultSearchPost**](docs/Api/IndexDefaultApi.md#indexdefaultsearchpost) | **POST** /index/default/search | Create cursor
+*JourneyAdminApi* | [**reactionAdminJourneyAccountAccountIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyaccountaccountidget) | **GET** /reaction/admin/journey/account/{accountId} | Get all journey processes of account
+*JourneyAdminApi* | [**reactionAdminJourneyIdAccountAccountIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidaccountaccountidget) | **GET** /reaction/admin/journey/{id}/account/{accountId} | Get journey processes of account
+*JourneyAdminApi* | [**reactionAdminJourneyIdAccountGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidaccountget) | **GET** /reaction/admin/journey/{id}/account | Get journey processes of journey
 *JourneyAdminApi* | [**reactionAdminJourneyIdAttendeeDelete**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidattendeedelete) | **DELETE** /reaction/admin/journey/{id}/attendee | Remove attendees
 *JourneyAdminApi* | [**reactionAdminJourneyIdAttendeeGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidattendeeget) | **GET** /reaction/admin/journey/{id}/attendee | Get attendees
 *JourneyAdminApi* | [**reactionAdminJourneyIdAttendeePatch**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidattendeepatch) | **PATCH** /reaction/admin/journey/{id}/attendee | Update attendees
@@ -325,7 +328,8 @@ Class | Method | HTTP request | Description
 *JourneyAdminApi* | [**reactionAdminJourneyIdStagesGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidstagesget) | **GET** /reaction/admin/journey/{id}/stages | Get stages
 *JourneyAdminApi* | [**reactionAdminJourneyIdStagesPut**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidstagesput) | **PUT** /reaction/admin/journey/{id}/stages | Update stages
 *JourneyAdminApi* | [**reactionAdminJourneyPost**](docs/Api/JourneyAdminApi.md#reactionadminjourneypost) | **POST** /reaction/admin/journey | Create journey
-*JourneyAdminApi* | [**reactionAdminJourneyProjectIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyprojectidget) | **GET** /reaction/admin/journey/project/{id} | Get journey list for project
+*JourneyAdminApi* | [**reactionAdminJourneyProcessIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyprocessidget) | **GET** /reaction/admin/journey/process/{id} | Get journey process
+*JourneyAdminApi* | [**reactionAdminJourneyProjectProjectIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyprojectprojectidget) | **GET** /reaction/admin/journey/project/{projectId} | Get journey list for project
 *JourneyDefaultApi* | [**reactionDefaultJourneyGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyget) | **GET** /reaction/default/journey | Get journey processes list for cursor
 *JourneyDefaultApi* | [**reactionDefaultJourneyIdGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyidget) | **GET** /reaction/default/journey/{id} | Get journey
 *JourneyDefaultApi* | [**reactionDefaultJourneyIdProcessGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyidprocessget) | **GET** /reaction/default/journey/{id}/process | Get journey process
@@ -363,9 +367,11 @@ Class | Method | HTTP request | Description
 *LocationAdminApi* | [**locationAdminIdDelete**](docs/Api/LocationAdminApi.md#locationadminiddelete) | **DELETE** /location/admin/{id} | Delete location
 *LocationAdminApi* | [**locationAdminIdGet**](docs/Api/LocationAdminApi.md#locationadminidget) | **GET** /location/admin/{id} | Get location
 *LocationAdminApi* | [**locationAdminIdPatch**](docs/Api/LocationAdminApi.md#locationadminidpatch) | **PATCH** /location/admin/{id} | Update location
+*LocationAdminApi* | [**locationAdminPlaceConfigGet**](docs/Api/LocationAdminApi.md#locationadminplaceconfigget) | **GET** /location/admin/place/config | Get places config
 *LocationAdminApi* | [**locationAdminPost**](docs/Api/LocationAdminApi.md#locationadminpost) | **POST** /location/admin | Create location
 *LocationAdminApi* | [**locationAdminProjectIdGet**](docs/Api/LocationAdminApi.md#locationadminprojectidget) | **GET** /location/admin/project/{id} | Get location list for project
 *LocationDefaultApi* | [**locationDefaultIdGet**](docs/Api/LocationDefaultApi.md#locationdefaultidget) | **GET** /location/default/{id} | Get location
+*LocationDefaultApi* | [**locationDefaultPlaceConfigGet**](docs/Api/LocationDefaultApi.md#locationdefaultplaceconfigget) | **GET** /location/default/place/config | Get places config
 *LocationDefaultApi* | [**locationDefaultProjectIdGet**](docs/Api/LocationDefaultApi.md#locationdefaultprojectidget) | **GET** /location/default/project/{id} | Get location list for project
 *MapAdminApi* | [**locationAdminMapIdAccessGet**](docs/Api/MapAdminApi.md#locationadminmapidaccessget) | **GET** /location/admin/map/{id}/access | Get map access configuration
 *MapAdminApi* | [**locationAdminMapIdAccessPatch**](docs/Api/MapAdminApi.md#locationadminmapidaccesspatch) | **PATCH** /location/admin/map/{id}/access | Update map access configuration
@@ -504,6 +510,7 @@ Class | Method | HTTP request | Description
 *PartyAdminApi* | [**partyAdminPost**](docs/Api/PartyAdminApi.md#partyadminpost) | **POST** /party/admin | Create party
 *PartyAdminApi* | [**partyAdminReactionGet**](docs/Api/PartyAdminApi.md#partyadminreactionget) | **GET** /party/admin/reaction | Get reaction list for cursor
 *PartyAdminApi* | [**partyAdminReactionIdDelete**](docs/Api/PartyAdminApi.md#partyadminreactioniddelete) | **DELETE** /party/admin/reaction/{id} | Delete reaction
+*PartyAdminApi* | [**partyAdminReactionIdGet**](docs/Api/PartyAdminApi.md#partyadminreactionidget) | **GET** /party/admin/reaction/{id} | Get reaction
 *PartyAdminApi* | [**partyAdminReactionIdPut**](docs/Api/PartyAdminApi.md#partyadminreactionidput) | **PUT** /party/admin/reaction/{id} | Update reaction
 *PartyAdminApi* | [**partyAdminReactionSearchPost**](docs/Api/PartyAdminApi.md#partyadminreactionsearchpost) | **POST** /party/admin/reaction/search | Create cursor
 *PartyAdminApi* | [**partyAdminSearchPost**](docs/Api/PartyAdminApi.md#partyadminsearchpost) | **POST** /party/admin/search | Create cursor
@@ -850,6 +857,7 @@ Class | Method | HTTP request | Description
 - [JourneyprocessPostEntry](docs/Model/JourneyprocessPostEntry.md)
 - [JourneyprocessResponseAdmin](docs/Model/JourneyprocessResponseAdmin.md)
 - [JourneyprocessResponseDefault](docs/Model/JourneyprocessResponseDefault.md)
+- [JourneyprocessResponseListAdmin](docs/Model/JourneyprocessResponseListAdmin.md)
 - [JourneyprocessResponseListDefault](docs/Model/JourneyprocessResponseListDefault.md)
 - [JourneyprocessTranslationResponse](docs/Model/JourneyprocessTranslationResponse.md)
 - [KeywordPatchRequest](docs/Model/KeywordPatchRequest.md)
@@ -1100,6 +1108,8 @@ Class | Method | HTTP request | Description
 - [PartyResponseAdmin](docs/Model/PartyResponseAdmin.md)
 - [PartyResponseDefault](docs/Model/PartyResponseDefault.md)
 - [PartyResponsePartyConfigurationDefault](docs/Model/PartyResponsePartyConfigurationDefault.md)
+- [PlaceConfigResponseAdmin](docs/Model/PlaceConfigResponseAdmin.md)
+- [PlaceConfigResponseDefault](docs/Model/PlaceConfigResponseDefault.md)
 - [ProjectPatchRequest](docs/Model/ProjectPatchRequest.md)
 - [ProjectPatchRequestTracking](docs/Model/ProjectPatchRequestTracking.md)
 - [ProjectPostRequest](docs/Model/ProjectPostRequest.md)
@@ -1170,6 +1180,6 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `5.5.0-pre`
-    - Generator version: `7.18.0`
+- API version: `5.5.2`
+    - Generator version: `7.20.0`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

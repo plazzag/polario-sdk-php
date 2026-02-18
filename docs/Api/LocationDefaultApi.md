@@ -7,6 +7,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
 | [**locationDefaultIdGet()**](LocationDefaultApi.md#locationDefaultIdGet) | **GET** /location/default/{id} | Get location |
+| [**locationDefaultPlaceConfigGet()**](LocationDefaultApi.md#locationDefaultPlaceConfigGet) | **GET** /location/default/place/config | Get places config |
 | [**locationDefaultProjectIdGet()**](LocationDefaultApi.md#locationDefaultProjectIdGet) | **GET** /location/default/project/{id} | Get location list for project |
 
 
@@ -56,6 +57,62 @@ try {
 ### Return type
 
 [**\OpenAPI\Client\Model\LocationResponseDefault**](../Model/LocationResponseDefault.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `locationDefaultPlaceConfigGet()`
+
+```php
+locationDefaultPlaceConfigGet($session): \OpenAPI\Client\Model\PlaceConfigResponseDefault
+```
+
+Get places config
+
+This endpoint returns config for places search. It provides the google places api key.  _accessible without permission_
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\LocationDefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->locationDefaultPlaceConfigGet($session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling LocationDefaultApi->locationDefaultPlaceConfigGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\PlaceConfigResponseDefault**](../Model/PlaceConfigResponseDefault.md)
 
 ### Authorization
 

@@ -321,7 +321,7 @@ configAdminLanguageIdPatch($id, $session, $request): \OpenAPI\Client\Model\Langu
 
 Update language
 
-This endpoint updates a language in the system by given id. The default language must be published. Status of languages could only be changed if auto translation is activated. To switch the default language, use the following endpoint: PUT /config/admin/language/default  _only accessible with permission_ : `\"ManageConfiguration\"`  _fully accessible with permission_ : `\"ManageConfiguration\"`
+This endpoint updates a language in the system by given id. The default language must be published. Status of languages could only be changed if auto translation is activated. To switch the default language, use the following endpoint: PUT /config/admin/language/default  __Note:__ Auto translations is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageConfiguration\"`  _fully accessible with permission_ : `\"ManageConfiguration\"`
 
 ### Example
 
