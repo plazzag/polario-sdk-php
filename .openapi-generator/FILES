@@ -321,6 +321,7 @@ docs/Model/JourneyprocessPatchStageStatus.md
 docs/Model/JourneyprocessPostEntry.md
 docs/Model/JourneyprocessResponseAdmin.md
 docs/Model/JourneyprocessResponseDefault.md
+docs/Model/JourneyprocessResponseListAdmin.md
 docs/Model/JourneyprocessResponseListDefault.md
 docs/Model/JourneyprocessTranslationResponse.md
 docs/Model/KeywordPatchRequest.md
@@ -571,6 +572,8 @@ docs/Model/PartyRequestConfiguration.md
 docs/Model/PartyResponseAdmin.md
 docs/Model/PartyResponseDefault.md
 docs/Model/PartyResponsePartyConfigurationDefault.md
+docs/Model/PlaceConfigResponseAdmin.md
+docs/Model/PlaceConfigResponseDefault.md
 docs/Model/ProjectPatchRequest.md
 docs/Model/ProjectPatchRequestTracking.md
 docs/Model/ProjectPostRequest.md
@@ -943,6 +946,7 @@ lib/Model/JourneyprocessPatchStageStatus.php
 lib/Model/JourneyprocessPostEntry.php
 lib/Model/JourneyprocessResponseAdmin.php
 lib/Model/JourneyprocessResponseDefault.php
+lib/Model/JourneyprocessResponseListAdmin.php
 lib/Model/JourneyprocessResponseListDefault.php
 lib/Model/JourneyprocessTranslationResponse.php
 lib/Model/KeywordPatchRequest.php
@@ -1194,6 +1198,8 @@ lib/Model/PartyRequestConfiguration.php
 lib/Model/PartyResponseAdmin.php
 lib/Model/PartyResponseDefault.php
 lib/Model/PartyResponsePartyConfigurationDefault.php
+lib/Model/PlaceConfigResponseAdmin.php
+lib/Model/PlaceConfigResponseDefault.php
 lib/Model/ProjectPatchRequest.php
 lib/Model/ProjectPatchRequestTracking.php
 lib/Model/ProjectPostRequest.php
@@ -1245,3 +1251,6 @@ lib/Model/WebhookRequest.php
 lib/Model/WebhookResponse.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
+test/Model/JourneyprocessResponseListAdminTest.php
+test/Model/PlaceConfigResponseAdminTest.php
+test/Model/PlaceConfigResponseDefaultTest.php

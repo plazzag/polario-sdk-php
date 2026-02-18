@@ -22,7 +22,7 @@ reactionDefaultJourneyGet($session, $cursor, $page, $limit, $accept_language): \
 
 Get journey processes list for cursor
 
-This endpoint returns a list of all journey processes for account without content in default representation.  Cursor could be created here: POST /reaction/default/journey/search  _accessible without permission_
+This endpoint returns a list of all journey processes for account without content in default representation.  __Note:__ Journeys is a premium feature and requires a valid subscription.  Cursor could be created here: POST /reaction/default/journey/search  _accessible without permission_
 
 ### Example
 
@@ -86,7 +86,7 @@ reactionDefaultJourneyIdGet($id, $session, $accept_language): \OpenAPI\Client\Mo
 
 Get journey
 
-This endpoint returns a journey in default representation by given id. If the requested language is not available it will fall back to the default language.  _accessible without permission_
+This endpoint returns a journey in default representation by given id. If the requested language is not available it will fall back to the default language.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _accessible without permission_
 
 ### Example
 
@@ -146,7 +146,7 @@ reactionDefaultJourneyIdProcessGet($id, $session, $accept_language): \OpenAPI\Cl
 
 Get journey process
 
-This endpoint returns a journey process in default representation by given journey id. If the requested language is not available it will fall back to the default language.  _accessible without permission_
+This endpoint returns a journey process in default representation by given journey id. If the requested language is not available it will fall back to the default language.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _accessible without permission_
 
 ### Example
 
@@ -206,7 +206,7 @@ reactionDefaultJourneyIdStageStageIdPatch($id, $stage_id, $session, $request, $a
 
 Update stage status
 
-This endpoint is for updating the status of a stage for an own journey process. If the requested language is not available it will fall back to the default language.  _accessible without permission_
+This endpoint is for updating the status of a stage for an own journey process. If the requested language is not available it will fall back to the default language.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _accessible without permission_
 
 ### Example
 
@@ -270,7 +270,7 @@ reactionDefaultJourneySearchPost($session, $request): \OpenAPI\Client\Model\Mode
 
 Create cursor
 
-This endpoint returns a cursor for list own journeys in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_
+This endpoint returns a cursor for list own journeys in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _accessible without permission_
 
 ### Example
 
@@ -328,7 +328,7 @@ reactionDefaultJourneyStatsGet($session): \OpenAPI\Client\Model\JourneyResponseS
 
 Get journey stats
 
-This endpoint returns aggregated statistics for journeys of the authenticated account.  _accessible without permission_
+This endpoint returns aggregated statistics for journeys of the authenticated account.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _accessible without permission_
 
 ### Example
 

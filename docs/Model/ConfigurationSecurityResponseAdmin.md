@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **number_required** | **bool** |  | [optional]
 **password_expiration** | **int** | amount of days | [optional]
 **prevent_dictionary_attack** | **bool** |  | [optional]
+**refresh_token_lifetime** | **int** | token lifetime in days | [optional]
 **registration_activated** | **bool** |  | [optional]
 **special_letters_required** | **bool** |  | [optional]
 **tracking_enabled** | **bool** | specify if there are terms of use must be confirmed for login first because of enabled tracking | [optional]

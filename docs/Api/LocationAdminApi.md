@@ -11,6 +11,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**locationAdminIdDelete()**](LocationAdminApi.md#locationAdminIdDelete) | **DELETE** /location/admin/{id} | Delete location |
 | [**locationAdminIdGet()**](LocationAdminApi.md#locationAdminIdGet) | **GET** /location/admin/{id} | Get location |
 | [**locationAdminIdPatch()**](LocationAdminApi.md#locationAdminIdPatch) | **PATCH** /location/admin/{id} | Update location |
+| [**locationAdminPlaceConfigGet()**](LocationAdminApi.md#locationAdminPlaceConfigGet) | **GET** /location/admin/place/config | Get places config |
 | [**locationAdminPost()**](LocationAdminApi.md#locationAdminPost) | **POST** /location/admin | Create location |
 | [**locationAdminProjectIdGet()**](LocationAdminApi.md#locationAdminProjectIdGet) | **GET** /location/admin/project/{id} | Get location list for project |
 
@@ -303,6 +304,62 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `locationAdminPlaceConfigGet()`
+
+```php
+locationAdminPlaceConfigGet($session): \OpenAPI\Client\Model\PlaceConfigResponseAdmin
+```
+
+Get places config
+
+This endpoint returns config for places search. It provides the google places api key.  _accessible without permission_
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\LocationAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->locationAdminPlaceConfigGet($session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling LocationAdminApi->locationAdminPlaceConfigGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\PlaceConfigResponseAdmin**](../Model/PlaceConfigResponseAdmin.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

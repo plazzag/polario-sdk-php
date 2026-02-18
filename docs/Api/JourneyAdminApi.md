@@ -6,6 +6,9 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
+| [**reactionAdminJourneyAccountAccountIdGet()**](JourneyAdminApi.md#reactionAdminJourneyAccountAccountIdGet) | **GET** /reaction/admin/journey/account/{accountId} | Get all journey processes of account |
+| [**reactionAdminJourneyIdAccountAccountIdGet()**](JourneyAdminApi.md#reactionAdminJourneyIdAccountAccountIdGet) | **GET** /reaction/admin/journey/{id}/account/{accountId} | Get journey processes of account |
+| [**reactionAdminJourneyIdAccountGet()**](JourneyAdminApi.md#reactionAdminJourneyIdAccountGet) | **GET** /reaction/admin/journey/{id}/account | Get journey processes of journey |
 | [**reactionAdminJourneyIdAttendeeDelete()**](JourneyAdminApi.md#reactionAdminJourneyIdAttendeeDelete) | **DELETE** /reaction/admin/journey/{id}/attendee | Remove attendees |
 | [**reactionAdminJourneyIdAttendeeGet()**](JourneyAdminApi.md#reactionAdminJourneyIdAttendeeGet) | **GET** /reaction/admin/journey/{id}/attendee | Get attendees |
 | [**reactionAdminJourneyIdAttendeePatch()**](JourneyAdminApi.md#reactionAdminJourneyIdAttendeePatch) | **PATCH** /reaction/admin/journey/{id}/attendee | Update attendees |
@@ -16,8 +19,185 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**reactionAdminJourneyIdStagesGet()**](JourneyAdminApi.md#reactionAdminJourneyIdStagesGet) | **GET** /reaction/admin/journey/{id}/stages | Get stages |
 | [**reactionAdminJourneyIdStagesPut()**](JourneyAdminApi.md#reactionAdminJourneyIdStagesPut) | **PUT** /reaction/admin/journey/{id}/stages | Update stages |
 | [**reactionAdminJourneyPost()**](JourneyAdminApi.md#reactionAdminJourneyPost) | **POST** /reaction/admin/journey | Create journey |
-| [**reactionAdminJourneyProjectIdGet()**](JourneyAdminApi.md#reactionAdminJourneyProjectIdGet) | **GET** /reaction/admin/journey/project/{id} | Get journey list for project |
+| [**reactionAdminJourneyProcessIdGet()**](JourneyAdminApi.md#reactionAdminJourneyProcessIdGet) | **GET** /reaction/admin/journey/process/{id} | Get journey process |
+| [**reactionAdminJourneyProjectProjectIdGet()**](JourneyAdminApi.md#reactionAdminJourneyProjectProjectIdGet) | **GET** /reaction/admin/journey/project/{projectId} | Get journey list for project |
 
+
+## `reactionAdminJourneyAccountAccountIdGet()`
+
+```php
+reactionAdminJourneyAccountAccountIdGet($account_id, $session): \OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]
+```
+
+Get all journey processes of account
+
+This endpoint returns all journey processes for 1 account in admin representation.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\JourneyAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$account_id = 'account_id_example'; // string | Account ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->reactionAdminJourneyAccountAccountIdGet($account_id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling JourneyAdminApi->reactionAdminJourneyAccountAccountIdGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **account_id** | **string**| Account ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]**](../Model/JourneyprocessResponseListAdmin.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `reactionAdminJourneyIdAccountAccountIdGet()`
+
+```php
+reactionAdminJourneyIdAccountAccountIdGet($id, $account_id, $session): \OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]
+```
+
+Get journey processes of account
+
+This endpoint returns all journey processes of a specific account for a specific journey in admin representation.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\JourneyAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Journey ID
+$account_id = 'account_id_example'; // string | Account ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->reactionAdminJourneyIdAccountAccountIdGet($id, $account_id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling JourneyAdminApi->reactionAdminJourneyIdAccountAccountIdGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Journey ID | |
+| **account_id** | **string**| Account ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]**](../Model/JourneyprocessResponseListAdmin.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `reactionAdminJourneyIdAccountGet()`
+
+```php
+reactionAdminJourneyIdAccountGet($id, $session): \OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]
+```
+
+Get journey processes of journey
+
+This endpoint returns all account processes for 1 journey in admin representation.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\JourneyAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Journey ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->reactionAdminJourneyIdAccountGet($id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling JourneyAdminApi->reactionAdminJourneyIdAccountGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Journey ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]**](../Model/JourneyprocessResponseListAdmin.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
 ## `reactionAdminJourneyIdAttendeeDelete()`
 
@@ -27,7 +207,7 @@ reactionAdminJourneyIdAttendeeDelete($id, $session, $ids): \OpenAPI\Client\Model
 
 Remove attendees
 
-This endpoint is for removing journey processes. Note: when no query parameter is set, all attendees will be removed.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for removing journey processes.  __Note:__ when no query parameter is set, all attendees will be removed.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -82,12 +262,12 @@ No authorization required
 ## `reactionAdminJourneyIdAttendeeGet()`
 
 ```php
-reactionAdminJourneyIdAttendeeGet($id, $session, $cursor, $limit, $page): \OpenAPI\Client\Model\JourneyprocessResponseAdmin[]
+reactionAdminJourneyIdAttendeeGet($id, $session, $cursor, $limit, $page): \OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]
 ```
 
 Get attendees
 
-This endpoint is for retrieving attendees from journey processes.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for retrieving attendees from journey processes.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -128,7 +308,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\JourneyprocessResponseAdmin[]**](../Model/JourneyprocessResponseAdmin.md)
+[**\OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]**](../Model/JourneyprocessResponseListAdmin.md)
 
 ### Authorization
 
@@ -151,7 +331,7 @@ reactionAdminJourneyIdAttendeePatch($id, $session, $request, $ids): \OpenAPI\Cli
 
 Update attendees
 
-This endpoint is for updating journey processes. Note: when no query parameter is set, all attendees will be updated.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for updating journey processes. Note: when no query parameter is set, all attendees will be updated.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -208,12 +388,12 @@ No authorization required
 ## `reactionAdminJourneyIdAttendeePost()`
 
 ```php
-reactionAdminJourneyIdAttendeePost($id, $session, $request): \OpenAPI\Client\Model\JourneyprocessResponseAdmin[]
+reactionAdminJourneyIdAttendeePost($id, $session, $request): \OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]
 ```
 
 Add attendees
 
-This endpoint is for creating new journey processes by adding attendees.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for creating new journey processes by adding attendees.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -250,7 +430,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\JourneyprocessResponseAdmin[]**](../Model/JourneyprocessResponseAdmin.md)
+[**\OpenAPI\Client\Model\JourneyprocessResponseListAdmin[]**](../Model/JourneyprocessResponseListAdmin.md)
 
 ### Authorization
 
@@ -273,7 +453,7 @@ reactionAdminJourneyIdDelete($id, $session): \OpenAPI\Client\Model\ModelSwagStat
 
 Delete journey
 
-This endpoint is for deleting a single journey with all localizations.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for deleting a single journey with all localizations.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -331,7 +511,7 @@ reactionAdminJourneyIdGet($id, $session): \OpenAPI\Client\Model\JourneyResponseA
 
 Get journey
 
-This endpoint returns a journey in administrative representation by given id.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns a journey in administrative representation by given id.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -389,7 +569,7 @@ reactionAdminJourneyIdPatch($id, $session, $request): \OpenAPI\Client\Model\Jour
 
 Update journey
 
-This endpoint is for updating specific data of an existing journey.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for updating specific data of an existing journey.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -449,7 +629,7 @@ reactionAdminJourneyIdStagesGet($id, $session): \OpenAPI\Client\Model\JourneyRes
 
 Get stages
 
-This endpoint returns the stages for a journey object in administrative representation by given id.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns the stages for a journey object in administrative representation by given id.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -507,7 +687,7 @@ reactionAdminJourneyIdStagesPut($id, $session, $request): \OpenAPI\Client\Model\
 
 Update stages
 
-This endpoint updates the stages for a journey object in administrative representation by given id.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint updates the stages for a journey object in administrative representation by given id.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -567,7 +747,7 @@ reactionAdminJourneyPost($session, $request): \OpenAPI\Client\Model\JourneyRespo
 
 Create journey
 
-This endpoint is for creating a new journey.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for creating a new journey.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -617,15 +797,15 @@ No authorization required
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `reactionAdminJourneyProjectIdGet()`
+## `reactionAdminJourneyProcessIdGet()`
 
 ```php
-reactionAdminJourneyProjectIdGet($id, $session, $cursor, $limit, $page): \OpenAPI\Client\Model\JourneyResponseListAdmin[]
+reactionAdminJourneyProcessIdGet($id, $session): \OpenAPI\Client\Model\JourneyprocessResponseAdmin
 ```
 
-Get journey list for project
+Get journey process
 
-This endpoint returns a list of all journeys for the requested project without items in administrative representation. If a limit is set, a cursor for this endpoint may be created to iterate over all journeys.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns one specific journey processes in admin representation.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -640,17 +820,14 @@ $apiInstance = new OpenAPI\Client\Api\JourneyAdminApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$id = 'id_example'; // string | Project ID
+$id = 'id_example'; // string | Process ID
 $session = 'session_example'; // string | JWT
-$cursor = 'cursor_example'; // string | id of the cursor used for pagination; required if page is set
-$limit = 56; // int | amount of results per page (1 ... 100)
-$page = 56; // int | current page index of the cursor used for pagination; required if cursor is set
 
 try {
-    $result = $apiInstance->reactionAdminJourneyProjectIdGet($id, $session, $cursor, $limit, $page);
+    $result = $apiInstance->reactionAdminJourneyProcessIdGet($id, $session);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling JourneyAdminApi->reactionAdminJourneyProjectIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling JourneyAdminApi->reactionAdminJourneyProcessIdGet: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -658,7 +835,68 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| Project ID | |
+| **id** | **string**| Process ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\JourneyprocessResponseAdmin**](../Model/JourneyprocessResponseAdmin.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `reactionAdminJourneyProjectProjectIdGet()`
+
+```php
+reactionAdminJourneyProjectProjectIdGet($project_id, $session, $cursor, $limit, $page): \OpenAPI\Client\Model\JourneyResponseListAdmin[]
+```
+
+Get journey list for project
+
+This endpoint returns a list of all journeys for the requested project without items in administrative representation. If a limit is set, a cursor for this endpoint may be created to iterate over all journeys.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\JourneyAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$project_id = 'project_id_example'; // string | Project ID
+$session = 'session_example'; // string | JWT
+$cursor = 'cursor_example'; // string | id of the cursor used for pagination; required if page is set
+$limit = 56; // int | amount of results per page (1 ... 100)
+$page = 56; // int | current page index of the cursor used for pagination; required if cursor is set
+
+try {
+    $result = $apiInstance->reactionAdminJourneyProjectProjectIdGet($project_id, $session, $cursor, $limit, $page);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling JourneyAdminApi->reactionAdminJourneyProjectProjectIdGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **project_id** | **string**| Project ID | |
 | **session** | **string**| JWT | |
 | **cursor** | **string**| id of the cursor used for pagination; required if page is set | [optional] |
 | **limit** | **int**| amount of results per page (1 ... 100) | [optional] |
