@@ -1,4 +1,4 @@
-# # SsoCodeRequest
+# SsoCodeRequest
 
 ## Properties
 

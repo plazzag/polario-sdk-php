@@ -1,4 +1,4 @@
-# # NewsResponseColumnDefault
+# NewsResponseColumnDefault
 
 ## Properties
 

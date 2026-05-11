@@ -1,4 +1,4 @@
-# # DirectoryItemTranslationResponse
+# DirectoryItemTranslationResponse
 
 ## Properties
 

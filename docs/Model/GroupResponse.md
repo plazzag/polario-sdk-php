@@ -1,4 +1,4 @@
-# # GroupResponse
+# GroupResponse
 
 ## Properties
 

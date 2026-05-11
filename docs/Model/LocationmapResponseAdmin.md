@@ -1,4 +1,4 @@
-# # LocationmapResponseAdmin
+# LocationmapResponseAdmin
 
 ## Properties
 

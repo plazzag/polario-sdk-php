@@ -1,4 +1,4 @@
-# # NewsPlatform
+# NewsPlatform
 
 ## Properties
 

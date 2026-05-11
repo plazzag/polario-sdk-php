@@ -1,4 +1,4 @@
-# # PartyCursorRequestDefault
+# PartyCursorRequestDefault
 
 ## Properties
 

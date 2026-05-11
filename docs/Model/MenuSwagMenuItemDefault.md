@@ -1,4 +1,4 @@
-# # MenuSwagMenuItemDefault
+# MenuSwagMenuItemDefault
 
 ## Properties
 
@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **applied_filter** | [**\OpenAPI\Client\Model\ContentbuilderSwagResponseItemAppliedFilter**](ContentbuilderSwagResponseItemAppliedFilter.md) | only for Link type and deeplink.objectType &#x3D; Calendar | [optional]
 **children** | [**\OpenAPI\Client\Model\MenuSwagMenuItemDefault[]**](MenuSwagMenuItemDefault.md) | only for Folder type | [optional]
 **deeplink** | [**\OpenAPI\Client\Model\ModelDeeplinkObject**](ModelDeeplinkObject.md) | only for Image, Link, Support and Imprint type | [optional]
-**icon** | **string** | media id only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Support, Imprint, Settings and LeaveProject type | [optional]
+**icon** | **string** | media id only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Support, Imprint, Recommendation, Settings and LeaveProject type | [optional]
 **id** | **string** |  | [optional]
 **image** | **string** | media id only for Image type | [optional]
 **link_behavior** | **string** | only for Image, Link, Support, Imprint and Settings type; Has no effect if the url matches with the web app | [optional]
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **search** | [**\OpenAPI\Client\Model\ModelSearch**](ModelSearch.md) | only for IndexSearch type and News type | [optional]
 **separator_type** | **string** | only for Separator type | [optional]
 **size** | **string** | only for Gap type | [optional]
-**text** | **string** | only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Separator, Support, Imprint, Settings and LeaveProject type | [optional]
+**text** | **string** | only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Recommendation, Separator, Support, Imprint, Settings and LeaveProject type | [optional]
 **text_orientation** | **string** | only for Separator type | [optional]
 **translations** | [**\OpenAPI\Client\Model\MenuItemTranslationResponse[]**](MenuItemTranslationResponse.md) | only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Separator, Support, Imprint, Settings and LeaveProject type | [optional]
 **type** | **string** |  | [optional]

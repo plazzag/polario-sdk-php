@@ -1,4 +1,4 @@
-# # AppointmentConfigResponse
+# AppointmentConfigResponse
 
 ## Properties
 

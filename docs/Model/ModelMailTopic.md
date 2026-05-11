@@ -1,4 +1,4 @@
-# # ModelMailTopic
+# ModelMailTopic
 
 ## Properties
 

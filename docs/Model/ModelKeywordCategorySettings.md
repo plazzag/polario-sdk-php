@@ -1,4 +1,4 @@
-# # ModelKeywordCategorySettings
+# ModelKeywordCategorySettings
 
 ## Properties
 

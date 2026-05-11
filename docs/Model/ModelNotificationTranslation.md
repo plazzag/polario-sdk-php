@@ -1,4 +1,4 @@
-# # ModelNotificationTranslation
+# ModelNotificationTranslation
 
 ## Properties
 

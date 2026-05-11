@@ -1,4 +1,4 @@
-# # SelectionAPIOptionDesignResponseDefault
+# SelectionAPIOptionDesignResponseDefault
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # MenuResponseAdmin
+# MenuResponseAdmin
 
 ## Properties
 

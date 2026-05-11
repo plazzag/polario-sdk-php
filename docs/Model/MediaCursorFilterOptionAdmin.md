@@ -1,4 +1,4 @@
-# # MediaCursorFilterOptionAdmin
+# MediaCursorFilterOptionAdmin
 
 ## Properties
 

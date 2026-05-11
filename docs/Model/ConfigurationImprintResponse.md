@@ -1,4 +1,4 @@
-# # ConfigurationImprintResponse
+# ConfigurationImprintResponse
 
 ## Properties
 

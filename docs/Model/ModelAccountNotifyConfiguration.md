@@ -1,4 +1,4 @@
-# # ModelAccountNotifyConfiguration
+# ModelAccountNotifyConfiguration
 
 ## Properties
 

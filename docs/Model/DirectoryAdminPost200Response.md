@@ -1,4 +1,4 @@
-# # DirectoryAdminPost200Response
+# DirectoryAdminPost200Response
 
 ## Properties
 

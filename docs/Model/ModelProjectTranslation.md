@@ -1,4 +1,4 @@
-# # ModelProjectTranslation
+# ModelProjectTranslation
 
 ## Properties
 

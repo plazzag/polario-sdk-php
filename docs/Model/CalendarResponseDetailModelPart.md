@@ -1,4 +1,4 @@
-# # CalendarResponseDetailModelPart
+# CalendarResponseDetailModelPart
 
 ## Properties
 

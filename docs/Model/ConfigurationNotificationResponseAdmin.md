@@ -1,4 +1,4 @@
-# # ConfigurationNotificationResponseAdmin
+# ConfigurationNotificationResponseAdmin
 
 ## Properties
 

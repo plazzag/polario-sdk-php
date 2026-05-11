@@ -1,4 +1,4 @@
-# # MediaResponsePermalink
+# MediaResponsePermalink
 
 ## Properties
 

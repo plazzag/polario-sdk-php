@@ -1,4 +1,4 @@
-# # MenuRequestSettings
+# MenuRequestSettings
 
 ## Properties
 

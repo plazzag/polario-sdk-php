@@ -1,4 +1,4 @@
-# # NewsAdminPost200ResponseAllOfContentInner
+# NewsAdminPost200ResponseAllOfContentInner
 
 ## Properties
 

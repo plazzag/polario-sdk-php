@@ -1,4 +1,4 @@
-# # ConfigurationFeaturesResponseAdminChatDomainFilter
+# ConfigurationFeaturesResponseAdminChatDomainFilter
 
 ## Properties
 

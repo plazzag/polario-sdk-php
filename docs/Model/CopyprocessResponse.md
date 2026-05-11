@@ -1,4 +1,4 @@
-# # CopyprocessResponse
+# CopyprocessResponse
 
 ## Properties
 

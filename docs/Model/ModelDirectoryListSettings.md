@@ -1,4 +1,4 @@
-# # ModelDirectoryListSettings
+# ModelDirectoryListSettings
 
 ## Properties
 

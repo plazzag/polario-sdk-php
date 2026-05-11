@@ -1,4 +1,4 @@
-# # ModelDirectoryDetail
+# ModelDirectoryDetail
 
 ## Properties
 

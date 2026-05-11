@@ -1,4 +1,4 @@
-# # LocalizationResponseAdmin
+# LocalizationResponseAdmin
 
 ## Properties
 

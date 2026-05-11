@@ -1,4 +1,4 @@
-# # AuthEmailChangeRedeemTokenRequest
+# AuthEmailChangeRedeemTokenRequest
 
 ## Properties
 

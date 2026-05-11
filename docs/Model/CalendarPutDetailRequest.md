@@ -1,4 +1,4 @@
-# # CalendarPutDetailRequest
+# CalendarPutDetailRequest
 
 ## Properties
 

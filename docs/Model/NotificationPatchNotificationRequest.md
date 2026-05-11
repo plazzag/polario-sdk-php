@@ -1,4 +1,4 @@
-# # NotificationPatchNotificationRequest
+# NotificationPatchNotificationRequest
 
 ## Properties
 

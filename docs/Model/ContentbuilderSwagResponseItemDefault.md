@@ -1,4 +1,4 @@
-# # ContentbuilderSwagResponseItemDefault
+# ContentbuilderSwagResponseItemDefault
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ConfigurationFeaturesResponseAdmin
+# ConfigurationFeaturesResponseAdmin
 
 ## Properties
 

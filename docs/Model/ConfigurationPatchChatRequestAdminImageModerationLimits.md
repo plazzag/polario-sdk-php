@@ -1,4 +1,4 @@
-# # ConfigurationPatchChatRequestAdminImageModerationLimits
+# ConfigurationPatchChatRequestAdminImageModerationLimits
 
 ## Properties
 

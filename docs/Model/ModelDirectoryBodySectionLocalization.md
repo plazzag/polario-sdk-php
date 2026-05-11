@@ -1,4 +1,4 @@
-# # ModelDirectoryBodySectionLocalization
+# ModelDirectoryBodySectionLocalization
 
 ## Properties
 

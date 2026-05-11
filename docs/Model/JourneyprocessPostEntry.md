@@ -1,4 +1,4 @@
-# # JourneyprocessPostEntry
+# JourneyprocessPostEntry
 
 ## Properties
 

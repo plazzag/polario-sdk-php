@@ -1,4 +1,4 @@
-# # CalendarDefaultIdGet200Response
+# CalendarDefaultIdGet200Response
 
 ## Properties
 

@@ -21,7 +21,7 @@ authAdminSsoProviderGet($session, $cursor, $limit, $page): \OpenAPI\Client\Model
 
 Get all sso provider
 
-This endpoint returns all sso-provider with content in administrative representation. If a limit is set, a cursor for this endpoint may be created to iterate over all sso-provider.  _only accessible with permission_ : `\"ManageConfiguration\"`  _fully accessible with permission_ : `\"ManageConfiguration\"`
+This endpoint returns all sso-provider with content in administrative representation. If a limit is set, a cursor for this endpoint may be created to iterate over all sso-provider.  _only accessible with permission_ : `\"ManageConfiguration\"` `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageConfiguration\"` `\"ManageAccounts\"`
 
 ### Example
 
@@ -141,7 +141,7 @@ authAdminSsoProviderIdGet($id, $session): \OpenAPI\Client\Model\SsoProviderRespo
 
 Get a single sso provider
 
-This endpoint returns a single sso-provider with content in administrative representation.  _only accessible with permission_ : `\"ManageConfiguration\"`  _fully accessible with permission_ : `\"ManageConfiguration\"`
+This endpoint returns a single sso-provider with content in administrative representation.  _only accessible with permission_ : `\"ManageConfiguration\"` `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageConfiguration\"` `\"ManageAccounts\"`
 
 ### Example
 

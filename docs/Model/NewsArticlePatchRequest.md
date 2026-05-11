@@ -1,4 +1,4 @@
-# # NewsArticlePatchRequest
+# NewsArticlePatchRequest
 
 ## Properties
 

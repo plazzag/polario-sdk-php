@@ -1,4 +1,4 @@
-# # AccountResponse
+# AccountResponse
 
 ## Properties
 
@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **color** | [**\OpenAPI\Client\Model\ModelAccountProfileColor**](ModelAccountProfileColor.md) |  | [optional]
 **email** | **string** | permissions handler may omit this | [optional]
 **first_name** | **string** |  | [optional]
+**has_password** | **bool** |  | [optional]
 **id** | **string** |  | [optional]
 **image** | **string** | media id | [optional]
 **keyword_ids** | **string[]** |  | [optional]

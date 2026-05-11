@@ -1,4 +1,4 @@
-# # PageDefaultIdGet200ResponseAllOfContentInnerAllOfColumnsInner
+# PageDefaultIdGet200ResponseAllOfContentInnerAllOfColumnsInner
 
 ## Properties
 

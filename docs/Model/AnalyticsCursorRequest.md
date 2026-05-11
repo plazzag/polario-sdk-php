@@ -1,4 +1,4 @@
-# # AnalyticsCursorRequest
+# AnalyticsCursorRequest
 
 ## Properties
 

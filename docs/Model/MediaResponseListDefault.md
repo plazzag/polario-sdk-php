@@ -1,4 +1,4 @@
-# # MediaResponseListDefault
+# MediaResponseListDefault
 
 ## Properties
 

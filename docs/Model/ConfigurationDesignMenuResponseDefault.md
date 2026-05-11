@@ -1,4 +1,4 @@
-# # ConfigurationDesignMenuResponseDefault
+# ConfigurationDesignMenuResponseDefault
 
 ## Properties
 

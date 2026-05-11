@@ -1,4 +1,4 @@
-# # ConfigurationFeaturesResponseDefault
+# ConfigurationFeaturesResponseDefault
 
 ## Properties
 

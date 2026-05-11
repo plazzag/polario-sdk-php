@@ -1,4 +1,4 @@
-# # SchemeResponseAdmin
+# SchemeResponseAdmin
 
 ## Properties
 

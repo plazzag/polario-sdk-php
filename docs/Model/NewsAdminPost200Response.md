@@ -1,4 +1,4 @@
-# # NewsAdminPost200Response
+# NewsAdminPost200Response
 
 ## Properties
 

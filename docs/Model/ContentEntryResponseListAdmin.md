@@ -1,4 +1,4 @@
-# # ContentEntryResponseListAdmin
+# ContentEntryResponseListAdmin
 
 ## Properties
 
@@ -18,8 +18,10 @@ Name | Type | Description | Notes
 **position** | **int** |  | [optional]
 **project_id** | **string** |  | [optional]
 **published_at** | **int** |  | [optional]
+**rating_enabled** | **bool** |  | [optional]
+**rating_result** | **int[]** | [0,0,0,0,0] &#x3D; [Amount1StarRatings, Amount2StarRatings, ...], redundant data SSOT is model.Rating | [optional]
 **start** | **int** |  | [optional]
-**time_zone** | **string** | // IANA Time Zone | [optional]
+**time_zone** | **string** | IANA Time Zone | [optional]
 **title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\ContentEntryTranslation[]**](ContentEntryTranslation.md) |  | [optional]
 

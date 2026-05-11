@@ -1,4 +1,4 @@
-# # MenuDefaultProjectIdGet200Response
+# MenuDefaultProjectIdGet200Response
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ConfigurationPatchChatRequestAdminImageModeration
+# ConfigurationPatchChatRequestAdminImageModeration
 
 ## Properties
 

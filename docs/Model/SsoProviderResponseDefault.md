@@ -1,4 +1,4 @@
-# # SsoProviderResponseDefault
+# SsoProviderResponseDefault
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # LocationmapMarkerResponseAdmin
+# LocationmapMarkerResponseAdmin
 
 ## Properties
 

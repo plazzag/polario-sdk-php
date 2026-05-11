@@ -1,4 +1,4 @@
-# # ContentEntryTabRequest
+# ContentEntryTabRequest
 
 ## Properties
 

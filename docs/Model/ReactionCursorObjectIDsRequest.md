@@ -1,4 +1,4 @@
-# # ReactionCursorObjectIDsRequest
+# ReactionCursorObjectIDsRequest
 
 ## Properties
 

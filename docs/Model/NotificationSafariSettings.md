@@ -1,4 +1,4 @@
-# # NotificationSafariSettings
+# NotificationSafariSettings
 
 ## Properties
 

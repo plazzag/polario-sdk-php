@@ -1,4 +1,4 @@
-# # ConfigurationTermsRequestAdmin
+# ConfigurationTermsRequestAdmin
 
 ## Properties
 

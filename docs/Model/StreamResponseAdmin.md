@@ -1,4 +1,4 @@
-# # StreamResponseAdmin
+# StreamResponseAdmin
 
 ## Properties
 

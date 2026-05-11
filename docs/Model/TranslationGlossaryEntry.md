@@ -1,4 +1,4 @@
-# # TranslationGlossaryEntry
+# TranslationGlossaryEntry
 
 ## Properties
 

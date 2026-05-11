@@ -1,4 +1,4 @@
-# # BookingCalendarBookingResponseAdmin
+# BookingCalendarBookingResponseAdmin
 
 ## Properties
 

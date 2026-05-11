@@ -1,4 +1,4 @@
-# # ModelDirectoryBodySection
+# ModelDirectoryBodySection
 
 ## Properties
 

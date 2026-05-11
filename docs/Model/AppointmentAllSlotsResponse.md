@@ -1,4 +1,4 @@
-# # AppointmentAllSlotsResponse
+# AppointmentAllSlotsResponse
 
 ## Properties
 

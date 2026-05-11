@@ -1,4 +1,4 @@
-# # ModelNotificationRecipients
+# ModelNotificationRecipients
 
 ## Properties
 

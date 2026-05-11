@@ -1,4 +1,4 @@
-# # AuthServerSignatureResponse
+# AuthServerSignatureResponse
 
 ## Properties
 

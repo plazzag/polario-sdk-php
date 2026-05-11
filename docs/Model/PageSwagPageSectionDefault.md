@@ -1,4 +1,4 @@
-# # PageSwagPageSectionDefault
+# PageSwagPageSectionDefault
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # DirectoryResponseListAdmin
+# DirectoryResponseListAdmin
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # CalendarAdminPost200Response
+# CalendarAdminPost200Response
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ProjectResponseListAdmin
+# ProjectResponseListAdmin
 
 ## Properties
 

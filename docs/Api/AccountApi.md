@@ -19,8 +19,11 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**authAccountIdDeviceDeviceIdLogoutGet()**](AccountApi.md#authAccountIdDeviceDeviceIdLogoutGet) | **GET** /auth/account/{id}/device/{deviceId}/logout | Logout device |
 | [**authAccountIdDeviceGet()**](AccountApi.md#authAccountIdDeviceGet) | **GET** /auth/account/{id}/device | Get account devices |
 | [**authAccountIdGet()**](AccountApi.md#authAccountIdGet) | **GET** /auth/account/{id} | Get account |
+| [**authAccountIdGroupGet()**](AccountApi.md#authAccountIdGroupGet) | **GET** /auth/account/{id}/group | Get group list for account |
+| [**authAccountIdGroupPatch()**](AccountApi.md#authAccountIdGroupPatch) | **PATCH** /auth/account/{id}/group | Update account group memberships |
 | [**authAccountIdGroupProjectProjectIdGet()**](AccountApi.md#authAccountIdGroupProjectProjectIdGet) | **GET** /auth/account/{id}/group/project/{projectId} | Get group list for account for project |
 | [**authAccountIdGroupProjectProjectIdPut()**](AccountApi.md#authAccountIdGroupProjectProjectIdPut) | **PUT** /auth/account/{id}/group/project/{projectId} | Update account groups membership for project |
+| [**authAccountIdGroupPut()**](AccountApi.md#authAccountIdGroupPut) | **PUT** /auth/account/{id}/group | Set account group memberships |
 | [**authAccountIdPermissionGet()**](AccountApi.md#authAccountIdPermissionGet) | **GET** /auth/account/{id}/permission | Get account permissions |
 | [**authAccountIdProfileGet()**](AccountApi.md#authAccountIdProfileGet) | **GET** /auth/account/{id}/profile | Get account profile |
 | [**authAccountIdProfilePatch()**](AccountApi.md#authAccountIdProfilePatch) | **PATCH** /auth/account/{id}/profile | Update account profile |
@@ -45,6 +48,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**authAccountProjectProjectIdIdGet()**](AccountApi.md#authAccountProjectProjectIdIdGet) | **GET** /auth/account/project/{projectId}/id | Get project account ids |
 | [**authAccountProjectProjectIdStatsGet()**](AccountApi.md#authAccountProjectProjectIdStatsGet) | **GET** /auth/account/project/{projectId}/stats | Get project accounts statistics |
 | [**authAccountProjectProjectIdStatsRecordGet()**](AccountApi.md#authAccountProjectProjectIdStatsRecordGet) | **GET** /auth/account/project/{projectId}/stats/record | Get project accounts statistic records |
+| [**authAccountSearchCursorPost()**](AccountApi.md#authAccountSearchCursorPost) | **POST** /auth/account/search-cursor | Create cursor |
 | [**authAccountSearchPost()**](AccountApi.md#authAccountSearchPost) | **POST** /auth/account/search | Search accounts |
 | [**authAccountStatsGet()**](AccountApi.md#authAccountStatsGet) | **GET** /auth/account/stats | Get accounts statistics |
 | [**authAccountStatsRecordGet()**](AccountApi.md#authAccountStatsRecordGet) | **GET** /auth/account/stats/record | Get accounts statistic records |
@@ -832,6 +836,124 @@ No authorization required
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `authAccountIdGroupGet()`
+
+```php
+authAccountIdGroupGet($id, $session): string[]
+```
+
+Get group list for account
+
+This endpoint returns a list of all groups the requested account belongs to across all projects.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\AccountApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Account ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->authAccountIdGroupGet($id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling AccountApi->authAccountIdGroupGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Account ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+**string[]**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `authAccountIdGroupPatch()`
+
+```php
+authAccountIdGroupPatch($id, $session, $request): string[]
+```
+
+Update account group memberships
+
+This endpoint updates group memberships for an account by explicitly providing groups to add and groups to remove. Groups may span multiple projects. System groups are calculated and cannot be changed with that request. In case of response status is 205 the request was only executed partial. Use GET to receive the stored configuration.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\AccountApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Account ID
+$session = 'session_example'; // string | JWT
+$request = new \OpenAPI\Client\Model\GroupPatchAccountGroupsRequest(); // \OpenAPI\Client\Model\GroupPatchAccountGroupsRequest | groups to add and remove
+
+try {
+    $result = $apiInstance->authAccountIdGroupPatch($id, $session, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling AccountApi->authAccountIdGroupPatch: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Account ID | |
+| **session** | **string**| JWT | |
+| **request** | [**\OpenAPI\Client\Model\GroupPatchAccountGroupsRequest**](../Model/GroupPatchAccountGroupsRequest.md)| groups to add and remove | |
+
+### Return type
+
+**string[]**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
 ## `authAccountIdGroupProjectProjectIdGet()`
 
 ```php
@@ -906,7 +1028,7 @@ authAccountIdGroupProjectProjectIdPut($id, $project_id, $session, $request): str
 
 Update account groups membership for project
 
-This endpoint is for updating the group membership of an account for a specific project. In case of response status is 205 the request was only executed partial. Use GET to receive the stored configuration.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
+This endpoint is for updating the group membership of an account for a specific project. System groups are calculated and cannot be changed with that request. In case of response status is 205 the request was only executed partial. Use GET to receive the stored configuration.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
 
 ### Example
 
@@ -942,6 +1064,66 @@ try {
 | **project_id** | **string**| Project ID | |
 | **session** | **string**| JWT | |
 | **request** | [**string[]**](../Model/string.md)| group ids | |
+
+### Return type
+
+**string[]**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `authAccountIdGroupPut()`
+
+```php
+authAccountIdGroupPut($id, $session, $request): string[]
+```
+
+Set account group memberships
+
+This endpoint sets the group memberships of an account by providing the complete desired set of group ids. Groups may span multiple projects. System groups are calculated and cannot be changed with that request. In case of response status is 205 the request was only executed partial. Use GET to receive the stored configuration.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\AccountApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Account ID
+$session = 'session_example'; // string | JWT
+$request = array('request_example'); // string[] | group ids to be set for account
+
+try {
+    $result = $apiInstance->authAccountIdGroupPut($id, $session, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling AccountApi->authAccountIdGroupPut: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Account ID | |
+| **session** | **string**| JWT | |
+| **request** | [**string[]**](../Model/string.md)| group ids to be set for account | |
 
 ### Return type
 
@@ -1621,7 +1803,7 @@ No authorization required
 ## `authAccountIdSettingsNotificationPatch()`
 
 ```php
-authAccountIdSettingsNotificationPatch($id, $session, $request): \OpenAPI\Client\Model\ModelAccountNotificationSettings[]
+authAccountIdSettingsNotificationPatch($id, $session, $request): \OpenAPI\Client\Model\ModelAccountNotificationSettings
 ```
 
 Update account notification settings
@@ -1663,7 +1845,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelAccountNotificationSettings[]**](../Model/ModelAccountNotificationSettings.md)
+[**\OpenAPI\Client\Model\ModelAccountNotificationSettings**](../Model/ModelAccountNotificationSettings.md)
 
 ### Authorization
 
@@ -2388,6 +2570,64 @@ No authorization required
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `authAccountSearchCursorPost()`
+
+```php
+authAccountSearchCursorPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+```
+
+Create cursor
+
+This endpoint returns a cursor for list accounts with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\AccountApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$session = 'session_example'; // string | JWT
+$request = new \OpenAPI\Client\Model\AccountCursorRequest(); // \OpenAPI\Client\Model\AccountCursorRequest | options to create cursor
+
+try {
+    $result = $apiInstance->authAccountSearchCursorPost($session, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling AccountApi->authAccountSearchCursorPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **session** | **string**| JWT | |
+| **request** | [**\OpenAPI\Client\Model\AccountCursorRequest**](../Model/AccountCursorRequest.md)| options to create cursor | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
 ## `authAccountSearchPost()`
 
 ```php
@@ -2396,7 +2636,7 @@ authAccountSearchPost($session, $request, $accept_language, $platform): \OpenAPI
 
 Search accounts
 
-This endpoint is for requesting account list with a search If _Platform_ header is `\"Cms\"` _Accept-Language_ header will be ignored.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
+This endpoint is for requesting account list with a search If _Platform_ header is `\"Cms\"` _Accept-Language_ header will be ignored.  __Note:__ For cursor use: POST /auth/account/search-cursor  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
 
 ### Example
 
@@ -2632,7 +2872,7 @@ authEmailPut($request, $accept_language, $platform): \OpenAPI\Client\Model\AuthE
 
 Change email final
 
-This endpoint should be requested for redeeming the token to finish the email address change. For this action a one time token is needed. The email cannot be changed for an accounts that is linked to a sso provider. After a successful change of the email address all session and refresh tokens will be invalidated and a notification is sent to the old email address of the account. The _Accept-Language_ header is used to select the language for sending the email. If no language is selected, the email will be sent for the default language of the system. On success this endpoint provides a new refresh token and new session in the 200 response. In case of response status is 205 login has to be performed again.  _accessible without permission_
+This endpoint should be requested for redeeming the token to finish the email address change. For this action a one time token is needed. The email cannot be changed for an accounts that is linked to a sso provider. After a successful change of the email address all session and refresh tokens will be invalidated and a notification is sent to the old email address of the account. The _Accept-Language_ header is used to select the language for sending the email. If no language is selected, the email will be sent for the default language of the system. On success this endpoint provides a new refresh token and new session in the 200 response. In case of response status is 205 login has to be performed again. If the password is retired, it will return 428 Precondition Required.  _accessible without permission_
 
 ### Example
 

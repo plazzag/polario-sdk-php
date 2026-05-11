@@ -1,4 +1,4 @@
-# # AuthPasswordChangeTokenResponse
+# AuthPasswordChangeTokenResponse
 
 ## Properties
 

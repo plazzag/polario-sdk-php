@@ -1,4 +1,4 @@
-# # ModelAccountChatVisibleAnalyticsSnapshot
+# ModelAccountChatVisibleAnalyticsSnapshot
 
 ## Properties
 

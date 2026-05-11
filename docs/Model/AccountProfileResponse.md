@@ -1,4 +1,4 @@
-# # AccountProfileResponse
+# AccountProfileResponse
 
 ## Properties
 

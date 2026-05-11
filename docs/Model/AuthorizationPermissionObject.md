@@ -1,4 +1,4 @@
-# # AuthorizationPermissionObject
+# AuthorizationPermissionObject
 
 ## Properties
 

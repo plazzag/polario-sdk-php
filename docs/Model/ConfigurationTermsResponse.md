@@ -1,4 +1,4 @@
-# # ConfigurationTermsResponse
+# ConfigurationTermsResponse
 
 ## Properties
 

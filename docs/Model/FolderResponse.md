@@ -1,4 +1,4 @@
-# # FolderResponse
+# FolderResponse
 
 ## Properties
 

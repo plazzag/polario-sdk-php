@@ -1,4 +1,4 @@
-# # ModelStreamTranslation
+# ModelStreamTranslation
 
 ## Properties
 

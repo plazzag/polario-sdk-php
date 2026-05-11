@@ -1,4 +1,4 @@
-# # DirectoryResponseDefaultDetailHeaderSection
+# DirectoryResponseDefaultDetailHeaderSection
 
 ## Properties
 

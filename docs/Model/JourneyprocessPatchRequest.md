@@ -1,4 +1,4 @@
-# # JourneyprocessPatchRequest
+# JourneyprocessPatchRequest
 
 ## Properties
 

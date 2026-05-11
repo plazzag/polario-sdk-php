@@ -1,4 +1,4 @@
-# # DirectoryBodySectionTranslationResponse
+# DirectoryBodySectionTranslationResponse
 
 ## Properties
 

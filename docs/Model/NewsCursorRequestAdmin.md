@@ -1,4 +1,4 @@
-# # NewsCursorRequestAdmin
+# NewsCursorRequestAdmin
 
 ## Properties
 

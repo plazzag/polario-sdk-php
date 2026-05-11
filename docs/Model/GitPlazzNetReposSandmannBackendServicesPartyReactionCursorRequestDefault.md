@@ -1,4 +1,4 @@
-# # GitPlazzNetReposSandmannBackendServicesPartyReactionCursorRequestDefault
+# GitPlazzNetReposSandmannBackendServicesPartyReactionCursorRequestDefault
 
 ## Properties
 

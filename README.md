@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# polario
 
 API for Polario
 
@@ -57,7 +57,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/OpenAPIClient-php/vendor/autoload.php');
+require_once('/path/to/polario/vendor/autoload.php');
 ```
 
 ## Getting Started
@@ -109,8 +109,11 @@ Class | Method | HTTP request | Description
 *AccountApi* | [**authAccountIdDeviceDeviceIdLogoutGet**](docs/Api/AccountApi.md#authaccountiddevicedeviceidlogoutget) | **GET** /auth/account/{id}/device/{deviceId}/logout | Logout device
 *AccountApi* | [**authAccountIdDeviceGet**](docs/Api/AccountApi.md#authaccountiddeviceget) | **GET** /auth/account/{id}/device | Get account devices
 *AccountApi* | [**authAccountIdGet**](docs/Api/AccountApi.md#authaccountidget) | **GET** /auth/account/{id} | Get account
+*AccountApi* | [**authAccountIdGroupGet**](docs/Api/AccountApi.md#authaccountidgroupget) | **GET** /auth/account/{id}/group | Get group list for account
+*AccountApi* | [**authAccountIdGroupPatch**](docs/Api/AccountApi.md#authaccountidgrouppatch) | **PATCH** /auth/account/{id}/group | Update account group memberships
 *AccountApi* | [**authAccountIdGroupProjectProjectIdGet**](docs/Api/AccountApi.md#authaccountidgroupprojectprojectidget) | **GET** /auth/account/{id}/group/project/{projectId} | Get group list for account for project
 *AccountApi* | [**authAccountIdGroupProjectProjectIdPut**](docs/Api/AccountApi.md#authaccountidgroupprojectprojectidput) | **PUT** /auth/account/{id}/group/project/{projectId} | Update account groups membership for project
+*AccountApi* | [**authAccountIdGroupPut**](docs/Api/AccountApi.md#authaccountidgroupput) | **PUT** /auth/account/{id}/group | Set account group memberships
 *AccountApi* | [**authAccountIdPermissionGet**](docs/Api/AccountApi.md#authaccountidpermissionget) | **GET** /auth/account/{id}/permission | Get account permissions
 *AccountApi* | [**authAccountIdProfileGet**](docs/Api/AccountApi.md#authaccountidprofileget) | **GET** /auth/account/{id}/profile | Get account profile
 *AccountApi* | [**authAccountIdProfilePatch**](docs/Api/AccountApi.md#authaccountidprofilepatch) | **PATCH** /auth/account/{id}/profile | Update account profile
@@ -135,6 +138,7 @@ Class | Method | HTTP request | Description
 *AccountApi* | [**authAccountProjectProjectIdIdGet**](docs/Api/AccountApi.md#authaccountprojectprojectididget) | **GET** /auth/account/project/{projectId}/id | Get project account ids
 *AccountApi* | [**authAccountProjectProjectIdStatsGet**](docs/Api/AccountApi.md#authaccountprojectprojectidstatsget) | **GET** /auth/account/project/{projectId}/stats | Get project accounts statistics
 *AccountApi* | [**authAccountProjectProjectIdStatsRecordGet**](docs/Api/AccountApi.md#authaccountprojectprojectidstatsrecordget) | **GET** /auth/account/project/{projectId}/stats/record | Get project accounts statistic records
+*AccountApi* | [**authAccountSearchCursorPost**](docs/Api/AccountApi.md#authaccountsearchcursorpost) | **POST** /auth/account/search-cursor | Create cursor
 *AccountApi* | [**authAccountSearchPost**](docs/Api/AccountApi.md#authaccountsearchpost) | **POST** /auth/account/search | Search accounts
 *AccountApi* | [**authAccountStatsGet**](docs/Api/AccountApi.md#authaccountstatsget) | **GET** /auth/account/stats | Get accounts statistics
 *AccountApi* | [**authAccountStatsRecordGet**](docs/Api/AccountApi.md#authaccountstatsrecordget) | **GET** /auth/account/stats/record | Get accounts statistic records
@@ -362,17 +366,25 @@ Class | Method | HTTP request | Description
 *LegalDefaultApi* | [**configDefaultLegalPolicyGet**](docs/Api/LegalDefaultApi.md#configdefaultlegalpolicyget) | **GET** /config/default/legal/policy | Get policy
 *LegalDefaultApi* | [**configDefaultLegalTermsGet**](docs/Api/LegalDefaultApi.md#configdefaultlegaltermsget) | **GET** /config/default/legal/terms | Get terms
 *LegalDefaultApi* | [**configDefaultLegalTrackingGet**](docs/Api/LegalDefaultApi.md#configdefaultlegaltrackingget) | **GET** /config/default/legal/tracking | Get tracking legal
+*LocationAdminApi* | [**locationAdminDelete**](docs/Api/LocationAdminApi.md#locationadmindelete) | **DELETE** /location/admin | Delete locations
+*LocationAdminApi* | [**locationAdminGet**](docs/Api/LocationAdminApi.md#locationadminget) | **GET** /location/admin | Get location list
 *LocationAdminApi* | [**locationAdminIdAccessGet**](docs/Api/LocationAdminApi.md#locationadminidaccessget) | **GET** /location/admin/{id}/access | Get location access configuration
 *LocationAdminApi* | [**locationAdminIdAccessPatch**](docs/Api/LocationAdminApi.md#locationadminidaccesspatch) | **PATCH** /location/admin/{id}/access | Update location access configuration
 *LocationAdminApi* | [**locationAdminIdDelete**](docs/Api/LocationAdminApi.md#locationadminiddelete) | **DELETE** /location/admin/{id} | Delete location
 *LocationAdminApi* | [**locationAdminIdGet**](docs/Api/LocationAdminApi.md#locationadminidget) | **GET** /location/admin/{id} | Get location
 *LocationAdminApi* | [**locationAdminIdPatch**](docs/Api/LocationAdminApi.md#locationadminidpatch) | **PATCH** /location/admin/{id} | Update location
+*LocationAdminApi* | [**locationAdminNotationPost**](docs/Api/LocationAdminApi.md#locationadminnotationpost) | **POST** /location/admin/notation | Create locations with notation
 *LocationAdminApi* | [**locationAdminPlaceConfigGet**](docs/Api/LocationAdminApi.md#locationadminplaceconfigget) | **GET** /location/admin/place/config | Get places config
 *LocationAdminApi* | [**locationAdminPost**](docs/Api/LocationAdminApi.md#locationadminpost) | **POST** /location/admin | Create location
 *LocationAdminApi* | [**locationAdminProjectIdGet**](docs/Api/LocationAdminApi.md#locationadminprojectidget) | **GET** /location/admin/project/{id} | Get location list for project
+*LocationAdminApi* | [**locationAdminSearchPost**](docs/Api/LocationAdminApi.md#locationadminsearchpost) | **POST** /location/admin/search | Create cursor
+*LocationDefaultApi* | [**locationDefaultGet**](docs/Api/LocationDefaultApi.md#locationdefaultget) | **GET** /location/default | Get location list
 *LocationDefaultApi* | [**locationDefaultIdGet**](docs/Api/LocationDefaultApi.md#locationdefaultidget) | **GET** /location/default/{id} | Get location
+*LocationDefaultApi* | [**locationDefaultIdReservationPost**](docs/Api/LocationDefaultApi.md#locationdefaultidreservationpost) | **POST** /location/default/{id}/reservation | Create location reservation
 *LocationDefaultApi* | [**locationDefaultPlaceConfigGet**](docs/Api/LocationDefaultApi.md#locationdefaultplaceconfigget) | **GET** /location/default/place/config | Get places config
 *LocationDefaultApi* | [**locationDefaultProjectIdGet**](docs/Api/LocationDefaultApi.md#locationdefaultprojectidget) | **GET** /location/default/project/{id} | Get location list for project
+*LocationDefaultApi* | [**locationDefaultReservationDelete**](docs/Api/LocationDefaultApi.md#locationdefaultreservationdelete) | **DELETE** /location/default/reservation | Delete location reservation
+*LocationDefaultApi* | [**locationDefaultSearchPost**](docs/Api/LocationDefaultApi.md#locationdefaultsearchpost) | **POST** /location/default/search | Create cursor
 *MapAdminApi* | [**locationAdminMapIdAccessGet**](docs/Api/MapAdminApi.md#locationadminmapidaccessget) | **GET** /location/admin/map/{id}/access | Get map access configuration
 *MapAdminApi* | [**locationAdminMapIdAccessPatch**](docs/Api/MapAdminApi.md#locationadminmapidaccesspatch) | **PATCH** /location/admin/map/{id}/access | Update map access configuration
 *MapAdminApi* | [**locationAdminMapIdDelete**](docs/Api/MapAdminApi.md#locationadminmapiddelete) | **DELETE** /location/admin/map/{id} | Delete map
@@ -479,6 +491,7 @@ Class | Method | HTTP request | Description
 *NotificationJobAdminApi* | [**notificationAdminJobIdGet**](docs/Api/NotificationJobAdminApi.md#notificationadminjobidget) | **GET** /notification/admin/job/{id} | Get job
 *NotificationJobAdminApi* | [**notificationAdminJobIdPatch**](docs/Api/NotificationJobAdminApi.md#notificationadminjobidpatch) | **PATCH** /notification/admin/job/{id} | Update job
 *NotificationJobAdminApi* | [**notificationAdminJobPost**](docs/Api/NotificationJobAdminApi.md#notificationadminjobpost) | **POST** /notification/admin/job | Create job
+*NotificationJobAdminApi* | [**notificationAdminJobSearchPost**](docs/Api/NotificationJobAdminApi.md#notificationadminjobsearchpost) | **POST** /notification/admin/job/search | Create cursor
 *NotificationJobAdminApi* | [**notificationAdminJobTestPost**](docs/Api/NotificationJobAdminApi.md#notificationadminjobtestpost) | **POST** /notification/admin/job/test | Test job content
 *OneTimeTokenApi* | [**authOttValidatePost**](docs/Api/OneTimeTokenApi.md#authottvalidatepost) | **POST** /auth/ott/validate | Validate one time token
 *PageAdminApi* | [**pageAdminIdAccessGet**](docs/Api/PageAdminApi.md#pageadminidaccessget) | **GET** /page/admin/{id}/access | Get page access configuration
@@ -552,6 +565,14 @@ Class | Method | HTTP request | Description
 *ReactionDefaultApi* | [**reactionDefaultObjectTypeObjectIdGet**](docs/Api/ReactionDefaultApi.md#reactiondefaultobjecttypeobjectidget) | **GET** /reaction/default/{objectType}/{objectId} | Get reactions of object
 *ReactionDefaultApi* | [**reactionDefaultObjectTypeObjectIdPost**](docs/Api/ReactionDefaultApi.md#reactiondefaultobjecttypeobjectidpost) | **POST** /reaction/default/{objectType}/{objectId} | Create or update your reaction
 *ReactionDefaultApi* | [**reactionDefaultObjectTypeSearchPost**](docs/Api/ReactionDefaultApi.md#reactiondefaultobjecttypesearchpost) | **POST** /reaction/default/{objectType}/search | Create cursor
+*ReactionDefaultApi* | [**reactionDefaultRatingObjectTypeObjectIdDelete**](docs/Api/ReactionDefaultApi.md#reactiondefaultratingobjecttypeobjectiddelete) | **DELETE** /reaction/default/rating/{objectType}/{objectId} | Delete a rating
+*ReactionDefaultApi* | [**reactionDefaultRatingObjectTypeObjectIdGet**](docs/Api/ReactionDefaultApi.md#reactiondefaultratingobjecttypeobjectidget) | **GET** /reaction/default/rating/{objectType}/{objectId} | Get rating of object for your account
+*ReactionDefaultApi* | [**reactionDefaultRatingObjectTypeObjectIdPost**](docs/Api/ReactionDefaultApi.md#reactiondefaultratingobjecttypeobjectidpost) | **POST** /reaction/default/rating/{objectType}/{objectId} | Create a rating
+*RecommendationApi* | [**recommendationGet**](docs/Api/RecommendationApi.md#recommendationget) | **GET** /recommendation | Get recommendation list
+*RecommendationApi* | [**recommendationObjectTypeGet**](docs/Api/RecommendationApi.md#recommendationobjecttypeget) | **GET** /recommendation/{objectType} | Get recommendation sorted
+*RecommendationApi* | [**recommendationObjectTypeRandomGet**](docs/Api/RecommendationApi.md#recommendationobjecttyperandomget) | **GET** /recommendation/{objectType}/random | Get recommendation random
+*RecommendationApi* | [**recommendationObjectTypeRerollPost**](docs/Api/RecommendationApi.md#recommendationobjecttypererollpost) | **POST** /recommendation/{objectType}/reroll | Reroll account matches
+*RecommendationApi* | [**recommendationSearchPost**](docs/Api/RecommendationApi.md#recommendationsearchpost) | **POST** /recommendation/search | Create cursor
 *RoleApi* | [**authRoleAllowedToSetGet**](docs/Api/RoleApi.md#authroleallowedtosetget) | **GET** /auth/role/allowed-to-set | Get roles allowed assigning
 *RoleApi* | [**authRoleGet**](docs/Api/RoleApi.md#authroleget) | **GET** /auth/role | Get roles
 *RoleApi* | [**authRoleIdDelete**](docs/Api/RoleApi.md#authroleiddelete) | **DELETE** /auth/role/{id} | Delete role
@@ -571,6 +592,8 @@ Class | Method | HTTP request | Description
 *SessionApi* | [**authLoginPost**](docs/Api/SessionApi.md#authloginpost) | **POST** /auth/login | Login
 *SessionApi* | [**authLogoutGet**](docs/Api/SessionApi.md#authlogoutget) | **GET** /auth/logout | Logout
 *SessionApi* | [**authSessionPost**](docs/Api/SessionApi.md#authsessionpost) | **POST** /auth/session | Refresh
+*ShippingAdminApi* | [**shippingAdminAccountEntryGet**](docs/Api/ShippingAdminApi.md#shippingadminaccountentryget) | **GET** /shipping/admin/Account/entry | Get account shipping data list
+*ShippingAdminApi* | [**shippingAdminAccountEntrySearchPost**](docs/Api/ShippingAdminApi.md#shippingadminaccountentrysearchpost) | **POST** /shipping/admin/Account/entry/search | Create account shipping data cursor
 *ShippingAdminApi* | [**shippingAdminAccountGet**](docs/Api/ShippingAdminApi.md#shippingadminaccountget) | **GET** /shipping/admin/Account | Get accounts shipping list
 *ShippingAdminApi* | [**shippingAdminAccountIdGet**](docs/Api/ShippingAdminApi.md#shippingadminaccountidget) | **GET** /shipping/admin/Account/{id} | Get account shipping
 *ShippingAdminApi* | [**shippingAdminAccountIdPost**](docs/Api/ShippingAdminApi.md#shippingadminaccountidpost) | **POST** /shipping/admin/Account/{id} | Add account shipping data
@@ -599,6 +622,8 @@ Class | Method | HTTP request | Description
 ## Models
 
 - [AccountCreateRequest](docs/Model/AccountCreateRequest.md)
+- [AccountCursorFilterOption](docs/Model/AccountCursorFilterOption.md)
+- [AccountCursorRequest](docs/Model/AccountCursorRequest.md)
 - [AccountMetaAdmin](docs/Model/AccountMetaAdmin.md)
 - [AccountMetaDataResponse](docs/Model/AccountMetaDataResponse.md)
 - [AccountMetaDataTranslationResponse](docs/Model/AccountMetaDataTranslationResponse.md)
@@ -824,6 +849,7 @@ Class | Method | HTTP request | Description
 - [GitPlazzNetReposSandmannBackendServicesPartyReactionCursorRequestDefault](docs/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionCursorRequestDefault.md)
 - [GitPlazzNetReposSandmannBackendServicesPartyReactionResponseDefault](docs/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionResponseDefault.md)
 - [GitPlazzNetReposSandmannBackendServicesReactionReactionResponseDefault](docs/Model/GitPlazzNetReposSandmannBackendServicesReactionReactionResponseDefault.md)
+- [GroupPatchAccountGroupsRequest](docs/Model/GroupPatchAccountGroupsRequest.md)
 - [GroupPatchRequest](docs/Model/GroupPatchRequest.md)
 - [GroupPostRequest](docs/Model/GroupPostRequest.md)
 - [GroupResponse](docs/Model/GroupResponse.md)
@@ -834,6 +860,8 @@ Class | Method | HTTP request | Description
 - [IndexCursorRequestDefault](docs/Model/IndexCursorRequestDefault.md)
 - [IndexResponse](docs/Model/IndexResponse.md)
 - [IndexSwagIndexMetaMap](docs/Model/IndexSwagIndexMetaMap.md)
+- [JobCursorFilterOptionAdmin](docs/Model/JobCursorFilterOptionAdmin.md)
+- [JobCursorRequestAdmin](docs/Model/JobCursorRequestAdmin.md)
 - [JobPatchRequest](docs/Model/JobPatchRequest.md)
 - [JobRequestAdmin](docs/Model/JobRequestAdmin.md)
 - [JobResponseAdmin](docs/Model/JobResponseAdmin.md)
@@ -878,6 +906,10 @@ Class | Method | HTTP request | Description
 - [LocalizationGlossaryEntryRequest](docs/Model/LocalizationGlossaryEntryRequest.md)
 - [LocalizationPatchLocalizationRequest](docs/Model/LocalizationPatchLocalizationRequest.md)
 - [LocalizationResponseAdmin](docs/Model/LocalizationResponseAdmin.md)
+- [LocationCursorFilterOptionAdmin](docs/Model/LocationCursorFilterOptionAdmin.md)
+- [LocationCursorFilterOptionDefault](docs/Model/LocationCursorFilterOptionDefault.md)
+- [LocationCursorRequestAdmin](docs/Model/LocationCursorRequestAdmin.md)
+- [LocationCursorRequestDefault](docs/Model/LocationCursorRequestDefault.md)
 - [LocationPatchRequest](docs/Model/LocationPatchRequest.md)
 - [LocationRequestAdmin](docs/Model/LocationRequestAdmin.md)
 - [LocationResponseAdmin](docs/Model/LocationResponseAdmin.md)
@@ -894,6 +926,8 @@ Class | Method | HTTP request | Description
 - [LocationmapResponseDefault](docs/Model/LocationmapResponseDefault.md)
 - [LocationmapResponseListAdmin](docs/Model/LocationmapResponseListAdmin.md)
 - [LocationmapTranslationResponse](docs/Model/LocationmapTranslationResponse.md)
+- [LocationreservationRequest](docs/Model/LocationreservationRequest.md)
+- [LocationreservationResponse](docs/Model/LocationreservationResponse.md)
 - [MediaCursorFilterOptionAdmin](docs/Model/MediaCursorFilterOptionAdmin.md)
 - [MediaCursorFilterOptionDefault](docs/Model/MediaCursorFilterOptionDefault.md)
 - [MediaCursorRequestAdmin](docs/Model/MediaCursorRequestAdmin.md)
@@ -996,6 +1030,7 @@ Class | Method | HTTP request | Description
 - [ModelProjectCopyProcessedData](docs/Model/ModelProjectCopyProcessedData.md)
 - [ModelProjectTranslation](docs/Model/ModelProjectTranslation.md)
 - [ModelPushSettings](docs/Model/ModelPushSettings.md)
+- [ModelRecommendationConfig](docs/Model/ModelRecommendationConfig.md)
 - [ModelSSOAccountMapping](docs/Model/ModelSSOAccountMapping.md)
 - [ModelSSOGroupConfigurationMapping](docs/Model/ModelSSOGroupConfigurationMapping.md)
 - [ModelSSOIdp](docs/Model/ModelSSOIdp.md)
@@ -1005,6 +1040,7 @@ Class | Method | HTTP request | Description
 - [ModelSSOType](docs/Model/ModelSSOType.md)
 - [ModelSearch](docs/Model/ModelSearch.md)
 - [ModelShipAccountData](docs/Model/ModelShipAccountData.md)
+- [ModelShippingAccountMetrics](docs/Model/ModelShippingAccountMetrics.md)
 - [ModelShippingConfig](docs/Model/ModelShippingConfig.md)
 - [ModelShippingProcess](docs/Model/ModelShippingProcess.md)
 - [ModelStreamTranslation](docs/Model/ModelStreamTranslation.md)
@@ -1015,6 +1051,7 @@ Class | Method | HTTP request | Description
 - [ModelSwagErrorContentTooLarge](docs/Model/ModelSwagErrorContentTooLarge.md)
 - [ModelSwagErrorForbidden](docs/Model/ModelSwagErrorForbidden.md)
 - [ModelSwagErrorInternalServerError](docs/Model/ModelSwagErrorInternalServerError.md)
+- [ModelSwagErrorLocked](docs/Model/ModelSwagErrorLocked.md)
 - [ModelSwagErrorNotFound](docs/Model/ModelSwagErrorNotFound.md)
 - [ModelSwagErrorNotImplemented](docs/Model/ModelSwagErrorNotImplemented.md)
 - [ModelSwagErrorPaymentRequired](docs/Model/ModelSwagErrorPaymentRequired.md)
@@ -1118,6 +1155,8 @@ Class | Method | HTTP request | Description
 - [ProjectResponseListAdmin](docs/Model/ProjectResponseListAdmin.md)
 - [ProjectResponseSettings](docs/Model/ProjectResponseSettings.md)
 - [ProjectResponseTracking](docs/Model/ProjectResponseTracking.md)
+- [RatingRequest](docs/Model/RatingRequest.md)
+- [RatingResponse](docs/Model/RatingResponse.md)
 - [ReactionCursorObjectIDsFilterOption](docs/Model/ReactionCursorObjectIDsFilterOption.md)
 - [ReactionCursorObjectIDsRequest](docs/Model/ReactionCursorObjectIDsRequest.md)
 - [ReactionInfo](docs/Model/ReactionInfo.md)
@@ -1126,6 +1165,10 @@ Class | Method | HTTP request | Description
 - [ReactionRequestAdmin](docs/Model/ReactionRequestAdmin.md)
 - [ReactionResponseAdmin](docs/Model/ReactionResponseAdmin.md)
 - [ReactionResponseListAdmin](docs/Model/ReactionResponseListAdmin.md)
+- [RecommendationCursorFilterOption](docs/Model/RecommendationCursorFilterOption.md)
+- [RecommendationCursorRequest](docs/Model/RecommendationCursorRequest.md)
+- [RecommendationMatchResponse](docs/Model/RecommendationMatchResponse.md)
+- [RecommendationRerollRequest](docs/Model/RecommendationRerollRequest.md)
 - [RolePatchRequest](docs/Model/RolePatchRequest.md)
 - [RolePostRequest](docs/Model/RolePostRequest.md)
 - [RoleResponse](docs/Model/RoleResponse.md)
@@ -1144,6 +1187,10 @@ Class | Method | HTTP request | Description
 - [SendbirdImageModerationLimits](docs/Model/SendbirdImageModerationLimits.md)
 - [ShippingRequestBaseAdmin](docs/Model/ShippingRequestBaseAdmin.md)
 - [ShippingResponseAdmin](docs/Model/ShippingResponseAdmin.md)
+- [ShippingdataAccountResponseList](docs/Model/ShippingdataAccountResponseList.md)
+- [ShippingdataCursorFilterOption](docs/Model/ShippingdataCursorFilterOption.md)
+- [ShippingdataCursorRequest](docs/Model/ShippingdataCursorRequest.md)
+- [ShippingdataMailStats](docs/Model/ShippingdataMailStats.md)
 - [SsoCodeRequest](docs/Model/SsoCodeRequest.md)
 - [SsoProviderRequest](docs/Model/SsoProviderRequest.md)
 - [SsoProviderResponseAdmin](docs/Model/SsoProviderResponseAdmin.md)
@@ -1180,6 +1227,6 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `5.5.2`
-    - Generator version: `7.20.0`
+- API version: `5.7.0`
+    - Generator version: `7.22.0`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

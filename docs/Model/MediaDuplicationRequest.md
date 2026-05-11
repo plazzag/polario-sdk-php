@@ -1,4 +1,4 @@
-# # MediaDuplicationRequest
+# MediaDuplicationRequest
 
 ## Properties
 

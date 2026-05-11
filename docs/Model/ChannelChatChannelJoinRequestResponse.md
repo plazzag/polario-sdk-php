@@ -1,4 +1,4 @@
-# # ChannelChatChannelJoinRequestResponse
+# ChannelChatChannelJoinRequestResponse
 
 ## Properties
 

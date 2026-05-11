@@ -1,4 +1,4 @@
-# # GroupPostRequest
+# GroupPostRequest
 
 ## Properties
 

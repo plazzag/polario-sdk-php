@@ -6,6 +6,8 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
+| [**shippingAdminAccountEntryGet()**](ShippingAdminApi.md#shippingAdminAccountEntryGet) | **GET** /shipping/admin/Account/entry | Get account shipping data list |
+| [**shippingAdminAccountEntrySearchPost()**](ShippingAdminApi.md#shippingAdminAccountEntrySearchPost) | **POST** /shipping/admin/Account/entry/search | Create account shipping data cursor |
 | [**shippingAdminAccountGet()**](ShippingAdminApi.md#shippingAdminAccountGet) | **GET** /shipping/admin/Account | Get accounts shipping list |
 | [**shippingAdminAccountIdGet()**](ShippingAdminApi.md#shippingAdminAccountIdGet) | **GET** /shipping/admin/Account/{id} | Get account shipping |
 | [**shippingAdminAccountIdPost()**](ShippingAdminApi.md#shippingAdminAccountIdPost) | **POST** /shipping/admin/Account/{id} | Add account shipping data |
@@ -13,6 +15,126 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**shippingAdminAccountPost()**](ShippingAdminApi.md#shippingAdminAccountPost) | **POST** /shipping/admin/Account | Create account shipping |
 | [**shippingAdminIdGet()**](ShippingAdminApi.md#shippingAdminIdGet) | **GET** /shipping/admin/{id} | Get shipping |
 
+
+## `shippingAdminAccountEntryGet()`
+
+```php
+shippingAdminAccountEntryGet($cursor, $page, $session, $limit): \OpenAPI\Client\Model\ShippingdataAccountResponseList[]
+```
+
+Get account shipping data list
+
+This endpoint returns an array of all shipping data for a cursor.  Cursor could be created here: POST /shipping/admin/Account/entry/search  _accessible without permission_
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\ShippingAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$cursor = 'cursor_example'; // string | id of the cursor used for pagination; required if page is set
+$page = 56; // int | current page index of the cursor used for pagination; required if cursor is set
+$session = 'session_example'; // string | JWT
+$limit = 56; // int | amount of results per page (1 ... 100)
+
+try {
+    $result = $apiInstance->shippingAdminAccountEntryGet($cursor, $page, $session, $limit);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ShippingAdminApi->shippingAdminAccountEntryGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **cursor** | **string**| id of the cursor used for pagination; required if page is set | |
+| **page** | **int**| current page index of the cursor used for pagination; required if cursor is set | |
+| **session** | **string**| JWT | |
+| **limit** | **int**| amount of results per page (1 ... 100) | [optional] |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ShippingdataAccountResponseList[]**](../Model/ShippingdataAccountResponseList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `shippingAdminAccountEntrySearchPost()`
+
+```php
+shippingAdminAccountEntrySearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+```
+
+Create account shipping data cursor
+
+This endpoint returns a cursor for list shipping datawith applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\ShippingAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$session = 'session_example'; // string | JWT
+$request = new \OpenAPI\Client\Model\ShippingdataCursorRequest(); // \OpenAPI\Client\Model\ShippingdataCursorRequest | filter options to create cursor
+
+try {
+    $result = $apiInstance->shippingAdminAccountEntrySearchPost($session, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ShippingAdminApi->shippingAdminAccountEntrySearchPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **session** | **string**| JWT | |
+| **request** | [**\OpenAPI\Client\Model\ShippingdataCursorRequest**](../Model/ShippingdataCursorRequest.md)| filter options to create cursor | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
 ## `shippingAdminAccountGet()`
 

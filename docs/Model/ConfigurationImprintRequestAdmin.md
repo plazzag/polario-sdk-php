@@ -1,4 +1,4 @@
-# # ConfigurationImprintRequestAdmin
+# ConfigurationImprintRequestAdmin
 
 ## Properties
 

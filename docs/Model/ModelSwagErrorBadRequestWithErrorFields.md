@@ -1,4 +1,4 @@
-# # ModelSwagErrorBadRequestWithErrorFields
+# ModelSwagErrorBadRequestWithErrorFields
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # KnowledgebaseFolder
+# KnowledgebaseFolder
 
 ## Properties
 

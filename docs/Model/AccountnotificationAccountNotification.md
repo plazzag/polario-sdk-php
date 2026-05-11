@@ -1,4 +1,4 @@
-# # AccountnotificationAccountNotification
+# AccountnotificationAccountNotification
 
 ## Properties
 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **published_at** | **int** |  | [optional]
 **read_confirmation** | **bool** |  | [optional]
 **read_confirmation_text** | **string** | currently not translatable | [optional]
-**reference_id** | **string** | appointmentId for type Appointment, articleId for type News, journeyId for type Journey, sendbirdChannelUrl for type Chat, sendbirdMessageId for type Mention | [optional]
+**reference_id** | **string** | appointmentId for type Appointment, calendarEntryId for type CalendarReminder, sendbirdChannelUrl for type Chat, journeyId for type Journey, sendbirdMessageId for type Mention, articleId for type News | [optional]
 **title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\ModelNotificationTranslation[]**](ModelNotificationTranslation.md) |  | [optional]
 **type** | **string** |  | [optional]

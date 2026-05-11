@@ -1,4 +1,4 @@
-# # LocalizationCursorFilterOptionAdmin
+# LocalizationCursorFilterOptionAdmin
 
 ## Properties
 

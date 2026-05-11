@@ -1,4 +1,4 @@
-# # LanguagePatchRequest
+# LanguagePatchRequest
 
 ## Properties
 

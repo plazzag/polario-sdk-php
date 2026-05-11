@@ -1,4 +1,4 @@
-# # ModelPageSettings
+# ModelPageSettings
 
 ## Properties
 

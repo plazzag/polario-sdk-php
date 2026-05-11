@@ -1,4 +1,4 @@
-# # ReactionResponseListAdmin
+# ReactionResponseListAdmin
 
 ## Properties
 

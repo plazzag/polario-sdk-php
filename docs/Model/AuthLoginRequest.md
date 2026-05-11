@@ -1,4 +1,4 @@
-# # AuthLoginRequest
+# AuthLoginRequest
 
 ## Properties
 

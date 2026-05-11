@@ -1,4 +1,4 @@
-# # MediaPatchRequestAdmin
+# MediaPatchRequestAdmin
 
 ## Properties
 

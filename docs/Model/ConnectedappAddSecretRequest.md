@@ -1,4 +1,4 @@
-# # ConnectedappAddSecretRequest
+# ConnectedappAddSecretRequest
 
 ## Properties
 

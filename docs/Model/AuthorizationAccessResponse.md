@@ -1,4 +1,4 @@
-# # AuthorizationAccessResponse
+# AuthorizationAccessResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ModelSwagErrorPaymentRequired
+# ModelSwagErrorPaymentRequired
 
 ## Properties
 

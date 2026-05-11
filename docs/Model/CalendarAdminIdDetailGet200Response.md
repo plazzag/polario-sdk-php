@@ -1,4 +1,4 @@
-# # CalendarAdminIdDetailGet200Response
+# CalendarAdminIdDetailGet200Response
 
 ## Properties
 

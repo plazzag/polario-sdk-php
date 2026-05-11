@@ -1,4 +1,4 @@
-# # ProjectResponseDefault
+# ProjectResponseDefault
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # SsoProviderRequest
+# SsoProviderRequest
 
 ## Properties
 

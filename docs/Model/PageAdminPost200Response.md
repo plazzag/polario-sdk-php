@@ -1,4 +1,4 @@
-# # PageAdminPost200Response
+# PageAdminPost200Response
 
 ## Properties
 

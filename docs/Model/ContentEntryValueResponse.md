@@ -1,4 +1,4 @@
-# # ContentEntryValueResponse
+# ContentEntryValueResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ModelSwagErrorInternalServerError
+# ModelSwagErrorInternalServerError
 
 ## Properties
 

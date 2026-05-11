@@ -1,4 +1,4 @@
-# # AuthPasswordRecoverRequest
+# AuthPasswordRecoverRequest
 
 ## Properties
 

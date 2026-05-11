@@ -1,4 +1,4 @@
-# # ModelJourneyStageStartCondition
+# ModelJourneyStageStartCondition
 
 ## Properties
 

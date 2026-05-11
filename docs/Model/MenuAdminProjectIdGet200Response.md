@@ -1,4 +1,4 @@
-# # MenuAdminProjectIdGet200Response
+# MenuAdminProjectIdGet200Response
 
 ## Properties
 

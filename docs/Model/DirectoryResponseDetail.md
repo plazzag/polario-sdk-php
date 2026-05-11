@@ -1,4 +1,4 @@
-# # DirectoryResponseDetail
+# DirectoryResponseDetail
 
 ## Properties
 

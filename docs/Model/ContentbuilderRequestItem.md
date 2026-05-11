@@ -1,4 +1,4 @@
-# # ContentbuilderRequestItem
+# ContentbuilderRequestItem
 
 ## Properties
 

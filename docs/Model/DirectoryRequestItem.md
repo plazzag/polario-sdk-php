@@ -1,4 +1,4 @@
-# # DirectoryRequestItem
+# DirectoryRequestItem
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ModelProjectCopyProcessConfig
+# ModelProjectCopyProcessConfig
 
 ## Properties
 

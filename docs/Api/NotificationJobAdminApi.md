@@ -12,6 +12,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**notificationAdminJobIdGet()**](NotificationJobAdminApi.md#notificationAdminJobIdGet) | **GET** /notification/admin/job/{id} | Get job |
 | [**notificationAdminJobIdPatch()**](NotificationJobAdminApi.md#notificationAdminJobIdPatch) | **PATCH** /notification/admin/job/{id} | Update job |
 | [**notificationAdminJobPost()**](NotificationJobAdminApi.md#notificationAdminJobPost) | **POST** /notification/admin/job | Create job |
+| [**notificationAdminJobSearchPost()**](NotificationJobAdminApi.md#notificationAdminJobSearchPost) | **POST** /notification/admin/job/search | Create cursor |
 | [**notificationAdminJobTestPost()**](NotificationJobAdminApi.md#notificationAdminJobTestPost) | **POST** /notification/admin/job/test | Test job content |
 
 
@@ -357,6 +358,64 @@ try {
 ### Return type
 
 [**\OpenAPI\Client\Model\JobResponseAdmin**](../Model/JobResponseAdmin.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `notificationAdminJobSearchPost()`
+
+```php
+notificationAdminJobSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+```
+
+Create cursor
+
+This endpoint returns a cursor for notification jobs in admin representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageConfiguration\"`  _fully accessible with permission_ : `\"ManageConfiguration\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\NotificationJobAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$session = 'session_example'; // string | JWT
+$request = new \OpenAPI\Client\Model\JobCursorRequestAdmin(); // \OpenAPI\Client\Model\JobCursorRequestAdmin | options to create cursor
+
+try {
+    $result = $apiInstance->notificationAdminJobSearchPost($session, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling NotificationJobAdminApi->notificationAdminJobSearchPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **session** | **string**| JWT | |
+| **request** | [**\OpenAPI\Client\Model\JobCursorRequestAdmin**](../Model/JobCursorRequestAdmin.md)| options to create cursor | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
 
 ### Authorization
 

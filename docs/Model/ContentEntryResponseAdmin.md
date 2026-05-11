@@ -1,4 +1,4 @@
-# # ContentEntryResponseAdmin
+# ContentEntryResponseAdmin
 
 ## Properties
 
@@ -21,9 +21,11 @@ Name | Type | Description | Notes
 **position** | **int** |  | [optional]
 **project_id** | **string** |  | [optional]
 **published_at** | **int** |  | [optional]
+**rating_enabled** | **bool** |  | [optional]
+**rating_result** | **int[]** | [0,0,0,0,0] &#x3D; [Amount1StarRatings, Amount2StarRatings, ...], redundant data SSOT is model.Rating | [optional]
 **start** | **int** |  | [optional]
 **tabs** | [**\OpenAPI\Client\Model\ContentEntryTabResponse[]**](ContentEntryTabResponse.md) |  | [optional]
-**time_zone** | **string** | // IANA Time Zone | [optional]
+**time_zone** | **string** | IANA Time Zone | [optional]
 **title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\ContentEntryTranslation[]**](ContentEntryTranslation.md) |  | [optional]
 **widgets** | **array<string,object>** |  | [optional]

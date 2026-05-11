@@ -1,4 +1,4 @@
-# # JobPatchRequest
+# JobPatchRequest
 
 ## Properties
 

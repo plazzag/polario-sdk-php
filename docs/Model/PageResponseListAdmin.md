@@ -1,4 +1,4 @@
-# # PageResponseListAdmin
+# PageResponseListAdmin
 
 ## Properties
 

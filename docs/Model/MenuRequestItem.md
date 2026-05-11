@@ -1,4 +1,4 @@
-# # MenuRequestItem
+# MenuRequestItem
 
 ## Properties
 
@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **applied_filter** | [**\OpenAPI\Client\Model\ContentbuilderRequestItemAppliedFilter**](ContentbuilderRequestItemAppliedFilter.md) | only for Link type and deeplink.objectType &#x3D; Calendar | [optional]
 **children** | [**\OpenAPI\Client\Model\MenuRequestItem[]**](MenuRequestItem.md) | only for Folder type | [optional]
 **deeplink** | [**\OpenAPI\Client\Model\DeeplinkRequest**](DeeplinkRequest.md) | only for Image, Link, Support and Imprint type; must be null when url is set | [optional]
-**icon** | **string** | media id only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Support, Imprint, Settings and LeaveProject type | [optional]
+**icon** | **string** | media id only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Support, Imprint, Recommendation, Settings and LeaveProject type | [optional]
 **id** | **string** | new items to create do not have an id (null) | [optional]
 **image** | **string** | media id only for Image type | [optional]
 **link_behavior** | **string** | only for Image, Link, Support, Imprint and Settings type; Has no effect if the url matches with the web app | [optional]
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **search** | [**\OpenAPI\Client\Model\ModelSearch**](ModelSearch.md) | only for IndexSearch and News type | [optional]
 **separator_type** | **string** | only for Separator type | [optional]
 **size** | **string** | only for Gap type | [optional]
-**text** | **string** | only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Separator, Support, Imprint, Settings and LeaveProject type | [optional]
+**text** | **string** | only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Recommendation, Separator, Support, Imprint, Settings and LeaveProject type | [optional]
 **text_orientation** | **string** | only for Separator type | [optional]
 **type** | **string** |  | [optional]
 **url** | **string** | only for Image, Link, Support, Imprint and Settings type; must be null if deeplink is set | [optional]
