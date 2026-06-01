@@ -1,4 +1,4 @@
-# # DirectoryResponseDetailModelPart
+# DirectoryResponseDetailModelPart
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ModelMediaItemTranslation
+# ModelMediaItemTranslation
 
 ## Properties
 

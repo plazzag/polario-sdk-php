@@ -1,4 +1,4 @@
-# # KeywordPatchRequest
+# KeywordPatchRequest
 
 ## Properties
 

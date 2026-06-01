@@ -1,4 +1,4 @@
-# # LocationmapMarkerResponseDefault
+# LocationmapMarkerResponseDefault
 
 ## Properties
 

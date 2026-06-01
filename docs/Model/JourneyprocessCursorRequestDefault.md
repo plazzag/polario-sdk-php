@@ -1,4 +1,4 @@
-# # JourneyprocessCursorRequestDefault
+# JourneyprocessCursorRequestDefault
 
 ## Properties
 

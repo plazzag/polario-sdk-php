@@ -1,4 +1,4 @@
-# # ConfigurationFeaturesResponseAdminChat
+# ConfigurationFeaturesResponseAdminChat
 
 ## Properties
 

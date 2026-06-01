@@ -1,4 +1,4 @@
-# # NewsSwagNewsSectionAdmin
+# NewsSwagNewsSectionAdmin
 
 ## Properties
 

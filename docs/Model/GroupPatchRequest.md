@@ -1,4 +1,4 @@
-# # GroupPatchRequest
+# GroupPatchRequest
 
 ## Properties
 

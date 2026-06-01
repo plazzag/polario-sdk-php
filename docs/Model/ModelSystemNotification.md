@@ -1,4 +1,4 @@
-# # ModelSystemNotification
+# ModelSystemNotification
 
 ## Properties
 

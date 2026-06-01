@@ -1,4 +1,4 @@
-# # MenuResponseSettingsAdmin
+# MenuResponseSettingsAdmin
 
 ## Properties
 

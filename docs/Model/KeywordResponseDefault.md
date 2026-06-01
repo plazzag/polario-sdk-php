@@ -1,4 +1,4 @@
-# # KeywordResponseDefault
+# KeywordResponseDefault
 
 ## Properties
 

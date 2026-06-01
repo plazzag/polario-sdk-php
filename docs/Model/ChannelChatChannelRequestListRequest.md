@@ -1,4 +1,4 @@
-# # ChannelChatChannelRequestListRequest
+# ChannelChatChannelRequestListRequest
 
 ## Properties
 

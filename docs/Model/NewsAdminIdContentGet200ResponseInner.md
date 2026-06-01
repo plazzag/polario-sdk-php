@@ -1,4 +1,4 @@
-# # NewsAdminIdContentGet200ResponseInner
+# NewsAdminIdContentGet200ResponseInner
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ConfigurationLegalRequestAdmin
+# ConfigurationLegalRequestAdmin
 
 ## Properties
 

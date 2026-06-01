@@ -1,4 +1,4 @@
-# # AuthPushTokenRequest
+# AuthPushTokenRequest
 
 ## Properties
 

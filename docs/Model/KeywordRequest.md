@@ -1,4 +1,4 @@
-# # KeywordRequest
+# KeywordRequest
 
 ## Properties
 

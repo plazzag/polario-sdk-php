@@ -1,4 +1,4 @@
-# # DirectoryPutDetailRequest
+# DirectoryPutDetailRequest
 
 ## Properties
 

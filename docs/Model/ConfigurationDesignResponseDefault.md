@@ -1,4 +1,4 @@
-# # ConfigurationDesignResponseDefault
+# ConfigurationDesignResponseDefault
 
 ## Properties
 

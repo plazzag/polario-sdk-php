@@ -1,4 +1,4 @@
-# # PagePatchRequest
+# PagePatchRequest
 
 ## Properties
 

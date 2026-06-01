@@ -1,4 +1,4 @@
-# # PartyCursorFilterOptionDefault
+# PartyCursorFilterOptionDefault
 
 ## Properties
 

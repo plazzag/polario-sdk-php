@@ -1,4 +1,4 @@
-# # AccountProjectStatsRecordResponseSettings
+# AccountProjectStatsRecordResponseSettings
 
 ## Properties
 

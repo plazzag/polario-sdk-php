@@ -1,4 +1,4 @@
-# # ModelDirectoryRowValue
+# ModelDirectoryRowValue
 
 ## Properties
 

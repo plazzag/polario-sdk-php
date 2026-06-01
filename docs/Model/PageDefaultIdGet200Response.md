@@ -1,4 +1,4 @@
-# # PageDefaultIdGet200Response
+# PageDefaultIdGet200Response
 
 ## Properties
 

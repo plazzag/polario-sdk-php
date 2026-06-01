@@ -1,4 +1,4 @@
-# # AppointmentConfigPatchRequest
+# AppointmentConfigPatchRequest
 
 ## Properties
 

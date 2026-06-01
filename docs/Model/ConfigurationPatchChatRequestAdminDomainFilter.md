@@ -1,4 +1,4 @@
-# # ConfigurationPatchChatRequestAdminDomainFilter
+# ConfigurationPatchChatRequestAdminDomainFilter
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # GitPlazzNetReposSandmannBackendServicesCalendarTemplateResponseAdmin
+# GitPlazzNetReposSandmannBackendServicesCalendarTemplateResponseAdmin
 
 ## Properties
 

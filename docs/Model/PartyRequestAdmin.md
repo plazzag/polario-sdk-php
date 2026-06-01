@@ -1,4 +1,4 @@
-# # PartyRequestAdmin
+# PartyRequestAdmin
 
 ## Properties
 

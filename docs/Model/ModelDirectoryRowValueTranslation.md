@@ -1,4 +1,4 @@
-# # ModelDirectoryRowValueTranslation
+# ModelDirectoryRowValueTranslation
 
 ## Properties
 

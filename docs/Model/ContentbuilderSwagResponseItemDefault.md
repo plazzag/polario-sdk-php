@@ -1,11 +1,11 @@
-# # ContentbuilderSwagResponseItemDefault
+# ContentbuilderSwagResponseItemDefault
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **account_placeholder_config** | [**\OpenAPI\Client\Model\ModelAccountPlaceholderConfig**](ModelAccountPlaceholderConfig.md) | only for Salutation type | [optional]
-**applied_filter** | [**\OpenAPI\Client\Model\ContentbuilderSwagResponseItemAppliedFilter**](ContentbuilderSwagResponseItemAppliedFilter.md) | only for CalendarEntry type | [optional]
+**applied_filter** | [**\OpenAPI\Client\Model\ContentbuilderSwagResponseItemAppliedFilter**](ContentbuilderSwagResponseItemAppliedFilter.md) | only for CalendarEntry type; no validation for ids (filter only) | [optional]
 **aspect_ratio** | **string** | only for Webview type | [optional]
 **auto_play** | **bool** | only for Video type | [optional]
 **automatic_animation** | **bool** | only for CalendarEntry and DirectoryContentRow type | [optional]
@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 **icon_size** | **string** | only for IconText type | [optional]
 **id** | **string** |  | [optional]
 **image** | **string** | media id only for Image type | [optional]
-**keywords** | **string[]** | only for CalendarEntry and DirectoryContentRow type; no validation for ids (filter only) | [optional]
+**keywords** | **string[]** | only for CalendarEntry and DirectoryContentRow type; no validation for ids (filter only) // TODO: move into &#x60;appliedFilter&#x60; | [optional]
 **latitude** | **float** | (model.GeoInformation); only for Map type on page and news; only for TextAddress subtype on directory and calendar | [optional]
 **layout** | **string** | only for DirectoryContentRow and News type | [optional]
 **link_behavior** | **string** | only for Button, IconText and Image type; Has no effect if the url matches with the web app | [optional]

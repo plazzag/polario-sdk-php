@@ -1,4 +1,4 @@
-# # ModelPalette
+# ModelPalette
 
 ## Properties
 

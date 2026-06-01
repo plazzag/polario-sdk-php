@@ -1,4 +1,4 @@
-# # ConfigurationDesignCustomCSSResponseAdmin
+# ConfigurationDesignCustomCSSResponseAdmin
 
 ## Properties
 

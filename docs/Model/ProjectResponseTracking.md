@@ -1,4 +1,4 @@
-# # ProjectResponseTracking
+# ProjectResponseTracking
 
 ## Properties
 

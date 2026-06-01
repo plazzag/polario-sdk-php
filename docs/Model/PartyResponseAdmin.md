@@ -1,4 +1,4 @@
-# # PartyResponseAdmin
+# PartyResponseAdmin
 
 ## Properties
 

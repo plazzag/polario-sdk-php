@@ -1,4 +1,4 @@
-# # JourneyStageTranslationResponse
+# JourneyStageTranslationResponse
 
 ## Properties
 

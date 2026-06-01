@@ -1,4 +1,4 @@
-# # DirectoryResponseBodySection
+# DirectoryResponseBodySection
 
 ## Properties
 

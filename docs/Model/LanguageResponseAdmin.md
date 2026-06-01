@@ -1,4 +1,4 @@
-# # LanguageResponseAdmin
+# LanguageResponseAdmin
 
 ## Properties
 

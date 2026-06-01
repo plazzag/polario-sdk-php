@@ -1,4 +1,4 @@
-# # CalendarResponseDefault
+# CalendarResponseDefault
 
 ## Properties
 

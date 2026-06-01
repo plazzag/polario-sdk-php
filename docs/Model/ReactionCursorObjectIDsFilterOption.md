@@ -1,4 +1,4 @@
-# # ReactionCursorObjectIDsFilterOption
+# ReactionCursorObjectIDsFilterOption
 
 ## Properties
 

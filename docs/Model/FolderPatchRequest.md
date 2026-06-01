@@ -1,4 +1,4 @@
-# # FolderPatchRequest
+# FolderPatchRequest
 
 ## Properties
 

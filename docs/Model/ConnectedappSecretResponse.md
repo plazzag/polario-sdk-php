@@ -1,4 +1,4 @@
-# # ConnectedappSecretResponse
+# ConnectedappSecretResponse
 
 ## Properties
 

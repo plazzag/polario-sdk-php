@@ -1,4 +1,4 @@
-# # PageTranslationResponse
+# PageTranslationResponse
 
 ## Properties
 

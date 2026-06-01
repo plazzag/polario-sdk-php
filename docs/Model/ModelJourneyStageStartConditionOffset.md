@@ -1,4 +1,4 @@
-# # ModelJourneyStageStartConditionOffset
+# ModelJourneyStageStartConditionOffset
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ConfigurationFeaturesResponseAdminChatProfanityFilter
+# ConfigurationFeaturesResponseAdminChatProfanityFilter
 
 ## Properties
 

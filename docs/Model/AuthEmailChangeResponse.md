@@ -1,4 +1,4 @@
-# # AuthEmailChangeResponse
+# AuthEmailChangeResponse
 
 ## Properties
 

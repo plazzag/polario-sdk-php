@@ -1,4 +1,4 @@
-# # AuthAccountMetaGet200Response
+# AuthAccountMetaGet200Response
 
 ## Properties
 

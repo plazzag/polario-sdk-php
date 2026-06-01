@@ -1,4 +1,4 @@
-# # NewsDefaultIdGet200Response
+# NewsDefaultIdGet200Response
 
 ## Properties
 

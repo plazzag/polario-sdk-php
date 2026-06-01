@@ -1,4 +1,4 @@
-# # AccountRegistrationRequest
+# AccountRegistrationRequest
 
 ## Properties
 

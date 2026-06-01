@@ -1,4 +1,4 @@
-# # SelectionAPIOptionTranslationResponse
+# SelectionAPIOptionTranslationResponse
 
 ## Properties
 

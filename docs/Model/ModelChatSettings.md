@@ -1,4 +1,4 @@
-# # ModelChatSettings
+# ModelChatSettings
 
 ## Properties
 

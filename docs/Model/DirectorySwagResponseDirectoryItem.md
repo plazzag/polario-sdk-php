@@ -1,4 +1,4 @@
-# # DirectorySwagResponseDirectoryItem
+# DirectorySwagResponseDirectoryItem
 
 ## Properties
 

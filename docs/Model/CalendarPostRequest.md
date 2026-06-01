@@ -1,4 +1,4 @@
-# # CalendarPostRequest
+# CalendarPostRequest
 
 ## Properties
 

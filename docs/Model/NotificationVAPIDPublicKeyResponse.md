@@ -1,4 +1,4 @@
-# # NotificationVAPIDPublicKeyResponse
+# NotificationVAPIDPublicKeyResponse
 
 ## Properties
 

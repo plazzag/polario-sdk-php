@@ -1,4 +1,4 @@
-# # ModelShippingConfig
+# ModelShippingConfig
 
 ## Properties
 

@@ -1,10 +1,10 @@
-# # AccountProfileResponse
+# AccountProfileResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access_edit_allowed** | **bool** | part 1 from authorization.AccessResponse | [optional]
+**access_edit_allowed** | **bool** | part 2 from authorization.AccessResponse | [optional]
 **color** | [**\OpenAPI\Client\Model\ModelAccountProfileColor**](ModelAccountProfileColor.md) |  | [optional]
 **email** | **string** | permissions handler may omit this | [optional]
 **first_name** | **string** |  | [optional]

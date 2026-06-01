@@ -1,4 +1,4 @@
-# # IndexAdminGet200ResponseInner
+# IndexAdminGet200ResponseInner
 
 ## Properties
 

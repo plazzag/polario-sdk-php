@@ -1,4 +1,4 @@
-# # ModelAccountStatsRecord
+# ModelAccountStatsRecord
 
 ## Properties
 

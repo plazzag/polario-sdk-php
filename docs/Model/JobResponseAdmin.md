@@ -1,4 +1,4 @@
-# # JobResponseAdmin
+# JobResponseAdmin
 
 ## Properties
 

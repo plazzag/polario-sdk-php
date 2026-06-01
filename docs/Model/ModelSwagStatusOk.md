@@ -1,4 +1,4 @@
-# # ModelSwagStatusOk
+# ModelSwagStatusOk
 
 ## Properties
 

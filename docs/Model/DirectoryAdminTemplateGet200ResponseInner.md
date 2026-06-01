@@ -1,4 +1,4 @@
-# # DirectoryAdminTemplateGet200ResponseInner
+# DirectoryAdminTemplateGet200ResponseInner
 
 ## Properties
 

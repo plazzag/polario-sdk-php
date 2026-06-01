@@ -1,4 +1,4 @@
-# # ModelAccountTrackingAnalyticsSnapshot
+# ModelAccountTrackingAnalyticsSnapshot
 
 ## Properties
 

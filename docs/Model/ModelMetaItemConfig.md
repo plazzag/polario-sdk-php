@@ -1,4 +1,4 @@
-# # ModelMetaItemConfig
+# ModelMetaItemConfig
 
 ## Properties
 

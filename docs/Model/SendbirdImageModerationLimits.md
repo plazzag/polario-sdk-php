@@ -1,4 +1,4 @@
-# # SendbirdImageModerationLimits
+# SendbirdImageModerationLimits
 
 ## Properties
 

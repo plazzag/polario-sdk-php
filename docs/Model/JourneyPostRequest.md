@@ -1,4 +1,4 @@
-# # JourneyPostRequest
+# JourneyPostRequest
 
 ## Properties
 

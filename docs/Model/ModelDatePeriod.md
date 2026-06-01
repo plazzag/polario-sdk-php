@@ -1,4 +1,4 @@
-# # ModelDatePeriod
+# ModelDatePeriod
 
 ## Properties
 

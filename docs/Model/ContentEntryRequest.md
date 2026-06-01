@@ -1,4 +1,4 @@
-# # ContentEntryRequest
+# ContentEntryRequest
 
 ## Properties
 
@@ -13,10 +13,11 @@ Name | Type | Description | Notes
 **parent_id** | **string** |  | [optional]
 **position** | **int** |  | [optional]
 **published_at** | **int** |  | [optional]
+**rating_enabled** | **bool** | Default: &#x60;true&#x60; | [optional]
 **start** | **int** |  | [optional]
 **tabs** | [**\OpenAPI\Client\Model\ContentEntryTabRequest[]**](ContentEntryTabRequest.md) |  | [optional]
 **time_zone** | **string** | IANA Time Zone | [optional]
 **title** | **string** |  | [optional]
-**widgets** | [**array<string,\OpenAPI\Client\Model\ContentbuilderRequestItem>**](ContentbuilderRequestItem.md) |  | [optional]
+**widgets** | [**array<string,\OpenAPI\Client\Model\ContentbuilderRequestItem>**](ContentbuilderRequestItem.md) | Default: &#x60;{}&#x60; | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

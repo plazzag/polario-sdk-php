@@ -1,4 +1,4 @@
-# # AuthSwagPermissionsAssociated
+# AuthSwagPermissionsAssociated
 
 ## Properties
 

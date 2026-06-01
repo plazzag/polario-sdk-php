@@ -19,7 +19,7 @@ authLoginPost($request, $platform): \OpenAPI\Client\Model\AuthLoginResponse
 
 Login
 
-This endpoint provides the login with a salted challenge response authentication mechanism (SCRAM). This endpoint is for the final message of the SCRAM challenge. The platform must match the platform from the first message. See RFC 5802 for detail SCRAM definition.  To perform this action call SCRAM First first: POST /auth/auth  _accessible without permission_
+This endpoint provides the login with a salted challenge response authentication mechanism (SCRAM). This endpoint is for the final message of the SCRAM challenge. The platform must match the platform from the first message. See RFC 5802 for detail SCRAM definition. If the password is retired, it will return 428 Precondition Required.  To perform this action call SCRAM First first: POST /auth/auth  _accessible without permission_
 
 ### Example
 
@@ -133,7 +133,7 @@ authSessionPost($request): \OpenAPI\Client\Model\AuthRefreshResponse
 
 Refresh
 
-This endpoint refreshes a JWT with given refresh token and return it in the response header. If refresh token is invalid it will return 416 Requested Range Not Satisfiable.  _accessible without permission_
+This endpoint refreshes a JWT with given refresh token and return it in the response header. If the refresh token is invalid, it will return 416 Requested Range Not Satisfiable. If the password is retired, it will return 428 Precondition Required.  _accessible without permission_
 
 ### Example
 

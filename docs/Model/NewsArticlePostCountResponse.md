@@ -1,4 +1,4 @@
-# # NewsArticlePostCountResponse
+# NewsArticlePostCountResponse
 
 ## Properties
 

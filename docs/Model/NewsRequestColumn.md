@@ -1,4 +1,4 @@
-# # NewsRequestColumn
+# NewsRequestColumn
 
 ## Properties
 

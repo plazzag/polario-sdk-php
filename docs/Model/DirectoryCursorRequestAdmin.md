@@ -1,4 +1,4 @@
-# # DirectoryCursorRequestAdmin
+# DirectoryCursorRequestAdmin
 
 ## Properties
 

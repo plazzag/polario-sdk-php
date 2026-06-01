@@ -1,4 +1,4 @@
-# # PartyRequestBookingSlot
+# PartyRequestBookingSlot
 
 ## Properties
 

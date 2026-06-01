@@ -1,4 +1,4 @@
-# # NewsCursorFilterOptionAdmin
+# NewsCursorFilterOptionAdmin
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ModelAccountDevice
+# ModelAccountDevice
 
 ## Properties
 

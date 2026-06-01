@@ -1,4 +1,4 @@
-# # PageAdminIdContentGet200ResponseInner
+# PageAdminIdContentGet200ResponseInner
 
 ## Properties
 

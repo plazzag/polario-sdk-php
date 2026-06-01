@@ -1,4 +1,4 @@
-# # BookingCalendarBookingResponseDefault
+# BookingCalendarBookingResponseDefault
 
 ## Properties
 

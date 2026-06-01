@@ -1,4 +1,4 @@
-# # AppointmentCursorFilterOptionDefault
+# AppointmentCursorFilterOptionDefault
 
 ## Properties
 

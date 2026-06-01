@@ -1,4 +1,4 @@
-# # NewsArticleTranslationResponse
+# NewsArticleTranslationResponse
 
 ## Properties
 

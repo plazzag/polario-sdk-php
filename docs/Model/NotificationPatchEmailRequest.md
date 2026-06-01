@@ -1,4 +1,4 @@
-# # NotificationPatchEmailRequest
+# NotificationPatchEmailRequest
 
 ## Properties
 

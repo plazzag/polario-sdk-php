@@ -1,4 +1,4 @@
-# # ConfigurationPatchChatRequestAdminProfanityTriggeredModeration
+# ConfigurationPatchChatRequestAdminProfanityTriggeredModeration
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # PageResponseColumnDefault
+# PageResponseColumnDefault
 
 ## Properties
 

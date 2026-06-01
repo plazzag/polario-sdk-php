@@ -1,4 +1,4 @@
-# # DirectoryPatchRequest
+# DirectoryPatchRequest
 
 ## Properties
 

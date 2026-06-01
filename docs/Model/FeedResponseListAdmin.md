@@ -1,4 +1,4 @@
-# # FeedResponseListAdmin
+# FeedResponseListAdmin
 
 ## Properties
 

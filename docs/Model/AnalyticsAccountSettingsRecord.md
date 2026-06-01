@@ -1,4 +1,4 @@
-# # AnalyticsAccountSettingsRecord
+# AnalyticsAccountSettingsRecord
 
 ## Properties
 

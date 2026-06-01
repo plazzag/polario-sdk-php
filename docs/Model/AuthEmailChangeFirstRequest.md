@@ -1,4 +1,4 @@
-# # AuthEmailChangeFirstRequest
+# AuthEmailChangeFirstRequest
 
 ## Properties
 

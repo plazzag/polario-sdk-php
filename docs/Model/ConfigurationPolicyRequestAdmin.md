@@ -1,4 +1,4 @@
-# # ConfigurationPolicyRequestAdmin
+# ConfigurationPolicyRequestAdmin
 
 ## Properties
 

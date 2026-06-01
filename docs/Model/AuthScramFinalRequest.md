@@ -1,4 +1,4 @@
-# # AuthScramFinalRequest
+# AuthScramFinalRequest
 
 ## Properties
 

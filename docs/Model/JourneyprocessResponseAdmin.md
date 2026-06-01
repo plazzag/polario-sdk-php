@@ -1,4 +1,4 @@
-# # JourneyprocessResponseAdmin
+# JourneyprocessResponseAdmin
 
 ## Properties
 

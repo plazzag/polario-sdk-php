@@ -1,4 +1,4 @@
-# # ModelCalendarBodySection
+# ModelCalendarBodySection
 
 ## Properties
 

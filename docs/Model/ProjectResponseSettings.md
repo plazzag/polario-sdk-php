@@ -1,4 +1,4 @@
-# # ProjectResponseSettings
+# ProjectResponseSettings
 
 ## Properties
 

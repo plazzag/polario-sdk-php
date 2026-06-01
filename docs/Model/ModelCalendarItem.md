@@ -1,4 +1,4 @@
-# # ModelCalendarItem
+# ModelCalendarItem
 
 ## Properties
 

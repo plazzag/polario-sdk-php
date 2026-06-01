@@ -1,4 +1,4 @@
-# # AppointmentSlotFilter
+# AppointmentSlotFilter
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # MenuResponseSettingsDefault
+# MenuResponseSettingsDefault
 
 ## Properties
 

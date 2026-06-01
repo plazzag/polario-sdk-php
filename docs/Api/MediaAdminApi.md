@@ -1225,7 +1225,7 @@ mediaAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorRespo
 
 Create cursor
 
-This endpoint returns a cursor for list media items in admin representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns a cursor for list media items in admin representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"`
 
 ### Example
 

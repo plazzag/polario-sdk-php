@@ -1,4 +1,4 @@
-# # ConnectedappResponseList
+# ConnectedappResponseList
 
 ## Properties
 
