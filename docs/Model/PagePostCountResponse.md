@@ -1,4 +1,4 @@
-# # PagePostCountResponse
+# PagePostCountResponse
 
 ## Properties
 

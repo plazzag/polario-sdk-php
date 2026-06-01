@@ -1,4 +1,4 @@
-# # JourneyprocessCursorFilterOptionDefault
+# JourneyprocessCursorFilterOptionDefault
 
 ## Properties
 

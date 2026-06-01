@@ -1,4 +1,4 @@
-# # ModelWebhookAction
+# ModelWebhookAction
 
 ## Properties
 

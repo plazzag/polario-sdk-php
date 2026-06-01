@@ -1,4 +1,4 @@
-# # ModelTimeSlot
+# ModelTimeSlot
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # KeywordcategoryResponseDefault
+# KeywordcategoryResponseDefault
 
 ## Properties
 

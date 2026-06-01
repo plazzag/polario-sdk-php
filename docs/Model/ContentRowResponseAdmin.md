@@ -1,4 +1,4 @@
-# # ContentRowResponseAdmin
+# ContentRowResponseAdmin
 
 ## Properties
 

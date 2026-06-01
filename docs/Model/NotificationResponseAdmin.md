@@ -1,4 +1,4 @@
-# # NotificationResponseAdmin
+# NotificationResponseAdmin
 
 ## Properties
 

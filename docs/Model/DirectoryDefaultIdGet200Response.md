@@ -1,4 +1,4 @@
-# # DirectoryDefaultIdGet200Response
+# DirectoryDefaultIdGet200Response
 
 ## Properties
 

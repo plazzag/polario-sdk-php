@@ -1,4 +1,4 @@
-# # PartyRequestConfiguration
+# PartyRequestConfiguration
 
 ## Properties
 

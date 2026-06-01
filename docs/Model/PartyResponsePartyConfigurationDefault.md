@@ -1,4 +1,4 @@
-# # PartyResponsePartyConfigurationDefault
+# PartyResponsePartyConfigurationDefault
 
 ## Properties
 

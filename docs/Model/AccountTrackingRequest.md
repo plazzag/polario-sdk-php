@@ -1,4 +1,4 @@
-# # AccountTrackingRequest
+# AccountTrackingRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # StreamPatchRequest
+# StreamPatchRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # PagePlatform
+# PagePlatform
 
 ## Properties
 

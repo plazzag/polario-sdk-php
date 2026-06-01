@@ -1,4 +1,4 @@
-# # ModelAccountRole
+# ModelAccountRole
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # AuthRefreshRequest
+# AuthRefreshRequest
 
 ## Properties
 

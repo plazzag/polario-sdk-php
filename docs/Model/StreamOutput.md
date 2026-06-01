@@ -1,4 +1,4 @@
-# # StreamOutput
+# StreamOutput
 
 ## Properties
 

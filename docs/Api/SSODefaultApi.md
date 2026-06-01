@@ -83,7 +83,7 @@ authSaml2IdGet($origin, $id)
 
 Start a saml2 auth flow
 
-This endpoint redirects the user to the idp login mask.  __Note:__ This endpoint has to be opened directly in browser location, not called via ajax  _accessible without permission_
+This endpoint redirects the user to the idp login mask.  __Note:__ This endpoint has to be opened directly in browser location, not called via ajax __Note:__ During this process it is possible to automatically migrate an existing local account to a sso account  _accessible without permission_
 
 ### Example
 

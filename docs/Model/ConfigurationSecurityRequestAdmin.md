@@ -1,4 +1,4 @@
-# # ConfigurationSecurityRequestAdmin
+# ConfigurationSecurityRequestAdmin
 
 ## Properties
 

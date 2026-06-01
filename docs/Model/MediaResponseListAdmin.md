@@ -1,4 +1,4 @@
-# # MediaResponseListAdmin
+# MediaResponseListAdmin
 
 ## Properties
 

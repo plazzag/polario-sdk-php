@@ -1,4 +1,4 @@
-# # ModelWebhookRequestLogMessage
+# ModelWebhookRequestLogMessage
 
 ## Properties
 

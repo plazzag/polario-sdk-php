@@ -1,4 +1,4 @@
-# # ModelArticleSettings
+# ModelArticleSettings
 
 ## Properties
 

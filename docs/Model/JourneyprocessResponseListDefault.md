@@ -1,4 +1,4 @@
-# # JourneyprocessResponseListDefault
+# JourneyprocessResponseListDefault
 
 ## Properties
 

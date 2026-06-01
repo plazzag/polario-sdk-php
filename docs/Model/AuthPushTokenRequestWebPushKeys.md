@@ -1,4 +1,4 @@
-# # AuthPushTokenRequestWebPushKeys
+# AuthPushTokenRequestWebPushKeys
 
 ## Properties
 

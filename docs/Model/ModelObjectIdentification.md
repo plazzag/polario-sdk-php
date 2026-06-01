@@ -1,4 +1,4 @@
-# # ModelObjectIdentification
+# ModelObjectIdentification
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # LocalizationCursorRequestAdmin
+# LocalizationCursorRequestAdmin
 
 ## Properties
 

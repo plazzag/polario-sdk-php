@@ -1,4 +1,4 @@
-# # ContentEntryValueTranslation
+# ContentEntryValueTranslation
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # AccountMetaAdmin
+# AccountMetaAdmin
 
 ## Properties
 

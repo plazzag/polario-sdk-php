@@ -1,4 +1,4 @@
-# # ModelAppointmentSlotTimeConfig
+# ModelAppointmentSlotTimeConfig
 
 ## Properties
 

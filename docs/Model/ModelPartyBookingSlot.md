@@ -1,4 +1,4 @@
-# # ModelPartyBookingSlot
+# ModelPartyBookingSlot
 
 ## Properties
 

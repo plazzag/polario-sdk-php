@@ -1,9 +1,10 @@
-# # CalendarAdminProjectIdGet200ResponseInner
+# CalendarAdminProjectIdGet200ResponseInner
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **description** | **string** |  | [optional]
 **entries_count** | **int** |  | [optional]
 **id** | **string** |  | [optional]

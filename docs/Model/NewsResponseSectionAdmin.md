@@ -1,4 +1,4 @@
-# # NewsResponseSectionAdmin
+# NewsResponseSectionAdmin
 
 ## Properties
 

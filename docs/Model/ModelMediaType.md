@@ -1,4 +1,4 @@
-# # ModelMediaType
+# ModelMediaType
 
 ## Properties
 

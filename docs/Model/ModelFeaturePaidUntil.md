@@ -1,4 +1,4 @@
-# # ModelFeaturePaidUntil
+# ModelFeaturePaidUntil
 
 ## Properties
 

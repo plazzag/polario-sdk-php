@@ -1,4 +1,4 @@
-# # ContentEntryTabResponse
+# ContentEntryTabResponse
 
 ## Properties
 

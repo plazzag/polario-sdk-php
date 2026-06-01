@@ -1,4 +1,4 @@
-# # ModelChatFeedTranslation
+# ModelChatFeedTranslation
 
 ## Properties
 

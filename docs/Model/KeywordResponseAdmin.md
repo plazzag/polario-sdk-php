@@ -1,4 +1,4 @@
-# # KeywordResponseAdmin
+# KeywordResponseAdmin
 
 ## Properties
 

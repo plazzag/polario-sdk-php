@@ -1,4 +1,4 @@
-# # AccountMetaDataResponse
+# AccountMetaDataResponse
 
 ## Properties
 

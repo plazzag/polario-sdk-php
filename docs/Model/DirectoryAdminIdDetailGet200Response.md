@@ -1,4 +1,4 @@
-# # DirectoryAdminIdDetailGet200Response
+# DirectoryAdminIdDetailGet200Response
 
 ## Properties
 

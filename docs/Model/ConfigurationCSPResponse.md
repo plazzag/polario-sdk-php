@@ -1,4 +1,4 @@
-# # ConfigurationCSPResponse
+# ConfigurationCSPResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ConfigurationFeaturesResponseAdminChatImageModeration
+# ConfigurationFeaturesResponseAdminChatImageModeration
 
 ## Properties
 

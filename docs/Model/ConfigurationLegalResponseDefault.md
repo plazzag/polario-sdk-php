@@ -1,4 +1,4 @@
-# # ConfigurationLegalResponseDefault
+# ConfigurationLegalResponseDefault
 
 ## Properties
 

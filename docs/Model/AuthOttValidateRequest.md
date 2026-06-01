@@ -1,4 +1,4 @@
-# # AuthOttValidateRequest
+# AuthOttValidateRequest
 
 ## Properties
 

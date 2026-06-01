@@ -1,4 +1,4 @@
-# # DirectoryPostRequest
+# DirectoryPostRequest
 
 ## Properties
 

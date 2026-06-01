@@ -1,4 +1,4 @@
-# # AppointmentResponse
+# AppointmentResponse
 
 ## Properties
 

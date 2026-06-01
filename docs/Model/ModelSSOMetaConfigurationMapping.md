@@ -1,4 +1,4 @@
-# # ModelSSOMetaConfigurationMapping
+# ModelSSOMetaConfigurationMapping
 
 ## Properties
 

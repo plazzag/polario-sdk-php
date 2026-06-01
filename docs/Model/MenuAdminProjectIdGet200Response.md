@@ -1,11 +1,11 @@
-# # MenuAdminProjectIdGet200Response
+# MenuAdminProjectIdGet200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) |  | [optional]
-**access_edit_allowed** | **bool** |  | [optional]
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
+**access_edit_allowed** | **bool** | part 2 from authorization.AccessResponse | [optional]
 **content** | [**\OpenAPI\Client\Model\MenuSwagMenuItemAdmin[]**](MenuSwagMenuItemAdmin.md) |  | [optional]
 **id** | **string** |  | [optional]
 **project_id** | **string** |  | [optional]

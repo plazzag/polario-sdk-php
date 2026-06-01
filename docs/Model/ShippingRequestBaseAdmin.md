@@ -1,4 +1,4 @@
-# # ShippingRequestBaseAdmin
+# ShippingRequestBaseAdmin
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ContentEntryValueRequest
+# ContentEntryValueRequest
 
 ## Properties
 

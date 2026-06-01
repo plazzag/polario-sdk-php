@@ -1,4 +1,4 @@
-# # LocalizationPatchLocalizationRequest
+# LocalizationPatchLocalizationRequest
 
 ## Properties
 

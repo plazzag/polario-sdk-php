@@ -1,4 +1,4 @@
-# # ContentbuilderItemTranslationResponse
+# ContentbuilderItemTranslationResponse
 
 ## Properties
 

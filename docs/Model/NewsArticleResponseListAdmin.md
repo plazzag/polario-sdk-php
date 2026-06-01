@@ -1,4 +1,4 @@
-# # NewsArticleResponseListAdmin
+# NewsArticleResponseListAdmin
 
 ## Properties
 

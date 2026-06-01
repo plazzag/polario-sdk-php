@@ -1,4 +1,4 @@
-# # IndexCursorRequestAdmin
+# IndexCursorRequestAdmin
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # SsoProviderResponseAdmin
+# SsoProviderResponseAdmin
 
 ## Properties
 

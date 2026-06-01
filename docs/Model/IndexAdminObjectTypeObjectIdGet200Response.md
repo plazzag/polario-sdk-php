@@ -1,4 +1,4 @@
-# # IndexAdminObjectTypeObjectIdGet200Response
+# IndexAdminObjectTypeObjectIdGet200Response
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ConfigurationCSPRequest
+# ConfigurationCSPRequest
 
 ## Properties
 

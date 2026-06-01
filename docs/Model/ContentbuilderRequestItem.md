@@ -1,4 +1,4 @@
-# # ContentbuilderRequestItem
+# ContentbuilderRequestItem
 
 ## Properties
 
@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | Default: &#x60;{\&quot;any\&quot;: \&quot;Read\&quot;, \&quot;user\&quot;: \&quot;Read\&quot;, \&quot;accounts\&quot;: {}, \&quot;groups\&quot;: {}}&#x60; | [optional]
 **account_placeholder_config** | [**\OpenAPI\Client\Model\ModelAccountPlaceholderConfig**](ModelAccountPlaceholderConfig.md) | only for Salutation type | [optional]
-**applied_filter** | [**\OpenAPI\Client\Model\ContentbuilderRequestItemAppliedFilter**](ContentbuilderRequestItemAppliedFilter.md) | only for CalendarEntry type | [optional]
+**applied_filter** | [**\OpenAPI\Client\Model\ContentbuilderRequestItemAppliedFilter**](ContentbuilderRequestItemAppliedFilter.md) | only for CalendarEntry type; no validation for ids (filter only) | [optional]
 **aspect_ratio** | **string** | only for Webview type | [optional]
 **auto_play** | **bool** | only for Video type | [optional]
 **automatic_animation** | **bool** | only for CalendarEntry and DirectoryContentRow type; Default: &#x60;false&#x60; | [optional]

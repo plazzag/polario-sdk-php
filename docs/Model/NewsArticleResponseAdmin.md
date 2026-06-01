@@ -1,11 +1,11 @@
-# # NewsArticleResponseAdmin
+# NewsArticleResponseAdmin
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) |  | [optional]
-**access_edit_allowed** | **bool** |  | [optional]
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
+**access_edit_allowed** | **bool** | part 2 from authorization.AccessResponse | [optional]
 **archived_at** | **int** |  | [optional]
 **author** | **string** |  | [optional]
 **content** | [**\OpenAPI\Client\Model\NewsResponseSectionAdmin[]**](NewsResponseSectionAdmin.md) |  | [optional]

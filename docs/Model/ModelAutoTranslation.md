@@ -1,4 +1,4 @@
-# # ModelAutoTranslation
+# ModelAutoTranslation
 
 ## Properties
 

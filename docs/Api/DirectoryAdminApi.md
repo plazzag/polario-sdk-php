@@ -7,6 +7,8 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
 | [**directoryAdminGet()**](DirectoryAdminApi.md#directoryAdminGet) | **GET** /directory/admin | Get directory list for cursor |
+| [**directoryAdminIdAccessGet()**](DirectoryAdminApi.md#directoryAdminIdAccessGet) | **GET** /directory/admin/{id}/access | Get directory access configuration |
+| [**directoryAdminIdAccessPatch()**](DirectoryAdminApi.md#directoryAdminIdAccessPatch) | **PATCH** /directory/admin/{id}/access | Update directory access configuration |
 | [**directoryAdminIdContentGet()**](DirectoryAdminApi.md#directoryAdminIdContentGet) | **GET** /directory/admin/{id}/content | Get directory content rows list |
 | [**directoryAdminIdContentPost()**](DirectoryAdminApi.md#directoryAdminIdContentPost) | **POST** /directory/admin/{id}/content | Add directory content rows |
 | [**directoryAdminIdCopyPost()**](DirectoryAdminApi.md#directoryAdminIdCopyPost) | **POST** /directory/admin/{id}/copy | Copy directory |
@@ -86,6 +88,124 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `directoryAdminIdAccessGet()`
+
+```php
+directoryAdminIdAccessGet($id, $session): \OpenAPI\Client\Model\AuthorizationAccessResponse
+```
+
+Get directory access configuration
+
+This endpoint returns the access configuration for the requested directory.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\DirectoryAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Directory ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->directoryAdminIdAccessGet($id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DirectoryAdminApi->directoryAdminIdAccessGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Directory ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\AuthorizationAccessResponse**](../Model/AuthorizationAccessResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `directoryAdminIdAccessPatch()`
+
+```php
+directoryAdminIdAccessPatch($id, $session, $request): \OpenAPI\Client\Model\ModelAccess
+```
+
+Update directory access configuration
+
+This endpoint updates the access configuration for the requested directory. Only the changes should be transmitted due this endpoint.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\DirectoryAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Directory ID
+$session = 'session_example'; // string | JWT
+$request = new \OpenAPI\Client\Model\ModelAccess(); // \OpenAPI\Client\Model\ModelAccess | changed access rights
+
+try {
+    $result = $apiInstance->directoryAdminIdAccessPatch($id, $session, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DirectoryAdminApi->directoryAdminIdAccessPatch: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Directory ID | |
+| **session** | **string**| JWT | |
+| **request** | [**\OpenAPI\Client\Model\ModelAccess**](../Model/ModelAccess.md)| changed access rights | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ModelAccess**](../Model/ModelAccess.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

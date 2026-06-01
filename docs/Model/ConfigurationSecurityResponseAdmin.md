@@ -1,4 +1,4 @@
-# # ConfigurationSecurityResponseAdmin
+# ConfigurationSecurityResponseAdmin
 
 ## Properties
 

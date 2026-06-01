@@ -1,4 +1,4 @@
-# # StreamResponseDefault
+# StreamResponseDefault
 
 ## Properties
 

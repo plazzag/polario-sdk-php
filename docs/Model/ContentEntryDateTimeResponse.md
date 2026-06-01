@@ -1,4 +1,4 @@
-# # ContentEntryDateTimeResponse
+# ContentEntryDateTimeResponse
 
 ## Properties
 

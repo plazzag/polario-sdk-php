@@ -1,4 +1,4 @@
-# # StreamResponseListAdmin
+# StreamResponseListAdmin
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # KeywordcategoryResponseAdmin
+# KeywordcategoryResponseAdmin
 
 ## Properties
 

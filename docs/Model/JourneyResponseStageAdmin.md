@@ -1,4 +1,4 @@
-# # JourneyResponseStageAdmin
+# JourneyResponseStageAdmin
 
 ## Properties
 

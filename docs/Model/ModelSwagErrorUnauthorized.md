@@ -1,4 +1,4 @@
-# # ModelSwagErrorUnauthorized
+# ModelSwagErrorUnauthorized
 
 ## Properties
 

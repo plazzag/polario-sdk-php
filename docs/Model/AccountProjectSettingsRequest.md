@@ -1,4 +1,4 @@
-# # AccountProjectSettingsRequest
+# AccountProjectSettingsRequest
 
 ## Properties
 

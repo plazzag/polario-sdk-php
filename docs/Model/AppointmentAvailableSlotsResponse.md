@@ -1,4 +1,4 @@
-# # AppointmentAvailableSlotsResponse
+# AppointmentAvailableSlotsResponse
 
 ## Properties
 

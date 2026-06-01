@@ -1,4 +1,4 @@
-# # ConfigurationPolicyResponse
+# ConfigurationPolicyResponse
 
 ## Properties
 

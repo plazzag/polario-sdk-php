@@ -1,4 +1,4 @@
-# # DeeplinkRequest
+# DeeplinkRequest
 
 ## Properties
 

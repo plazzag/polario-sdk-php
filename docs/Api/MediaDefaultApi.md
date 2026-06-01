@@ -816,7 +816,7 @@ mediaDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Mo
 
 Create cursor
 
-This endpoint returns a cursor for list medias in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns a cursor for list medias in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"`
 
 ### Example
 

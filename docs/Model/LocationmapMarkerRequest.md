@@ -1,4 +1,4 @@
-# # LocationmapMarkerRequest
+# LocationmapMarkerRequest
 
 ## Properties
 

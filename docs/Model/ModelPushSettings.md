@@ -1,4 +1,4 @@
-# # ModelPushSettings
+# ModelPushSettings
 
 ## Properties
 

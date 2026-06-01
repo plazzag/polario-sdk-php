@@ -1,4 +1,4 @@
-# # ModelCursorResponse
+# ModelCursorResponse
 
 ## Properties
 

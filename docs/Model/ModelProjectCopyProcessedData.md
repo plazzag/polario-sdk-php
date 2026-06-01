@@ -1,4 +1,4 @@
-# # ModelProjectCopyProcessedData
+# ModelProjectCopyProcessedData
 
 ## Properties
 

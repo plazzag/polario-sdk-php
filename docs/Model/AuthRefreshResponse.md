@@ -1,4 +1,4 @@
-# # AuthRefreshResponse
+# AuthRefreshResponse
 
 ## Properties
 

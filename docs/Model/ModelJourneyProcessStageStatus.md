@@ -1,4 +1,4 @@
-# # ModelJourneyProcessStageStatus
+# ModelJourneyProcessStageStatus
 
 ## Properties
 

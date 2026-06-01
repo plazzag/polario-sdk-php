@@ -1,4 +1,4 @@
-# # NotificationPostEmailRequest
+# NotificationPostEmailRequest
 
 ## Properties
 

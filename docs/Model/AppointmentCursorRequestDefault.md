@@ -1,4 +1,4 @@
-# # AppointmentCursorRequestDefault
+# AppointmentCursorRequestDefault
 
 ## Properties
 

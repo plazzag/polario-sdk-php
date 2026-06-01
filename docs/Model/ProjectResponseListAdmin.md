@@ -1,10 +1,10 @@
-# # ProjectResponseListAdmin
+# ProjectResponseListAdmin
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 2 from authorization.AccessResponse | [optional]
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **description** | **string** |  | [optional]
 **featured** | **bool** |  | [optional]
 **first_published_at** | **int** |  | [optional]

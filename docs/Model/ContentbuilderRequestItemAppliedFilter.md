@@ -1,4 +1,4 @@
-# # ContentbuilderRequestItemAppliedFilter
+# ContentbuilderRequestItemAppliedFilter
 
 ## Properties
 

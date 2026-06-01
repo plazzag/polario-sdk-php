@@ -1,4 +1,4 @@
-# # AccountPatchProfileRequest
+# AccountPatchProfileRequest
 
 ## Properties
 

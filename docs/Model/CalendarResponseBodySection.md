@@ -1,4 +1,4 @@
-# # CalendarResponseBodySection
+# CalendarResponseBodySection
 
 ## Properties
 

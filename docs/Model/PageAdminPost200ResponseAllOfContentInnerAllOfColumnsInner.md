@@ -1,4 +1,4 @@
-# # PageAdminPost200ResponseAllOfContentInnerAllOfColumnsInner
+# PageAdminPost200ResponseAllOfContentInnerAllOfColumnsInner
 
 ## Properties
 

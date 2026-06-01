@@ -1,4 +1,4 @@
-# # CalendarAdminTemplateGet200ResponseInner
+# CalendarAdminTemplateGet200ResponseInner
 
 ## Properties
 

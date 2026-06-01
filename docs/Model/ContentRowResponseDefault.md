@@ -1,4 +1,4 @@
-# # ContentRowResponseDefault
+# ContentRowResponseDefault
 
 ## Properties
 

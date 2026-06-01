@@ -1,4 +1,4 @@
-# # AccountVisibilitySettingsResponse
+# AccountVisibilitySettingsResponse
 
 ## Properties
 

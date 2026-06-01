@@ -1,4 +1,4 @@
-# # ConfigurationMediaConfigurationRequestAdmin
+# ConfigurationMediaConfigurationRequestAdmin
 
 ## Properties
 

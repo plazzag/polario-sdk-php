@@ -1,4 +1,4 @@
-# # NotificationEmailResponseAdmin
+# NotificationEmailResponseAdmin
 
 ## Properties
 
@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **email_body** | **string** |  | [optional]
 **email_editor_config** | **string** |  | [optional]
 **email_reply_to** | **string** | currently not translatable | [optional]
+**email_sender_address** | **string** |  | [optional]
 **email_sender_name** | **string** | max 100 characters; currently not translatable | [optional]
 **id** | **string** |  | [optional]
 **is_published** | **bool** |  | [optional]

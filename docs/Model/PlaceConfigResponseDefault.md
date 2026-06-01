@@ -1,4 +1,4 @@
-# # PlaceConfigResponseDefault
+# PlaceConfigResponseDefault
 
 ## Properties
 

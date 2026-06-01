@@ -1,4 +1,4 @@
-# # GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault
+# GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault
 
 ## Properties
 

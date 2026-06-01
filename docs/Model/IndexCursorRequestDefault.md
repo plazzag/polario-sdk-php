@@ -1,4 +1,4 @@
-# # IndexCursorRequestDefault
+# IndexCursorRequestDefault
 
 ## Properties
 

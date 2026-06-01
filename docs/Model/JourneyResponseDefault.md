@@ -1,4 +1,4 @@
-# # JourneyResponseDefault
+# JourneyResponseDefault
 
 ## Properties
 
