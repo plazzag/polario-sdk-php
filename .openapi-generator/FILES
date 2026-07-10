@@ -53,6 +53,7 @@ docs/Api/ProjectApi.md
 docs/Api/ProjectDefaultApi.md
 docs/Api/ReactionAdminApi.md
 docs/Api/ReactionDefaultApi.md
+docs/Api/RecommendationApi.md
 docs/Api/RoleApi.md
 docs/Api/SSOAdminApi.md
 docs/Api/SSODefaultApi.md
@@ -63,6 +64,8 @@ docs/Api/StreamDefaultApi.md
 docs/Api/UtilApi.md
 docs/Api/WebhookApi.md
 docs/Model/AccountCreateRequest.md
+docs/Model/AccountCursorFilterOption.md
+docs/Model/AccountCursorRequest.md
 docs/Model/AccountMetaAdmin.md
 docs/Model/AccountMetaDataResponse.md
 docs/Model/AccountMetaDataTranslationResponse.md
@@ -160,6 +163,8 @@ docs/Model/ChannelChatChannelJoinRequestResponse.md
 docs/Model/ChannelChatChannelRequest.md
 docs/Model/ChannelChatChannelRequestListRequest.md
 docs/Model/ChannelChatChannelsResponse.md
+docs/Model/ConfigurationAccountSettingsRequestAdmin.md
+docs/Model/ConfigurationAccountSettingsResponseAdmin.md
 docs/Model/ConfigurationCSPRequest.md
 docs/Model/ConfigurationCSPResponse.md
 docs/Model/ConfigurationCertificateInfoResponse.md
@@ -288,6 +293,7 @@ docs/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionCursorRequestAdmi
 docs/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionCursorRequestDefault.md
 docs/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionResponseDefault.md
 docs/Model/GitPlazzNetReposSandmannBackendServicesReactionReactionResponseDefault.md
+docs/Model/GroupPatchAccountGroupsRequest.md
 docs/Model/GroupPatchRequest.md
 docs/Model/GroupPostRequest.md
 docs/Model/GroupResponse.md
@@ -298,6 +304,8 @@ docs/Model/IndexCursorRequestAdmin.md
 docs/Model/IndexCursorRequestDefault.md
 docs/Model/IndexResponse.md
 docs/Model/IndexSwagIndexMetaMap.md
+docs/Model/JobCursorFilterOptionAdmin.md
+docs/Model/JobCursorRequestAdmin.md
 docs/Model/JobPatchRequest.md
 docs/Model/JobRequestAdmin.md
 docs/Model/JobResponseAdmin.md
@@ -342,6 +350,10 @@ docs/Model/LocalizationCursorRequestAdmin.md
 docs/Model/LocalizationGlossaryEntryRequest.md
 docs/Model/LocalizationPatchLocalizationRequest.md
 docs/Model/LocalizationResponseAdmin.md
+docs/Model/LocationCursorFilterOptionAdmin.md
+docs/Model/LocationCursorFilterOptionDefault.md
+docs/Model/LocationCursorRequestAdmin.md
+docs/Model/LocationCursorRequestDefault.md
 docs/Model/LocationPatchRequest.md
 docs/Model/LocationRequestAdmin.md
 docs/Model/LocationResponseAdmin.md
@@ -358,6 +370,8 @@ docs/Model/LocationmapResponseAdmin.md
 docs/Model/LocationmapResponseDefault.md
 docs/Model/LocationmapResponseListAdmin.md
 docs/Model/LocationmapTranslationResponse.md
+docs/Model/LocationreservationRequest.md
+docs/Model/LocationreservationResponse.md
 docs/Model/MediaCursorFilterOptionAdmin.md
 docs/Model/MediaCursorFilterOptionDefault.md
 docs/Model/MediaCursorRequestAdmin.md
@@ -396,6 +410,7 @@ docs/Model/ModelAccountProjectSettings.md
 docs/Model/ModelAccountRole.md
 docs/Model/ModelAccountStatsRecord.md
 docs/Model/ModelAccountTrackingAnalyticsSnapshot.md
+docs/Model/ModelAccountVisibilitySettings.md
 docs/Model/ModelAddress.md
 docs/Model/ModelAppointmentReceiver.md
 docs/Model/ModelAppointmentSlotTimeConfig.md
@@ -428,6 +443,7 @@ docs/Model/ModelEventStatusFilter.md
 docs/Model/ModelFeatureEnabled.md
 docs/Model/ModelFeaturePaidUntil.md
 docs/Model/ModelGeoInformation.md
+docs/Model/ModelHistoryAction.md
 docs/Model/ModelJourneyProcessStageStatus.md
 docs/Model/ModelJourneyStageStartCondition.md
 docs/Model/ModelJourneyStageStartConditionOffset.md
@@ -460,6 +476,7 @@ docs/Model/ModelProjectCopyProcessStatusDetail.md
 docs/Model/ModelProjectCopyProcessedData.md
 docs/Model/ModelProjectTranslation.md
 docs/Model/ModelPushSettings.md
+docs/Model/ModelRecommendationConfig.md
 docs/Model/ModelSSOAccountMapping.md
 docs/Model/ModelSSOGroupConfigurationMapping.md
 docs/Model/ModelSSOIdp.md
@@ -469,6 +486,7 @@ docs/Model/ModelSSORoleConfigurationMapping.md
 docs/Model/ModelSSOType.md
 docs/Model/ModelSearch.md
 docs/Model/ModelShipAccountData.md
+docs/Model/ModelShippingAccountMetrics.md
 docs/Model/ModelShippingConfig.md
 docs/Model/ModelShippingProcess.md
 docs/Model/ModelStreamTranslation.md
@@ -479,6 +497,7 @@ docs/Model/ModelSwagErrorConflict.md
 docs/Model/ModelSwagErrorContentTooLarge.md
 docs/Model/ModelSwagErrorForbidden.md
 docs/Model/ModelSwagErrorInternalServerError.md
+docs/Model/ModelSwagErrorLocked.md
 docs/Model/ModelSwagErrorNotFound.md
 docs/Model/ModelSwagErrorNotImplemented.md
 docs/Model/ModelSwagErrorPaymentRequired.md
@@ -582,6 +601,8 @@ docs/Model/ProjectResponseDefault.md
 docs/Model/ProjectResponseListAdmin.md
 docs/Model/ProjectResponseSettings.md
 docs/Model/ProjectResponseTracking.md
+docs/Model/RatingRequest.md
+docs/Model/RatingResponse.md
 docs/Model/ReactionCursorObjectIDsFilterOption.md
 docs/Model/ReactionCursorObjectIDsRequest.md
 docs/Model/ReactionInfo.md
@@ -590,6 +611,10 @@ docs/Model/ReactionRequest.md
 docs/Model/ReactionRequestAdmin.md
 docs/Model/ReactionResponseAdmin.md
 docs/Model/ReactionResponseListAdmin.md
+docs/Model/RecommendationCursorFilterOption.md
+docs/Model/RecommendationCursorRequest.md
+docs/Model/RecommendationMatchResponse.md
+docs/Model/RecommendationRerollRequest.md
 docs/Model/RolePatchRequest.md
 docs/Model/RolePostRequest.md
 docs/Model/RoleResponse.md
@@ -608,6 +633,10 @@ docs/Model/SelectionAPIResponseDefault.md
 docs/Model/SendbirdImageModerationLimits.md
 docs/Model/ShippingRequestBaseAdmin.md
 docs/Model/ShippingResponseAdmin.md
+docs/Model/ShippingdataAccountResponseList.md
+docs/Model/ShippingdataCursorFilterOption.md
+docs/Model/ShippingdataCursorRequest.md
+docs/Model/ShippingdataMailStats.md
 docs/Model/SsoCodeRequest.md
 docs/Model/SsoProviderRequest.md
 docs/Model/SsoProviderResponseAdmin.md
@@ -674,6 +703,7 @@ lib/Api/ProjectApi.php
 lib/Api/ProjectDefaultApi.php
 lib/Api/ReactionAdminApi.php
 lib/Api/ReactionDefaultApi.php
+lib/Api/RecommendationApi.php
 lib/Api/RoleApi.php
 lib/Api/SSOAdminApi.php
 lib/Api/SSODefaultApi.php
@@ -688,6 +718,8 @@ lib/Configuration.php
 lib/FormDataProcessor.php
 lib/HeaderSelector.php
 lib/Model/AccountCreateRequest.php
+lib/Model/AccountCursorFilterOption.php
+lib/Model/AccountCursorRequest.php
 lib/Model/AccountMetaAdmin.php
 lib/Model/AccountMetaDataResponse.php
 lib/Model/AccountMetaDataTranslationResponse.php
@@ -785,6 +817,8 @@ lib/Model/ChannelChatChannelJoinRequestResponse.php
 lib/Model/ChannelChatChannelRequest.php
 lib/Model/ChannelChatChannelRequestListRequest.php
 lib/Model/ChannelChatChannelsResponse.php
+lib/Model/ConfigurationAccountSettingsRequestAdmin.php
+lib/Model/ConfigurationAccountSettingsResponseAdmin.php
 lib/Model/ConfigurationCSPRequest.php
 lib/Model/ConfigurationCSPResponse.php
 lib/Model/ConfigurationCertificateInfoResponse.php
@@ -913,6 +947,7 @@ lib/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionCursorRequestAdmin
 lib/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionCursorRequestDefault.php
 lib/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionResponseDefault.php
 lib/Model/GitPlazzNetReposSandmannBackendServicesReactionReactionResponseDefault.php
+lib/Model/GroupPatchAccountGroupsRequest.php
 lib/Model/GroupPatchRequest.php
 lib/Model/GroupPostRequest.php
 lib/Model/GroupResponse.php
@@ -923,6 +958,8 @@ lib/Model/IndexCursorRequestAdmin.php
 lib/Model/IndexCursorRequestDefault.php
 lib/Model/IndexResponse.php
 lib/Model/IndexSwagIndexMetaMap.php
+lib/Model/JobCursorFilterOptionAdmin.php
+lib/Model/JobCursorRequestAdmin.php
 lib/Model/JobPatchRequest.php
 lib/Model/JobRequestAdmin.php
 lib/Model/JobResponseAdmin.php
@@ -967,6 +1004,10 @@ lib/Model/LocalizationCursorRequestAdmin.php
 lib/Model/LocalizationGlossaryEntryRequest.php
 lib/Model/LocalizationPatchLocalizationRequest.php
 lib/Model/LocalizationResponseAdmin.php
+lib/Model/LocationCursorFilterOptionAdmin.php
+lib/Model/LocationCursorFilterOptionDefault.php
+lib/Model/LocationCursorRequestAdmin.php
+lib/Model/LocationCursorRequestDefault.php
 lib/Model/LocationPatchRequest.php
 lib/Model/LocationRequestAdmin.php
 lib/Model/LocationResponseAdmin.php
@@ -983,6 +1024,8 @@ lib/Model/LocationmapResponseAdmin.php
 lib/Model/LocationmapResponseDefault.php
 lib/Model/LocationmapResponseListAdmin.php
 lib/Model/LocationmapTranslationResponse.php
+lib/Model/LocationreservationRequest.php
+lib/Model/LocationreservationResponse.php
 lib/Model/MediaCursorFilterOptionAdmin.php
 lib/Model/MediaCursorFilterOptionDefault.php
 lib/Model/MediaCursorRequestAdmin.php
@@ -1021,6 +1064,7 @@ lib/Model/ModelAccountProjectSettings.php
 lib/Model/ModelAccountRole.php
 lib/Model/ModelAccountStatsRecord.php
 lib/Model/ModelAccountTrackingAnalyticsSnapshot.php
+lib/Model/ModelAccountVisibilitySettings.php
 lib/Model/ModelAddress.php
 lib/Model/ModelAppointmentReceiver.php
 lib/Model/ModelAppointmentSlotTimeConfig.php
@@ -1053,6 +1097,7 @@ lib/Model/ModelEventStatusFilter.php
 lib/Model/ModelFeatureEnabled.php
 lib/Model/ModelFeaturePaidUntil.php
 lib/Model/ModelGeoInformation.php
+lib/Model/ModelHistoryAction.php
 lib/Model/ModelInterface.php
 lib/Model/ModelJourneyProcessStageStatus.php
 lib/Model/ModelJourneyStageStartCondition.php
@@ -1086,6 +1131,7 @@ lib/Model/ModelProjectCopyProcessStatusDetail.php
 lib/Model/ModelProjectCopyProcessedData.php
 lib/Model/ModelProjectTranslation.php
 lib/Model/ModelPushSettings.php
+lib/Model/ModelRecommendationConfig.php
 lib/Model/ModelSSOAccountMapping.php
 lib/Model/ModelSSOGroupConfigurationMapping.php
 lib/Model/ModelSSOIdp.php
@@ -1095,6 +1141,7 @@ lib/Model/ModelSSORoleConfigurationMapping.php
 lib/Model/ModelSSOType.php
 lib/Model/ModelSearch.php
 lib/Model/ModelShipAccountData.php
+lib/Model/ModelShippingAccountMetrics.php
 lib/Model/ModelShippingConfig.php
 lib/Model/ModelShippingProcess.php
 lib/Model/ModelStreamTranslation.php
@@ -1105,6 +1152,7 @@ lib/Model/ModelSwagErrorConflict.php
 lib/Model/ModelSwagErrorContentTooLarge.php
 lib/Model/ModelSwagErrorForbidden.php
 lib/Model/ModelSwagErrorInternalServerError.php
+lib/Model/ModelSwagErrorLocked.php
 lib/Model/ModelSwagErrorNotFound.php
 lib/Model/ModelSwagErrorNotImplemented.php
 lib/Model/ModelSwagErrorPaymentRequired.php
@@ -1208,6 +1256,8 @@ lib/Model/ProjectResponseDefault.php
 lib/Model/ProjectResponseListAdmin.php
 lib/Model/ProjectResponseSettings.php
 lib/Model/ProjectResponseTracking.php
+lib/Model/RatingRequest.php
+lib/Model/RatingResponse.php
 lib/Model/ReactionCursorObjectIDsFilterOption.php
 lib/Model/ReactionCursorObjectIDsRequest.php
 lib/Model/ReactionInfo.php
@@ -1216,6 +1266,10 @@ lib/Model/ReactionRequest.php
 lib/Model/ReactionRequestAdmin.php
 lib/Model/ReactionResponseAdmin.php
 lib/Model/ReactionResponseListAdmin.php
+lib/Model/RecommendationCursorFilterOption.php
+lib/Model/RecommendationCursorRequest.php
+lib/Model/RecommendationMatchResponse.php
+lib/Model/RecommendationRerollRequest.php
 lib/Model/RolePatchRequest.php
 lib/Model/RolePostRequest.php
 lib/Model/RoleResponse.php
@@ -1234,6 +1288,10 @@ lib/Model/SelectionAPIResponseDefault.php
 lib/Model/SendbirdImageModerationLimits.php
 lib/Model/ShippingRequestBaseAdmin.php
 lib/Model/ShippingResponseAdmin.php
+lib/Model/ShippingdataAccountResponseList.php
+lib/Model/ShippingdataCursorFilterOption.php
+lib/Model/ShippingdataCursorRequest.php
+lib/Model/ShippingdataMailStats.php
 lib/Model/SsoCodeRequest.php
 lib/Model/SsoProviderRequest.php
 lib/Model/SsoProviderResponseAdmin.php
@@ -1251,6 +1309,28 @@ lib/Model/WebhookRequest.php
 lib/Model/WebhookResponse.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/JourneyprocessResponseListAdminTest.php
-test/Model/PlaceConfigResponseAdminTest.php
-test/Model/PlaceConfigResponseDefaultTest.php
+test/Api/RecommendationApiTest.php
+test/Model/AccountCursorFilterOptionTest.php
+test/Model/AccountCursorRequestTest.php
+test/Model/GroupPatchAccountGroupsRequestTest.php
+test/Model/JobCursorFilterOptionAdminTest.php
+test/Model/JobCursorRequestAdminTest.php
+test/Model/LocationCursorFilterOptionAdminTest.php
+test/Model/LocationCursorFilterOptionDefaultTest.php
+test/Model/LocationCursorRequestAdminTest.php
+test/Model/LocationCursorRequestDefaultTest.php
+test/Model/LocationreservationRequestTest.php
+test/Model/LocationreservationResponseTest.php
+test/Model/ModelRecommendationConfigTest.php
+test/Model/ModelShippingAccountMetricsTest.php
+test/Model/ModelSwagErrorLockedTest.php
+test/Model/RatingRequestTest.php
+test/Model/RatingResponseTest.php
+test/Model/RecommendationCursorFilterOptionTest.php
+test/Model/RecommendationCursorRequestTest.php
+test/Model/RecommendationMatchResponseTest.php
+test/Model/RecommendationRerollRequestTest.php
+test/Model/ShippingdataAccountResponseListTest.php
+test/Model/ShippingdataCursorFilterOptionTest.php
+test/Model/ShippingdataCursorRequestTest.php
+test/Model/ShippingdataMailStatsTest.php
