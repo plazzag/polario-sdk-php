@@ -1,4 +1,4 @@
-# # ModelEmailSettings
+# ModelEmailSettings
 
 ## Properties
 

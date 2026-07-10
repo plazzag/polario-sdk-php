@@ -1,4 +1,4 @@
-# # ModelSSOAccountMapping
+# ModelSSOAccountMapping
 
 ## Properties
 

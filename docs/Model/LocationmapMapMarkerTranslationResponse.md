@@ -1,4 +1,4 @@
-# # LocationmapMapMarkerTranslationResponse
+# LocationmapMapMarkerTranslationResponse
 
 ## Properties
 

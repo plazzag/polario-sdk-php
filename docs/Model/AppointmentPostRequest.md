@@ -1,4 +1,4 @@
-# # AppointmentPostRequest
+# AppointmentPostRequest
 
 ## Properties
 

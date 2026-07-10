@@ -1,4 +1,4 @@
-# # PageResponseListDefault
+# PageResponseListDefault
 
 ## Properties
 

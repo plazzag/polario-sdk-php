@@ -1,4 +1,4 @@
-# # PageResponseSectionAdmin
+# PageResponseSectionAdmin
 
 ## Properties
 

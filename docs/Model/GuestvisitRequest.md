@@ -1,4 +1,4 @@
-# # GuestvisitRequest
+# GuestvisitRequest
 
 ## Properties
 

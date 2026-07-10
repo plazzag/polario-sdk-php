@@ -1,9 +1,10 @@
-# # MediaResponseDefault
+# MediaResponseDefault
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **alt_text** | **string** |  | [optional]
 **author** | **string** | account id | [optional]
 **description** | **string** |  | [optional]

@@ -13,6 +13,8 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**calendarAdminEntryIdDelete()**](CalendarAdminApi.md#calendarAdminEntryIdDelete) | **DELETE** /calendar/admin/entry/{id} | Delete calendar entry |
 | [**calendarAdminEntryIdGet()**](CalendarAdminApi.md#calendarAdminEntryIdGet) | **GET** /calendar/admin/entry/{id} | Get calendar entry |
 | [**calendarAdminEntryIdPut()**](CalendarAdminApi.md#calendarAdminEntryIdPut) | **PUT** /calendar/admin/entry/{id} | Update calendar entry |
+| [**calendarAdminIdAccessGet()**](CalendarAdminApi.md#calendarAdminIdAccessGet) | **GET** /calendar/admin/{id}/access | Get calendar access configuration |
+| [**calendarAdminIdAccessPatch()**](CalendarAdminApi.md#calendarAdminIdAccessPatch) | **PATCH** /calendar/admin/{id}/access | Update calendar access configuration |
 | [**calendarAdminIdContentGet()**](CalendarAdminApi.md#calendarAdminIdContentGet) | **GET** /calendar/admin/{id}/content | Get calendar entries list for calendar |
 | [**calendarAdminIdContentPost()**](CalendarAdminApi.md#calendarAdminIdContentPost) | **POST** /calendar/admin/{id}/content | Add calendar entries |
 | [**calendarAdminIdDelete()**](CalendarAdminApi.md#calendarAdminIdDelete) | **DELETE** /calendar/admin/{id} | Delete calendar |
@@ -430,6 +432,124 @@ try {
 ### Return type
 
 [**\OpenAPI\Client\Model\CalendarAdminEntryIdGet200Response**](../Model/CalendarAdminEntryIdGet200Response.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `calendarAdminIdAccessGet()`
+
+```php
+calendarAdminIdAccessGet($id, $session): \OpenAPI\Client\Model\AuthorizationAccessResponse
+```
+
+Get calendar access configuration
+
+This endpoint returns the access configuration for the requested calendar. Calendars of `type` \"Appointment\" are readonly.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"` (not for \"Appointment\" calendars)
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\CalendarAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Calendar ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->calendarAdminIdAccessGet($id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling CalendarAdminApi->calendarAdminIdAccessGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Calendar ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\AuthorizationAccessResponse**](../Model/AuthorizationAccessResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `calendarAdminIdAccessPatch()`
+
+```php
+calendarAdminIdAccessPatch($id, $session, $request): \OpenAPI\Client\Model\ModelAccess
+```
+
+Update calendar access configuration
+
+This endpoint updates the access configuration for the requested calendar. Only the changes should be transmitted due this endpoint. Calendars of `type` \"Appointment\" are readonly.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"` (not for \"Appointment\" calendars)
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\CalendarAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Calendar ID
+$session = 'session_example'; // string | JWT
+$request = new \OpenAPI\Client\Model\ModelAccess(); // \OpenAPI\Client\Model\ModelAccess | changed access rights
+
+try {
+    $result = $apiInstance->calendarAdminIdAccessPatch($id, $session, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling CalendarAdminApi->calendarAdminIdAccessPatch: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Calendar ID | |
+| **session** | **string**| JWT | |
+| **request** | [**\OpenAPI\Client\Model\ModelAccess**](../Model/ModelAccess.md)| changed access rights | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ModelAccess**](../Model/ModelAccess.md)
 
 ### Authorization
 

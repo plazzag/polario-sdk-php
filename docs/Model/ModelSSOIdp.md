@@ -1,4 +1,4 @@
-# # ModelSSOIdp
+# ModelSSOIdp
 
 ## Properties
 

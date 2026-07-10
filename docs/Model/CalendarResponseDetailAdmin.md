@@ -1,4 +1,4 @@
-# # CalendarResponseDetailAdmin
+# CalendarResponseDetailAdmin
 
 ## Properties
 

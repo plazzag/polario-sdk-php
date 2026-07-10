@@ -1,9 +1,10 @@
-# # PageResponseListAdmin
+# PageResponseListAdmin
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **creator** | **string** | account id | [optional]
 **description** | **string** |  | [optional]
 **has_desktop** | **bool** | indicator if a page has a desktop representation | [optional]

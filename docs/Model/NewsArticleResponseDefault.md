@@ -1,4 +1,4 @@
-# # NewsArticleResponseDefault
+# NewsArticleResponseDefault
 
 ## Properties
 

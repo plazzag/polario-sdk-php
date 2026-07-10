@@ -1,4 +1,4 @@
-# # GitPlazzNetReposSandmannBackendServicesPartyReactionCursorFilterOptionDefault
+# GitPlazzNetReposSandmannBackendServicesPartyReactionCursorFilterOptionDefault
 
 ## Properties
 

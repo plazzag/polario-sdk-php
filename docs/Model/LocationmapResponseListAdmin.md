@@ -1,9 +1,10 @@
-# # LocationmapResponseListAdmin
+# LocationmapResponseListAdmin
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **id** | **string** |  | [optional]
 **image** | **string** | media id | [optional]
 **marker** | [**\OpenAPI\Client\Model\LocationmapMarkerResponseAdmin[]**](LocationmapMarkerResponseAdmin.md) |  | [optional]

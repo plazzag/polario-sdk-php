@@ -1,4 +1,4 @@
-# # AccountStatsResponse
+# AccountStatsResponse
 
 ## Properties
 

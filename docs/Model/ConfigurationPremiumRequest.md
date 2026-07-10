@@ -1,4 +1,4 @@
-# # ConfigurationPremiumRequest
+# ConfigurationPremiumRequest
 
 ## Properties
 
@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **appointment** | [**\OpenAPI\Client\Model\ModelFeaturePaidUntil**](ModelFeaturePaidUntil.md) |  | [optional]
 **auto_translation** | [**\OpenAPI\Client\Model\ModelAutoTranslation**](ModelAutoTranslation.md) |  | [optional]
 **journey** | [**\OpenAPI\Client\Model\ModelFeaturePaidUntil**](ModelFeaturePaidUntil.md) |  | [optional]
+**recommendation** | [**\OpenAPI\Client\Model\ModelRecommendationConfig**](ModelRecommendationConfig.md) |  | [optional]
 **system_notification_muted** | [**\OpenAPI\Client\Model\ModelSystemNotification**](ModelSystemNotification.md) |  | [optional]
 **whitelabel** | [**\OpenAPI\Client\Model\ModelFeaturePaidUntil**](ModelFeaturePaidUntil.md) |  | [optional]
 

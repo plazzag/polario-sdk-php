@@ -1,4 +1,4 @@
-# # CalendarRequestDetailPart
+# CalendarRequestDetailPart
 
 ## Properties
 

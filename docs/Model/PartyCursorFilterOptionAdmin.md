@@ -1,4 +1,4 @@
-# # PartyCursorFilterOptionAdmin
+# PartyCursorFilterOptionAdmin
 
 ## Properties
 

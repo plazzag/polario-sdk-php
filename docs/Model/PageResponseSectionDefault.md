@@ -1,4 +1,4 @@
-# # PageResponseSectionDefault
+# PageResponseSectionDefault
 
 ## Properties
 

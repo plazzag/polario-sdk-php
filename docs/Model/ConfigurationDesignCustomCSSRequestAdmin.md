@@ -1,4 +1,4 @@
-# # ConfigurationDesignCustomCSSRequestAdmin
+# ConfigurationDesignCustomCSSRequestAdmin
 
 ## Properties
 

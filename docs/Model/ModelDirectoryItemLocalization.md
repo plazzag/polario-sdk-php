@@ -1,4 +1,4 @@
-# # ModelDirectoryItemLocalization
+# ModelDirectoryItemLocalization
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ContentDeprecatedEntryResponseListDefault
+# ContentDeprecatedEntryResponseListDefault
 
 ## Properties
 
@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **position** | **int** |  | [optional]
 **project_id** | **string** |  | [optional]
 **published_at** | **int** |  | [optional]
+**rating_enabled** | **bool** |  | [optional]
 **start** | **int** |  | [optional]
 **stream_id** | **string** | Deprecated: will be removed in 6.0 | [optional]
 **title** | **string** |  | [optional]

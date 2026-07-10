@@ -1,4 +1,4 @@
-# # ModelKeywordCategoryTranslation
+# ModelKeywordCategoryTranslation
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # PageRequestColumn
+# PageRequestColumn
 
 ## Properties
 

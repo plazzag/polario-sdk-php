@@ -16,6 +16,9 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**reactionDefaultObjectTypeObjectIdGet()**](ReactionDefaultApi.md#reactionDefaultObjectTypeObjectIdGet) | **GET** /reaction/default/{objectType}/{objectId} | Get reactions of object |
 | [**reactionDefaultObjectTypeObjectIdPost()**](ReactionDefaultApi.md#reactionDefaultObjectTypeObjectIdPost) | **POST** /reaction/default/{objectType}/{objectId} | Create or update your reaction |
 | [**reactionDefaultObjectTypeSearchPost()**](ReactionDefaultApi.md#reactionDefaultObjectTypeSearchPost) | **POST** /reaction/default/{objectType}/search | Create cursor |
+| [**reactionDefaultRatingObjectTypeObjectIdDelete()**](ReactionDefaultApi.md#reactionDefaultRatingObjectTypeObjectIdDelete) | **DELETE** /reaction/default/rating/{objectType}/{objectId} | Delete a rating |
+| [**reactionDefaultRatingObjectTypeObjectIdGet()**](ReactionDefaultApi.md#reactionDefaultRatingObjectTypeObjectIdGet) | **GET** /reaction/default/rating/{objectType}/{objectId} | Get rating of object for your account |
+| [**reactionDefaultRatingObjectTypeObjectIdPost()**](ReactionDefaultApi.md#reactionDefaultRatingObjectTypeObjectIdPost) | **POST** /reaction/default/rating/{objectType}/{objectId} | Create a rating |
 
 
 ## `reactionDefaultBookmarkGet()`
@@ -88,7 +91,7 @@ reactionDefaultBookmarkObjectTypeGet($object_type, $session, $cursor, $limit, $p
 
 Get bookmarks for object type
 
-Bookmarks are not available for rows of dynamic directory entries. If a limit is set, a cursor for this endpoint may be created to iterate over all bookmarks.  _accessible without permission_
+If a limit is set, a cursor for this endpoint may be created to iterate over all bookmarks.  _accessible without permission_
 
 ### Example
 
@@ -212,7 +215,7 @@ reactionDefaultBookmarkObjectTypeObjectIdGet($object_type, $object_id, $session)
 
 Get bookmark of object for your account
 
-This endpoint is for retrieving the bookmark status for the requested object. Bookmarks are not available for rows of dynamic directory entries.  _accessible without permission_
+This endpoint is for retrieving the bookmark status for the requested object.  _accessible without permission_
 
 ### Example
 
@@ -272,7 +275,7 @@ reactionDefaultBookmarkObjectTypeObjectIdPost($object_type, $object_id, $session
 
 Create a bookmark
 
-This endpoint is for creating a bookmark. Bookmarks are not available for rows of dynamic directory entries.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"` `\"ManageGlobalMedia\"`
+This endpoint is for creating a bookmark.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"` `\"ManageGlobalMedia\"`
 
 ### Example
 
@@ -616,6 +619,188 @@ try {
 ### Return type
 
 [**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `reactionDefaultRatingObjectTypeObjectIdDelete()`
+
+```php
+reactionDefaultRatingObjectTypeObjectIdDelete($object_type, $object_id, $session): \OpenAPI\Client\Model\ModelSwagStatusOk
+```
+
+Delete a rating
+
+This endpoint is for deleting a rating from the system  _accessible without permission_
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\ReactionDefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$object_type = 'object_type_example'; // string | object type
+$object_id = 'object_id_example'; // string | object ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->reactionDefaultRatingObjectTypeObjectIdDelete($object_type, $object_id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ReactionDefaultApi->reactionDefaultRatingObjectTypeObjectIdDelete: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **object_type** | **string**| object type | |
+| **object_id** | **string**| object ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ModelSwagStatusOk**](../Model/ModelSwagStatusOk.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `reactionDefaultRatingObjectTypeObjectIdGet()`
+
+```php
+reactionDefaultRatingObjectTypeObjectIdGet($object_type, $object_id, $session): \OpenAPI\Client\Model\RatingResponse
+```
+
+Get rating of object for your account
+
+This endpoint is for retrieving the rating status for the requested object.  _accessible without permission_
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\ReactionDefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$object_type = 'object_type_example'; // string | object type
+$object_id = 'object_id_example'; // string | object ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->reactionDefaultRatingObjectTypeObjectIdGet($object_type, $object_id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ReactionDefaultApi->reactionDefaultRatingObjectTypeObjectIdGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **object_type** | **string**| object type | |
+| **object_id** | **string**| object ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\RatingResponse**](../Model/RatingResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `reactionDefaultRatingObjectTypeObjectIdPost()`
+
+```php
+reactionDefaultRatingObjectTypeObjectIdPost($object_type, $object_id, $session, $request): \OpenAPI\Client\Model\RatingResponse
+```
+
+Create a rating
+
+This endpoint is for creating a rating.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"` `\"ManageGlobalMedia\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\ReactionDefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$object_type = 'object_type_example'; // string | object type
+$object_id = 'object_id_example'; // string | object ID
+$session = 'session_example'; // string | JWT
+$request = new \OpenAPI\Client\Model\RatingRequest(); // \OpenAPI\Client\Model\RatingRequest | rating to be set
+
+try {
+    $result = $apiInstance->reactionDefaultRatingObjectTypeObjectIdPost($object_type, $object_id, $session, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ReactionDefaultApi->reactionDefaultRatingObjectTypeObjectIdPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **object_type** | **string**| object type | |
+| **object_id** | **string**| object ID | |
+| **session** | **string**| JWT | |
+| **request** | [**\OpenAPI\Client\Model\RatingRequest**](../Model/RatingRequest.md)| rating to be set | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\RatingResponse**](../Model/RatingResponse.md)
 
 ### Authorization
 

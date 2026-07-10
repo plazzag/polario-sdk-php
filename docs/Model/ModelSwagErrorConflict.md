@@ -1,4 +1,4 @@
-# # ModelSwagErrorConflict
+# ModelSwagErrorConflict
 
 ## Properties
 

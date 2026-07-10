@@ -1,4 +1,4 @@
-# # ModelSSOType
+# ModelSSOType
 
 ## Properties
 

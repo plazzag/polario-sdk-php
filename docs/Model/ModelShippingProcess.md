@@ -1,4 +1,4 @@
-# # ModelShippingProcess
+# ModelShippingProcess
 
 ## Properties
 

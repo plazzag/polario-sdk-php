@@ -1,4 +1,4 @@
-# # ReactionInfo
+# ReactionInfo
 
 ## Properties
 

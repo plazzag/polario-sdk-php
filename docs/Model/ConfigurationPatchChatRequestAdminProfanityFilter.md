@@ -1,4 +1,4 @@
-# # ConfigurationPatchChatRequestAdminProfanityFilter
+# ConfigurationPatchChatRequestAdminProfanityFilter
 
 ## Properties
 

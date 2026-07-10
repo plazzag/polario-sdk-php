@@ -1,4 +1,4 @@
-# # ContentEntryTabTranslation
+# ContentEntryTabTranslation
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # AuthLoginResponse
+# AuthLoginResponse
 
 ## Properties
 

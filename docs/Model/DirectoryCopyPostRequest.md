@@ -1,4 +1,4 @@
-# # DirectoryCopyPostRequest
+# DirectoryCopyPostRequest
 
 ## Properties
 

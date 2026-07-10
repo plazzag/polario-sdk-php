@@ -1,4 +1,4 @@
-# # ShippingResponseAdmin
+# ShippingResponseAdmin
 
 ## Properties
 
@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional]
 **last_modified** | **int** |  | [optional]
+**metrics** | [**\OpenAPI\Client\Model\ModelShippingAccountMetrics**](ModelShippingAccountMetrics.md) |  | [optional]
 **object_type** | [**\OpenAPI\Client\Model\ModelObjectType**](ModelObjectType.md) |  | [optional]
 **process** | [**\OpenAPI\Client\Model\ModelShippingProcess**](ModelShippingProcess.md) |  | [optional]
 **project_ids** | **string[]** |  | [optional]

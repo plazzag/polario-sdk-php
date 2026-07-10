@@ -1,4 +1,4 @@
-# # CalendarSwagResponseCalendarItem
+# CalendarSwagResponseCalendarItem
 
 ## Properties
 

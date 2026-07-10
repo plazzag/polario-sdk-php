@@ -1,4 +1,4 @@
-# # KnowledgebaseArticle
+# KnowledgebaseArticle
 
 ## Properties
 

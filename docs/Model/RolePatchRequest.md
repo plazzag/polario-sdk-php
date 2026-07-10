@@ -1,4 +1,4 @@
-# # RolePatchRequest
+# RolePatchRequest
 
 ## Properties
 

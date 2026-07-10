@@ -1,4 +1,4 @@
-# # MediaPatchRequestDefault
+# MediaPatchRequestDefault
 
 ## Properties
 

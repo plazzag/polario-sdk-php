@@ -1,4 +1,4 @@
-# # ModelDirectoryItem
+# ModelDirectoryItem
 
 ## Properties
 
@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **filter** | [**\OpenAPI\Client\Model\ModelSearch**](ModelSearch.md) |  | [optional]
 **icon** | **string** |  | [optional]
 **id** | **string** |  | [optional]
+**is_translatable** | **bool** |  | [optional]
 **link_behavior** | **string** |  | [optional]
 **localization** | [**array<string,\OpenAPI\Client\Model\ModelDirectoryItemLocalization>**](ModelDirectoryItemLocalization.md) |  | [optional]
 **readonly** | **bool** |  | [optional]

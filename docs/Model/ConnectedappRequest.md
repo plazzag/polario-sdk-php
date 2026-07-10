@@ -1,4 +1,4 @@
-# # ConnectedappRequest
+# ConnectedappRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ModelMimeType
+# ModelMimeType
 
 ## Properties
 

@@ -466,7 +466,7 @@ $apiInstance = new OpenAPI\Client\Api\MediaDefaultApi(
 );
 $id = 'id_example'; // string | Media Item ID
 $session = 'session_example'; // string | JWT
-$file = 'file_example'; // string | The new file
+$file = 'file_example'; // string | certificate
 $accept_language = 'accept_language_example'; // string | client language(s)
 
 try {
@@ -483,7 +483,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Media Item ID | |
 | **session** | **string**| JWT | |
-| **file** | **string**| The new file | |
+| **file** | **string**| certificate | |
 | **accept_language** | **string**| client language(s) | [optional] |
 
 ### Return type
@@ -816,7 +816,7 @@ mediaDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Mo
 
 Create cursor
 
-This endpoint returns a cursor for list medias in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns a cursor for list medias in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"`
 
 ### Example
 

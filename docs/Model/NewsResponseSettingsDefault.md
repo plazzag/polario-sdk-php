@@ -1,4 +1,4 @@
-# # NewsResponseSettingsDefault
+# NewsResponseSettingsDefault
 
 ## Properties
 

@@ -1,9 +1,10 @@
-# # ContentEntryResponseListAdmin
+# ContentEntryResponseListAdmin
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **booking_enabled** | **bool** |  | [optional]
 **calendar_id** | **string** |  | [optional]
 **date_time** | [**\OpenAPI\Client\Model\ContentEntryDateTimeResponse**](ContentEntryDateTimeResponse.md) | applies to the project time zone | [optional]
@@ -18,8 +19,10 @@ Name | Type | Description | Notes
 **position** | **int** |  | [optional]
 **project_id** | **string** |  | [optional]
 **published_at** | **int** |  | [optional]
+**rating_enabled** | **bool** |  | [optional]
+**rating_result** | **int[]** | [0,0,0,0,0] &#x3D; [Amount1StarRatings, Amount2StarRatings, ...], redundant data SSOT is model.Rating | [optional]
 **start** | **int** |  | [optional]
-**time_zone** | **string** | // IANA Time Zone | [optional]
+**time_zone** | **string** | IANA Time Zone | [optional]
 **title** | **string** |  | [optional]
 **translations** | [**\OpenAPI\Client\Model\ContentEntryTranslation[]**](ContentEntryTranslation.md) |  | [optional]
 

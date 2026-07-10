@@ -1,4 +1,4 @@
-# # ModelLocationTranslation
+# ModelLocationTranslation
 
 ## Properties
 

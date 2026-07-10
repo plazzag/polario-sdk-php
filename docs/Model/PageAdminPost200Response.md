@@ -1,14 +1,15 @@
-# # PageAdminPost200Response
+# PageAdminPost200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) |  | [optional]
-**access_edit_allowed** | **bool** |  | [optional]
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
+**access_edit_allowed** | **bool** | part 2 from authorization.AccessResponse | [optional]
 **content** | [**\OpenAPI\Client\Model\PageAdminPost200ResponseAllOfContentInner[]**](PageAdminPost200ResponseAllOfContentInner.md) |  | [optional]
 **creator** | **string** | account id | [optional]
 **description** | **string** |  | [optional]
+**has_desktop** | **bool** | indicator if a page has a desktop representation | [optional]
 **id** | **string** |  | [optional]
 **keyword_ids** | **string[]** |  | [optional]
 **project_id** | **string** |  | [optional]

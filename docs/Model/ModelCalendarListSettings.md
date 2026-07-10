@@ -1,4 +1,4 @@
-# # ModelCalendarListSettings
+# ModelCalendarListSettings
 
 ## Properties
 

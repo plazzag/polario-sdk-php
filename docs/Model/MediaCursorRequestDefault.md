@@ -1,4 +1,4 @@
-# # MediaCursorRequestDefault
+# MediaCursorRequestDefault
 
 ## Properties
 

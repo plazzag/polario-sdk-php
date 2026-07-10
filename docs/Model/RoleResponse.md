@@ -1,4 +1,4 @@
-# # RoleResponse
+# RoleResponse
 
 ## Properties
 

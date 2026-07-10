@@ -1,4 +1,4 @@
-# # AppointmentSlotSearchRequest
+# AppointmentSlotSearchRequest
 
 ## Properties
 

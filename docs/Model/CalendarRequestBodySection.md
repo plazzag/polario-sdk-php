@@ -1,4 +1,4 @@
-# # CalendarRequestBodySection
+# CalendarRequestBodySection
 
 ## Properties
 

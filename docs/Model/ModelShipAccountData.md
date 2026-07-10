@@ -1,17 +1,18 @@
-# # ModelShipAccountData
+# ModelShipAccountData
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access_read** | **string** | Default for new accounts: &#x60;\&quot;Any\&quot;&#x60; | [optional]
+**access_read** | **string** | Default for new accounts: &#x60;\&quot;Any\&quot;&#x60;; will not have any effect, when account settings configuration property &#x60;visibleForOthers&#x60; is false (GET /config/admin/account) | [optional]
 **add_to_groups** | **string[]** | group titles must match regex /^([^,\\s]|[^,\\s][^,]*[^,\\s])$/ | [optional]
 **email** | **string** |  | [optional]
 **first_name** | **string** |  | [optional]
-**image** | **string** | use empty string for removing image | [optional]
+**image** | **string** | use empty string for removing an image | [optional]
 **last_name** | **string** |  | [optional]
 **mail_language** | **string** | format: IETF BCP 47; for null the email will be sent for the default language of the system | [optional]
 **meta** | [**\OpenAPI\Client\Model\ModelAccountMetaData[]**](ModelAccountMetaData.md) |  | [optional]
+**overwrite_password** | **bool** | Default: &#x60;false&#x60; | [optional]
 **own_access** | [**\OpenAPI\Client\Model\ModelOperation**](ModelOperation.md) | Delete (includes) Write (includes) Read | [optional]
 **password** | **string** | must be empty if sso is set | [optional]
 **product** | **string** | Default: &#x60;\&quot;App\&quot;&#x60; | [optional]

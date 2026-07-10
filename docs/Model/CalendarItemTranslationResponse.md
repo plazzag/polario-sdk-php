@@ -1,4 +1,4 @@
-# # CalendarItemTranslationResponse
+# CalendarItemTranslationResponse
 
 ## Properties
 

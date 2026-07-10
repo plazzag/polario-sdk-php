@@ -1,4 +1,4 @@
-# # ModelEventStatusFilter
+# ModelEventStatusFilter
 
 ## Properties
 

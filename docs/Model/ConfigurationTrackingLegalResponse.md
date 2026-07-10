@@ -1,4 +1,4 @@
-# # ConfigurationTrackingLegalResponse
+# ConfigurationTrackingLegalResponse
 
 ## Properties
 

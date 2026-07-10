@@ -1,4 +1,4 @@
-# # ConfigurationFeaturesResponseAdminChatProfanityFilterRegexFiltersInner
+# ConfigurationFeaturesResponseAdminChatProfanityFilterRegexFiltersInner
 
 ## Properties
 

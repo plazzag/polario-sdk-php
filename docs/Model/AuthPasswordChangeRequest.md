@@ -1,4 +1,4 @@
-# # AuthPasswordChangeRequest
+# AuthPasswordChangeRequest
 
 ## Properties
 

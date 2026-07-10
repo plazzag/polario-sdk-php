@@ -1,4 +1,4 @@
-# # StreamResponseViewerCount
+# StreamResponseViewerCount
 
 ## Properties
 

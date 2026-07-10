@@ -1,4 +1,4 @@
-# # AccountMetaDataTranslationResponse
+# AccountMetaDataTranslationResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # LocalizationGlossaryEntryRequest
+# LocalizationGlossaryEntryRequest
 
 ## Properties
 

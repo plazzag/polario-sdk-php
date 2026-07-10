@@ -1,4 +1,4 @@
-# # ModelProjectCopyProcessStatusDetail
+# ModelProjectCopyProcessStatusDetail
 
 ## Properties
 

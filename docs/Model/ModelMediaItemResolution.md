@@ -1,4 +1,4 @@
-# # ModelMediaItemResolution
+# ModelMediaItemResolution
 
 ## Properties
 

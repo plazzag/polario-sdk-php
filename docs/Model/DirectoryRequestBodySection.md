@@ -1,4 +1,4 @@
-# # DirectoryRequestBodySection
+# DirectoryRequestBodySection
 
 ## Properties
 

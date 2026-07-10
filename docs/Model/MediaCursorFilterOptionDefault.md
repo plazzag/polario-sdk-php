@@ -1,4 +1,4 @@
-# # MediaCursorFilterOptionDefault
+# MediaCursorFilterOptionDefault
 
 ## Properties
 

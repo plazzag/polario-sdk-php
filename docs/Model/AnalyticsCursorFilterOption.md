@@ -1,4 +1,4 @@
-# # AnalyticsCursorFilterOption
+# AnalyticsCursorFilterOption
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # ChannelChatChannelsResponse
+# ChannelChatChannelsResponse
 
 ## Properties
 

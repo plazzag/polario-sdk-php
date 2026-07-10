@@ -1,4 +1,4 @@
-# # SelectionAPIOptionResponseAdmin
+# SelectionAPIOptionResponseAdmin
 
 ## Properties
 

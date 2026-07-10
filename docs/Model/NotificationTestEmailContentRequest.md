@@ -1,4 +1,4 @@
-# # NotificationTestEmailContentRequest
+# NotificationTestEmailContentRequest
 
 ## Properties
 

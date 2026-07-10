@@ -1,4 +1,4 @@
-# # PageRequestSection
+# PageRequestSection
 
 ## Properties
 

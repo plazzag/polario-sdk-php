@@ -1,4 +1,4 @@
-# # ContentRowResponseDefault
+# ContentRowResponseDefault
 
 ## Properties
 
@@ -11,7 +11,11 @@ Name | Type | Description | Notes
 **featured** | **bool** |  | [optional]
 **id** | **string** |  | [optional]
 **keyword_ids** | **string[]** |  | [optional]
+**last_action** | [**\OpenAPI\Client\Model\ModelHistoryAction**](ModelHistoryAction.md) |  | [optional]
+**last_editor_id** | **string** |  | [optional]
+**last_editor_name** | **string** |  | [optional]
 **last_modified** | **int** |  | [optional]
+**own_access** | [**\OpenAPI\Client\Model\ModelOperation**](ModelOperation.md) |  | [optional]
 **position** | **int** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

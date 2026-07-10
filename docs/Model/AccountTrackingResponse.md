@@ -1,4 +1,4 @@
-# # AccountTrackingResponse
+# AccountTrackingResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # NewsDefaultIdGet200ResponseAllOfContentInner
+# NewsDefaultIdGet200ResponseAllOfContentInner
 
 ## Properties
 

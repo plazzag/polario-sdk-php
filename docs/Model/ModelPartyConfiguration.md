@@ -1,4 +1,4 @@
-# # ModelPartyConfiguration
+# ModelPartyConfiguration
 
 ## Properties
 

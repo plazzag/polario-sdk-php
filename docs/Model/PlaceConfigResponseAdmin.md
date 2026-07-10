@@ -1,4 +1,4 @@
-# # PlaceConfigResponseAdmin
+# PlaceConfigResponseAdmin
 
 ## Properties
 

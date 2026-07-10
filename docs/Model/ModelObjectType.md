@@ -1,4 +1,4 @@
-# # ModelObjectType
+# ModelObjectType
 
 ## Properties
 

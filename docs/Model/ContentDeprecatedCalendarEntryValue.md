@@ -1,4 +1,4 @@
-# # ContentDeprecatedCalendarEntryValue
+# ContentDeprecatedCalendarEntryValue
 
 ## Properties
 

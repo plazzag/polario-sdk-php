@@ -1,4 +1,4 @@
-# # JourneyprocessPatchStageStatus
+# JourneyprocessPatchStageStatus
 
 ## Properties
 

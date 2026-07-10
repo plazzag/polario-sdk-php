@@ -1,4 +1,4 @@
-# # AccountPatchCredentialsRequest
+# AccountPatchCredentialsRequest
 
 ## Properties
 

@@ -1,16 +1,16 @@
-# # LocationResponseAdmin
+# LocationResponseAdmin
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) |  | [optional]
-**access_edit_allowed** | **bool** |  | [optional]
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
+**access_edit_allowed** | **bool** | part 2 from authorization.AccessResponse | [optional]
 **address** | [**\OpenAPI\Client\Model\ModelAddress**](ModelAddress.md) |  | [optional]
+**capacity** | **int** | null for no limit | [optional]
 **description** | **string** |  | [optional]
 **id** | **string** |  | [optional]
 **image** | **string** | media id | [optional]
-**limit** | **int** | Note: null if no limit should apply, minimum: 1 | [optional]
 **locked_slots** | [**\OpenAPI\Client\Model\ModelTimeSlot[]**](ModelTimeSlot.md) | sorted ny start time | [optional]
 **project_id** | **string** |  | [optional]
 **title** | **string** |  | [optional]

@@ -1,9 +1,10 @@
-# # NewsArticleResponseListAdmin
+# NewsArticleResponseListAdmin
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **archived_at** | **int** |  | [optional]
 **author** | **string** |  | [optional]
 **created_at** | **int** |  | [optional]

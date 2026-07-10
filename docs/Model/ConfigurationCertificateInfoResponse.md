@@ -1,4 +1,4 @@
-# # ConfigurationCertificateInfoResponse
+# ConfigurationCertificateInfoResponse
 
 ## Properties
 

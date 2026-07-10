@@ -1,4 +1,4 @@
-# # ModelSwagErrorBadRequest
+# ModelSwagErrorBadRequest
 
 ## Properties
 

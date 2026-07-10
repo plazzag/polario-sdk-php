@@ -1,4 +1,4 @@
-# # ConfigurationDesignResponseAdmin
+# ConfigurationDesignResponseAdmin
 
 ## Properties
 

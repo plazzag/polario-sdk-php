@@ -1,4 +1,4 @@
-# # ModelSSOProviderTranslation
+# ModelSSOProviderTranslation
 
 ## Properties
 

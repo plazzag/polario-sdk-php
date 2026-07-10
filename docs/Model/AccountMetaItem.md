@@ -1,4 +1,4 @@
-# # AccountMetaItem
+# AccountMetaItem
 
 ## Properties
 

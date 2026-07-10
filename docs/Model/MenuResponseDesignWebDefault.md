@@ -1,4 +1,4 @@
-# # MenuResponseDesignWebDefault
+# MenuResponseDesignWebDefault
 
 ## Properties
 

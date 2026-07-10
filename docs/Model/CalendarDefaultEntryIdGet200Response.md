@@ -1,4 +1,4 @@
-# # CalendarDefaultEntryIdGet200Response
+# CalendarDefaultEntryIdGet200Response
 
 ## Properties
 
@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **position** | **int** |  | [optional]
 **project_id** | **string** |  | [optional]
 **published_at** | **int** |  | [optional]
+**rating_enabled** | **bool** |  | [optional]
 **start** | **int** |  | [optional]
 **tabs** | [**\OpenAPI\Client\Model\ContentEntryTabResponse[]**](ContentEntryTabResponse.md) |  | [optional]
 **title** | **string** |  | [optional]

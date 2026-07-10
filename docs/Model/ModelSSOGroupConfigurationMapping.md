@@ -1,4 +1,4 @@
-# # ModelSSOGroupConfigurationMapping
+# ModelSSOGroupConfigurationMapping
 
 ## Properties
 

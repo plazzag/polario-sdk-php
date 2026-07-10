@@ -1,4 +1,4 @@
-# # ModelSwagErrorForbidden
+# ModelSwagErrorForbidden
 
 ## Properties
 
