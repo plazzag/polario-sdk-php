@@ -15,7 +15,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**reactionDefaultObjectTypeObjectIdDelete()**](ReactionDefaultApi.md#reactionDefaultObjectTypeObjectIdDelete) | **DELETE** /reaction/default/{objectType}/{objectId} | Delete your reaction |
 | [**reactionDefaultObjectTypeObjectIdGet()**](ReactionDefaultApi.md#reactionDefaultObjectTypeObjectIdGet) | **GET** /reaction/default/{objectType}/{objectId} | Get reactions of object |
 | [**reactionDefaultObjectTypeObjectIdPost()**](ReactionDefaultApi.md#reactionDefaultObjectTypeObjectIdPost) | **POST** /reaction/default/{objectType}/{objectId} | Create or update your reaction |
-| [**reactionDefaultObjectTypeSearchPost()**](ReactionDefaultApi.md#reactionDefaultObjectTypeSearchPost) | **POST** /reaction/default/{objectType}/search | Create cursor |
+| [**reactionDefaultObjectTypeSearchPost()**](ReactionDefaultApi.md#reactionDefaultObjectTypeSearchPost) | **POST** /reaction/default/{objectType}/search | Create cursor reactions |
 | [**reactionDefaultRatingObjectTypeObjectIdDelete()**](ReactionDefaultApi.md#reactionDefaultRatingObjectTypeObjectIdDelete) | **DELETE** /reaction/default/rating/{objectType}/{objectId} | Delete a rating |
 | [**reactionDefaultRatingObjectTypeObjectIdGet()**](ReactionDefaultApi.md#reactionDefaultRatingObjectTypeObjectIdGet) | **GET** /reaction/default/rating/{objectType}/{objectId} | Get rating of object for your account |
 | [**reactionDefaultRatingObjectTypeObjectIdPost()**](ReactionDefaultApi.md#reactionDefaultRatingObjectTypeObjectIdPost) | **POST** /reaction/default/rating/{objectType}/{objectId} | Create a rating |
@@ -579,7 +579,7 @@ No authorization required
 reactionDefaultObjectTypeSearchPost($object_type, $request, $session): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor reactions
 
 This endpoint returns a cursor for list reactions in default representation with applied filter. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 

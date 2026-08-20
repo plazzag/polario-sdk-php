@@ -4,6 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**exclude_global_media** | **bool** |  | [optional]
+**exclude_project_media** | **bool** |  | [optional]
 **folder_ids** | **string[]** | filter values can hold null to be filtered for global elements as well. | [optional]
 **ids** | **string[]** |  | [optional]
 **media_types** | **string[]** |  | [optional]

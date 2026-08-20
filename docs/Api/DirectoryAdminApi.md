@@ -28,7 +28,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**directoryAdminRowIdDelete()**](DirectoryAdminApi.md#directoryAdminRowIdDelete) | **DELETE** /directory/admin/row/{id} | Delete directory content row |
 | [**directoryAdminRowIdGet()**](DirectoryAdminApi.md#directoryAdminRowIdGet) | **GET** /directory/admin/row/{id} | Get directory content row |
 | [**directoryAdminRowIdPut()**](DirectoryAdminApi.md#directoryAdminRowIdPut) | **PUT** /directory/admin/row/{id} | Update directory content row |
-| [**directoryAdminSearchPost()**](DirectoryAdminApi.md#directoryAdminSearchPost) | **POST** /directory/admin/search | Create cursor |
+| [**directoryAdminSearchPost()**](DirectoryAdminApi.md#directoryAdminSearchPost) | **POST** /directory/admin/search | Create cursor directories |
 | [**directoryAdminTemplateGet()**](DirectoryAdminApi.md#directoryAdminTemplateGet) | **GET** /directory/admin/template | Get directory template list |
 
 
@@ -1346,7 +1346,7 @@ No authorization required
 directoryAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor directories
 
 This endpoint returns a cursor for list directories in admin representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 

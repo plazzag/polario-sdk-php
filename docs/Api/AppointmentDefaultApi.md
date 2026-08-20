@@ -9,7 +9,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**calendarDefaultAppointmentGet()**](AppointmentDefaultApi.md#calendarDefaultAppointmentGet) | **GET** /calendar/default/appointment | Get appointment list for cursor |
 | [**calendarDefaultAppointmentIdGet()**](AppointmentDefaultApi.md#calendarDefaultAppointmentIdGet) | **GET** /calendar/default/appointment/{id} | Get appointment |
 | [**calendarDefaultAppointmentPost()**](AppointmentDefaultApi.md#calendarDefaultAppointmentPost) | **POST** /calendar/default/appointment | Create appointment |
-| [**calendarDefaultAppointmentSearchPost()**](AppointmentDefaultApi.md#calendarDefaultAppointmentSearchPost) | **POST** /calendar/default/appointment/search | Create cursor |
+| [**calendarDefaultAppointmentSearchPost()**](AppointmentDefaultApi.md#calendarDefaultAppointmentSearchPost) | **POST** /calendar/default/appointment/search | Create cursor appointments |
 | [**calendarDefaultAppointmentSlotAllGet()**](AppointmentDefaultApi.md#calendarDefaultAppointmentSlotAllGet) | **GET** /calendar/default/appointment/slot/all | Get all appointment slot options |
 | [**calendarDefaultAppointmentSlotSearchPost()**](AppointmentDefaultApi.md#calendarDefaultAppointmentSlotSearchPost) | **POST** /calendar/default/appointment/slot/search | Get possible appointment slot options |
 
@@ -198,7 +198,7 @@ No authorization required
 calendarDefaultAppointmentSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor appointments
 
 This endpoint returns a cursor for list appointments in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_
 

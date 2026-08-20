@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access_read** | **string** | Default for new accounts: &#x60;\&quot;Any\&quot;&#x60; | [optional]
+**access_read** | **string** | Default for new accounts: &#x60;\&quot;Any\&quot;&#x60;; will not have any effect, when account settings configuration property &#x60;visibleForOthers&#x60; is false (GET /config/admin/account) | [optional]
 **add_to_groups** | **string[]** | group titles must match regex /^([^,\\s]|[^,\\s][^,]*[^,\\s])$/ | [optional]
 **email** | **string** |  | [optional]
 **first_name** | **string** |  | [optional]

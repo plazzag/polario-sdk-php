@@ -10,7 +10,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**reactionDefaultJourneyIdGet()**](JourneyDefaultApi.md#reactionDefaultJourneyIdGet) | **GET** /reaction/default/journey/{id} | Get journey |
 | [**reactionDefaultJourneyIdProcessGet()**](JourneyDefaultApi.md#reactionDefaultJourneyIdProcessGet) | **GET** /reaction/default/journey/{id}/process | Get journey process |
 | [**reactionDefaultJourneyIdStageStageIdPatch()**](JourneyDefaultApi.md#reactionDefaultJourneyIdStageStageIdPatch) | **PATCH** /reaction/default/journey/{id}/stage/{stageId} | Update stage status |
-| [**reactionDefaultJourneySearchPost()**](JourneyDefaultApi.md#reactionDefaultJourneySearchPost) | **POST** /reaction/default/journey/search | Create cursor |
+| [**reactionDefaultJourneySearchPost()**](JourneyDefaultApi.md#reactionDefaultJourneySearchPost) | **POST** /reaction/default/journey/search | Create cursor journeys |
 | [**reactionDefaultJourneyStatsGet()**](JourneyDefaultApi.md#reactionDefaultJourneyStatsGet) | **GET** /reaction/default/journey/stats | Get journey stats |
 
 
@@ -268,7 +268,7 @@ No authorization required
 reactionDefaultJourneySearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor journeys
 
 This endpoint returns a cursor for list own journeys in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _accessible without permission_
 

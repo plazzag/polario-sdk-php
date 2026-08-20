@@ -26,7 +26,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**mediaAdminIdPermalinkGet()**](MediaAdminApi.md#mediaAdminIdPermalinkGet) | **GET** /media/admin/{id}/permalink | Get permalink |
 | [**mediaAdminIdThumbnailGet()**](MediaAdminApi.md#mediaAdminIdThumbnailGet) | **GET** /media/admin/{id}/thumbnail | Get thumbnail |
 | [**mediaAdminPost()**](MediaAdminApi.md#mediaAdminPost) | **POST** /media/admin | Upload file &amp; create media item |
-| [**mediaAdminSearchPost()**](MediaAdminApi.md#mediaAdminSearchPost) | **POST** /media/admin/search | Create cursor |
+| [**mediaAdminSearchPost()**](MediaAdminApi.md#mediaAdminSearchPost) | **POST** /media/admin/search | Create cursor media items |
 
 
 ## `configAdminMediaDefaultGet()`
@@ -524,7 +524,7 @@ $apiInstance = new OpenAPI\Client\Api\MediaAdminApi(
 );
 $session = 'session_example'; // string | JWT
 $cursor = 'cursor_example'; // string | id of the cursor used for pagination; required if page is set
-$limit = 56; // int | amount of results per page (1 ... 100)
+$limit = 56; // int | amount of results per page (1 ... 1000)
 $page = 56; // int | current page index of the cursor used for pagination; required if cursor is set
 
 try {
@@ -541,7 +541,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **session** | **string**| JWT | |
 | **cursor** | **string**| id of the cursor used for pagination; required if page is set | [optional] |
-| **limit** | **int**| amount of results per page (1 ... 100) | [optional] |
+| **limit** | **int**| amount of results per page (1 ... 1000) | [optional] |
 | **page** | **int**| current page index of the cursor used for pagination; required if cursor is set | [optional] |
 
 ### Return type
@@ -1223,7 +1223,7 @@ No authorization required
 mediaAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor media items
 
 This endpoint returns a cursor for list media items in admin representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"`
 

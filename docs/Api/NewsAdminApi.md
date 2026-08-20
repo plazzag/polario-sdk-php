@@ -22,7 +22,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**newsAdminPost()**](NewsAdminApi.md#newsAdminPost) | **POST** /news/admin | Create article |
 | [**newsAdminPostCountProjectIdGet()**](NewsAdminApi.md#newsAdminPostCountProjectIdGet) | **GET** /news/admin/post-count/project/{id} | Get article post counts for project |
 | [**newsAdminProjectIdGet()**](NewsAdminApi.md#newsAdminProjectIdGet) | **GET** /news/admin/project/{id} | Get article list for project |
-| [**newsAdminSearchPost()**](NewsAdminApi.md#newsAdminSearchPost) | **POST** /news/admin/search | Create cursor |
+| [**newsAdminSearchPost()**](NewsAdminApi.md#newsAdminSearchPost) | **POST** /news/admin/search | Create cursor articles |
 | [**newsAdminSyncPut()**](NewsAdminApi.md#newsAdminSyncPut) | **PUT** /news/admin/sync | Sync Operators for all articles |
 
 
@@ -986,7 +986,7 @@ No authorization required
 newsAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor articles
 
 This endpoint returns a cursor for list articles in admin representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageContent\" (counts also for linked projects)` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\" (counts also for linked projects)` `\"ManageProjects\"`
 

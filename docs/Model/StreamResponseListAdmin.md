@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **alt_text** | **string** |  | [optional]
 **id** | **string** |  | [optional]
 **placeholder** | **string** | media id | [optional]

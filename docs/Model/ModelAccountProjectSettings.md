@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**gamification** | **string** |  | [optional]
 **notification** | **string** |  | [optional]
 **project_entered_at** | **int** |  | [optional]
 

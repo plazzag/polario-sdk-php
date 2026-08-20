@@ -13,7 +13,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**newsDefaultPostCountProjectIdGet()**](NewsDefaultApi.md#newsDefaultPostCountProjectIdGet) | **GET** /news/default/post-count/project/{id} | Get article post counts for project |
 | [**newsDefaultProjectIdGet()**](NewsDefaultApi.md#newsDefaultProjectIdGet) | **GET** /news/default/project/{id} | Get published article list for project |
 | [**newsDefaultProjectIdIdsGet()**](NewsDefaultApi.md#newsDefaultProjectIdIdsGet) | **GET** /news/default/project/{id}/ids | Get published article ids for project |
-| [**newsDefaultSearchPost()**](NewsDefaultApi.md#newsDefaultSearchPost) | **POST** /news/default/search | Create cursor |
+| [**newsDefaultSearchPost()**](NewsDefaultApi.md#newsDefaultSearchPost) | **POST** /news/default/search | Create cursor articles |
 
 
 ## `newsDefaultGet()`
@@ -452,7 +452,7 @@ No authorization required
 newsDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor articles
 
 This endpoint returns a cursor for list published articles in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  For preview list cursor use: GET /news/default/preview/search  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\" (counts also for linked projects)` `\"ManageProjects\"`
 

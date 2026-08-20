@@ -6,6 +6,8 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
+| [**configAdminAccountGet()**](ConfigAdminApi.md#configAdminAccountGet) | **GET** /config/admin/account | Get account settings configuration |
+| [**configAdminAccountPatch()**](ConfigAdminApi.md#configAdminAccountPatch) | **PATCH** /config/admin/account | Update account settings configuration |
 | [**configAdminDesignCustomCssGet()**](ConfigAdminApi.md#configAdminDesignCustomCssGet) | **GET** /config/admin/design/custom-css | Get Custom CSS |
 | [**configAdminDesignCustomCssPatch()**](ConfigAdminApi.md#configAdminDesignCustomCssPatch) | **PATCH** /config/admin/design/custom-css | Update Custom CSS |
 | [**configAdminDesignDefaultGet()**](ConfigAdminApi.md#configAdminDesignDefaultGet) | **GET** /config/admin/design/default | Get factory default design |
@@ -26,6 +28,124 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**configAdminSecurityGet()**](ConfigAdminApi.md#configAdminSecurityGet) | **GET** /config/admin/security | Get security settings |
 | [**configAdminSecurityPatch()**](ConfigAdminApi.md#configAdminSecurityPatch) | **PATCH** /config/admin/security | Update security settings |
 
+
+## `configAdminAccountGet()`
+
+```php
+configAdminAccountGet($if_modified_since, $session): \OpenAPI\Client\Model\ConfigurationAccountSettingsResponseAdmin
+```
+
+Get account settings configuration
+
+This endpoint returns the account settings configuration. The If-Modified-Since header can be used for omitting the output if nothing has changed.  _accessible without permission_  _fully accessible with permission_ : `\"ManageConfiguration\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\ConfigAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$if_modified_since = 56; // int | unix timestamp of the last sync
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->configAdminAccountGet($if_modified_since, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ConfigAdminApi->configAdminAccountGet: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **if_modified_since** | **int**| unix timestamp of the last sync | [optional] |
+| **session** | **string**| JWT | [optional] |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ConfigurationAccountSettingsResponseAdmin**](../Model/ConfigurationAccountSettingsResponseAdmin.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `configAdminAccountPatch()`
+
+```php
+configAdminAccountPatch($session, $if_modified_since, $request): \OpenAPI\Client\Model\ConfigurationAccountSettingsResponseAdmin
+```
+
+Update account settings configuration
+
+This endpoint is for updating the account settings configuration. The If-Modified-Since header can be used for omitting the request if nothing has changed.  _only accessible with permission_ : `\"ManageConfiguration\"`  _fully accessible with permission_ : `\"ManageConfiguration\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\ConfigAdminApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$session = 'session_example'; // string | JWT
+$if_modified_since = 56; // int | unix timestamp
+$request = new \OpenAPI\Client\Model\ConfigurationAccountSettingsRequestAdmin(); // \OpenAPI\Client\Model\ConfigurationAccountSettingsRequestAdmin | account settings data to be updated
+
+try {
+    $result = $apiInstance->configAdminAccountPatch($session, $if_modified_since, $request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ConfigAdminApi->configAdminAccountPatch: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **session** | **string**| JWT | |
+| **if_modified_since** | **int**| unix timestamp | [optional] |
+| **request** | [**\OpenAPI\Client\Model\ConfigurationAccountSettingsRequestAdmin**](../Model/ConfigurationAccountSettingsRequestAdmin.md)| account settings data to be updated | [optional] |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ConfigurationAccountSettingsResponseAdmin**](../Model/ConfigurationAccountSettingsResponseAdmin.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
 ## `configAdminDesignCustomCssGet()`
 

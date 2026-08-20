@@ -10,7 +10,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**recommendationObjectTypeGet()**](RecommendationApi.md#recommendationObjectTypeGet) | **GET** /recommendation/{objectType} | Get recommendation sorted |
 | [**recommendationObjectTypeRandomGet()**](RecommendationApi.md#recommendationObjectTypeRandomGet) | **GET** /recommendation/{objectType}/random | Get recommendation random |
 | [**recommendationObjectTypeRerollPost()**](RecommendationApi.md#recommendationObjectTypeRerollPost) | **POST** /recommendation/{objectType}/reroll | Reroll account matches |
-| [**recommendationSearchPost()**](RecommendationApi.md#recommendationSearchPost) | **POST** /recommendation/search | Create cursor |
+| [**recommendationSearchPost()**](RecommendationApi.md#recommendationSearchPost) | **POST** /recommendation/search | Create cursor recommendations |
 
 
 ## `recommendationGet()`
@@ -257,7 +257,7 @@ No authorization required
 recommendationSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor recommendations
 
 This endpoint creates a cursor for list recommendations with applied filter and sort options. In case of cursor response total will be 0 the status 204 with no content is returned instead.  _accessible without permission_
 

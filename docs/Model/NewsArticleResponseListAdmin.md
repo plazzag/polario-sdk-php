@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | part 1 from authorization.AccessResponse | [optional]
 **archived_at** | **int** |  | [optional]
 **author** | **string** |  | [optional]
 **created_at** | **int** |  | [optional]
@@ -17,7 +18,8 @@ Name | Type | Description | Notes
 **published_at** | **int** |  | [optional]
 **send_notification** | **bool** |  | [optional]
 **status** | **string** |  | [optional]
+**teaser_text** | **string** |  | [optional]
 **time_zone** | **string** | IANA Time Zone | [optional]
-**title** | **string** | localized | [optional]
+**title** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) |  | [optional]
+**access** | [**\OpenAPI\Client\Model\ModelAccess**](ModelAccess.md) | will be overwritten, when account settings configuration property &#x60;visibleForOthers&#x60; is false (GET /config/admin/account) | [optional]
 **email** | **string** |  | [optional]
 **first_name** | **string** |  | [optional]
 **image** | **string** |  | [optional]

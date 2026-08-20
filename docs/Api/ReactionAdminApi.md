@@ -7,7 +7,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
 | [**reactionAdminObjectTypeGet()**](ReactionAdminApi.md#reactionAdminObjectTypeGet) | **GET** /reaction/admin/{objectType} | Get reactions of type |
-| [**reactionAdminObjectTypeSearchPost()**](ReactionAdminApi.md#reactionAdminObjectTypeSearchPost) | **POST** /reaction/admin/{objectType}/search | Create cursor |
+| [**reactionAdminObjectTypeSearchPost()**](ReactionAdminApi.md#reactionAdminObjectTypeSearchPost) | **POST** /reaction/admin/{objectType}/search | Create cursor reactions |
 
 
 ## `reactionAdminObjectTypeGet()`
@@ -80,7 +80,7 @@ No authorization required
 reactionAdminObjectTypeSearchPost($object_type, $session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor reactions
 
 This endpoint returns a cursor for list reactions in admin representation with applied filter. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 

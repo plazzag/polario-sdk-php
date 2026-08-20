@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **keyword_ids** | **string[]** |  | [optional]
 **last_modified** | **int** |  | [optional]
 **linked_project_ids** | **string[]** |  | [optional]
-**project_id** | **string** | the project id the article belongs to | [optional]
+**project_id** | **string** |  | [optional]
 **published_at** | **int** |  | [optional]
 **settings** | [**\OpenAPI\Client\Model\NewsResponseSettingsDefault**](NewsResponseSettingsDefault.md) |  | [optional]
 **status** | **string** |  | [optional]

@@ -6,8 +6,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **appointment** | [**\OpenAPI\Client\Model\ModelFeatureEnabled**](ModelFeatureEnabled.md) |  | [optional]
 **auto_translation** | [**\OpenAPI\Client\Model\ModelFeatureEnabled**](ModelFeatureEnabled.md) |  | [optional]
+**gamification** | [**\OpenAPI\Client\Model\ModelFeatureEnabled**](ModelFeatureEnabled.md) |  | [optional]
 **journey** | [**\OpenAPI\Client\Model\ModelFeatureEnabled**](ModelFeatureEnabled.md) |  | [optional]
 **recommendation** | [**\OpenAPI\Client\Model\ModelFeatureEnabled**](ModelFeatureEnabled.md) |  | [optional]
+**survey** | [**\OpenAPI\Client\Model\ModelFeatureEnabled**](ModelFeatureEnabled.md) |  | [optional]
 **system_notification_muted** | [**\OpenAPI\Client\Model\ModelSystemNotification**](ModelSystemNotification.md) |  | [optional]
 **whitelabel** | [**\OpenAPI\Client\Model\ModelFeatureEnabled**](ModelFeatureEnabled.md) |  | [optional]
 

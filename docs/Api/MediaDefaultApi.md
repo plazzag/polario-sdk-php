@@ -19,7 +19,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**mediaDefaultIdThumbnailGet()**](MediaDefaultApi.md#mediaDefaultIdThumbnailGet) | **GET** /media/default/{id}/thumbnail | Get thumbnail |
 | [**mediaDefaultIdsGet()**](MediaDefaultApi.md#mediaDefaultIdsGet) | **GET** /media/default/ids | Get media item ids |
 | [**mediaDefaultPost()**](MediaDefaultApi.md#mediaDefaultPost) | **POST** /media/default | Upload file &amp; create media item |
-| [**mediaDefaultSearchPost()**](MediaDefaultApi.md#mediaDefaultSearchPost) | **POST** /media/default/search | Create cursor |
+| [**mediaDefaultSearchPost()**](MediaDefaultApi.md#mediaDefaultSearchPost) | **POST** /media/default/search | Create cursor media items |
 
 
 ## `configDefaultMediaGet()`
@@ -814,9 +814,9 @@ No authorization required
 mediaDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor media items
 
-This endpoint returns a cursor for list medias in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"`
+This endpoint returns a cursor for list media items in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"`
 
 ### Example
 

@@ -8,7 +8,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | ------------- | ------------- | ------------- |
 | [**indexDefaultGet()**](IndexDefaultApi.md#indexDefaultGet) | **GET** /index/default | Get index items for cursor |
 | [**indexDefaultObjectTypeObjectIdLinkedGet()**](IndexDefaultApi.md#indexDefaultObjectTypeObjectIdLinkedGet) | **GET** /index/default/{objectType}/{objectId}/linked | Get linked items |
-| [**indexDefaultSearchPost()**](IndexDefaultApi.md#indexDefaultSearchPost) | **POST** /index/default/search | Create cursor |
+| [**indexDefaultSearchPost()**](IndexDefaultApi.md#indexDefaultSearchPost) | **POST** /index/default/search | Create cursor index items |
 
 
 ## `indexDefaultGet()`
@@ -149,7 +149,7 @@ No authorization required
 indexDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor index items
 
 This endpoint returns a cursor for list index items in default representation with applied filter and sort options. private items will not be part of the result. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageAccounts\"` `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"` (depending on requested object type)
 

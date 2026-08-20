@@ -48,7 +48,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**authAccountProjectProjectIdIdGet()**](AccountApi.md#authAccountProjectProjectIdIdGet) | **GET** /auth/account/project/{projectId}/id | Get project account ids |
 | [**authAccountProjectProjectIdStatsGet()**](AccountApi.md#authAccountProjectProjectIdStatsGet) | **GET** /auth/account/project/{projectId}/stats | Get project accounts statistics |
 | [**authAccountProjectProjectIdStatsRecordGet()**](AccountApi.md#authAccountProjectProjectIdStatsRecordGet) | **GET** /auth/account/project/{projectId}/stats/record | Get project accounts statistic records |
-| [**authAccountSearchCursorPost()**](AccountApi.md#authAccountSearchCursorPost) | **POST** /auth/account/search-cursor | Create cursor |
+| [**authAccountSearchCursorPost()**](AccountApi.md#authAccountSearchCursorPost) | **POST** /auth/account/search-cursor | Create cursor accounts |
 | [**authAccountSearchPost()**](AccountApi.md#authAccountSearchPost) | **POST** /auth/account/search | Search accounts |
 | [**authAccountStatsGet()**](AccountApi.md#authAccountStatsGet) | **GET** /auth/account/stats | Get accounts statistics |
 | [**authAccountStatsRecordGet()**](AccountApi.md#authAccountStatsRecordGet) | **GET** /auth/account/stats/record | Get accounts statistic records |
@@ -360,7 +360,7 @@ authAccountGet($session, $cursor, $limit, $page, $accept_language, $platform): \
 
 Get accounts
 
-This endpoint is for requesting account list of the system. If a limit is set, a cursor for this endpoint may be created to iterate over all accounts. If _Platform_ header is `\"Cms\"` _Accept-Language_ header will be ignored.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
+This endpoint is for requesting account list of the system. If a limit is set, a cursor for this endpoint may be created to iterate over all accounts. If _Platform_ header is `\"Cms\"` _Accept-Language_ header will be ignored.  Cursor could be created here: POST /auth/account/search-cursor  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
 
 ### Example
 
@@ -377,7 +377,7 @@ $apiInstance = new OpenAPI\Client\Api\AccountApi(
 );
 $session = 'session_example'; // string | JWT
 $cursor = 'cursor_example'; // string | id of the cursor used for pagination; required if page is set
-$limit = 56; // int | amount of results per page (1 ... 100)
+$limit = 56; // int | amount of results per page (1 ... 1000)
 $page = 56; // int | current page index of the cursor used for pagination; required if cursor is set
 $accept_language = 'accept_language_example'; // string | client language(s)
 $platform = 'platform_example'; // string | The client platform
@@ -396,7 +396,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **session** | **string**| JWT | |
 | **cursor** | **string**| id of the cursor used for pagination; required if page is set | [optional] |
-| **limit** | **int**| amount of results per page (1 ... 100) | [optional] |
+| **limit** | **int**| amount of results per page (1 ... 1000) | [optional] |
 | **page** | **int**| current page index of the cursor used for pagination; required if cursor is set | [optional] |
 | **accept_language** | **string**| client language(s) | [optional] |
 | **platform** | **string**| The client platform | [optional] |
@@ -2576,7 +2576,7 @@ No authorization required
 authAccountSearchCursorPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor accounts
 
 This endpoint returns a cursor for list accounts with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageAccounts\"`  _fully accessible with permission_ : `\"ManageAccounts\"`
 

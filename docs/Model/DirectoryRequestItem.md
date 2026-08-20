@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **filter** | [**\OpenAPI\Client\Model\ModelSearch**](ModelSearch.md) | only for PropertyKeyword subtype | [optional]
 **icon** | **string** | media id; Default: &#x60;null&#x60; | [optional]
 **id** | **string** |  | [optional]
+**is_translatable** | **bool** | only for TextBlock and TextPlainLine subtype; no effect for directory contentRowObjectType &#x3D; Account; Default: &#x60;true&#x60; | [optional]
 **link_behavior** | **string** | only for TextLink subtype | [optional]
 **readonly** | **bool** | user can change value or not; no effect for directory contentRowObjectType &#x3D; Account | [optional]
 **reference** | **string** | only in admin representation and only for directory contentRowObjectType &#x3D; Account and type is not Property; type must match with reference, subtype must not match with reference for type Text. | [optional]

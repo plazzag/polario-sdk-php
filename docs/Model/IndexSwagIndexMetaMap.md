@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **private** | **bool** | only for MediaItem | [optional]
 **published_at** | **int** | only for CalendarEntry, News | [optional]
 **size** | **int** | only for MediaItem | [optional]
-**status** | **string** | only for News, Page, Project | [optional]
+**status** | **string** | only for DirectoryContentRow, News, Page, Project | [optional]
 **teaser_text** | **string** | only for News | [optional]
 **time_slot** | [**\OpenAPI\Client\Model\ModelTimeSlot**](ModelTimeSlot.md) | only for CalendarEntry | [optional]
 **time_zone** | **string** | only for Project | [optional]

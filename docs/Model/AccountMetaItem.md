@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **app_visibility** | **string** |  | [optional]
 **app_visibility_changeable** | **bool** | must be false when appVisibility !&#x3D; Public | [optional]
 **id** | **string** |  | [optional]
+**is_translatable** | **bool** | could only be true for TextBlock and TextPlainLine subtypes | [optional]
 **protected** | **bool** | specifies if cms user can change value | [optional]
 **readonly** | **bool** | specifies if app user can change value; must be true when protected is true | [optional]
 **selection_id** | **string** | only for Selection type | [optional]
