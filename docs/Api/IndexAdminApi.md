@@ -9,7 +9,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**indexAdminGet()**](IndexAdminApi.md#indexAdminGet) | **GET** /index/admin | Get index items for cursor |
 | [**indexAdminObjectTypeObjectIdGet()**](IndexAdminApi.md#indexAdminObjectTypeObjectIdGet) | **GET** /index/admin/{objectType}/{objectId} | Get index |
 | [**indexAdminObjectTypeObjectIdLinkedGet()**](IndexAdminApi.md#indexAdminObjectTypeObjectIdLinkedGet) | **GET** /index/admin/{objectType}/{objectId}/linked | Get linked items |
-| [**indexAdminSearchPost()**](IndexAdminApi.md#indexAdminSearchPost) | **POST** /index/admin/search | Create cursor |
+| [**indexAdminSearchPost()**](IndexAdminApi.md#indexAdminSearchPost) | **POST** /index/admin/search | Create cursor index items |
 
 
 ## `indexAdminGet()`
@@ -206,7 +206,7 @@ No authorization required
 indexAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor index items
 
 This endpoint returns a cursor for list index items in admin representation with applied filter and sort options. private items will not be part of the result. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageAccounts\"` `\"ManageContent\"` `\"ManageGlobalMedia\"` `\"ManageProjects\"` (depending on requested object type)
 

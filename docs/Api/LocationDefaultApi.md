@@ -12,7 +12,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**locationDefaultPlaceConfigGet()**](LocationDefaultApi.md#locationDefaultPlaceConfigGet) | **GET** /location/default/place/config | Get places config |
 | [**locationDefaultProjectIdGet()**](LocationDefaultApi.md#locationDefaultProjectIdGet) | **GET** /location/default/project/{id} | Get location list for project |
 | [**locationDefaultReservationDelete()**](LocationDefaultApi.md#locationDefaultReservationDelete) | **DELETE** /location/default/reservation | Delete location reservation |
-| [**locationDefaultSearchPost()**](LocationDefaultApi.md#locationDefaultSearchPost) | **POST** /location/default/search | Create cursor |
+| [**locationDefaultSearchPost()**](LocationDefaultApi.md#locationDefaultSearchPost) | **POST** /location/default/search | Create cursor locations |
 
 
 ## `locationDefaultGet()`
@@ -383,7 +383,7 @@ No authorization required
 locationDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor locations
 
 This endpoint returns a cursor for list locations in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 

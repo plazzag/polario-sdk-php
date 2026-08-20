@@ -138,7 +138,7 @@ Class | Method | HTTP request | Description
 *AccountApi* | [**authAccountProjectProjectIdIdGet**](docs/Api/AccountApi.md#authaccountprojectprojectididget) | **GET** /auth/account/project/{projectId}/id | Get project account ids
 *AccountApi* | [**authAccountProjectProjectIdStatsGet**](docs/Api/AccountApi.md#authaccountprojectprojectidstatsget) | **GET** /auth/account/project/{projectId}/stats | Get project accounts statistics
 *AccountApi* | [**authAccountProjectProjectIdStatsRecordGet**](docs/Api/AccountApi.md#authaccountprojectprojectidstatsrecordget) | **GET** /auth/account/project/{projectId}/stats/record | Get project accounts statistic records
-*AccountApi* | [**authAccountSearchCursorPost**](docs/Api/AccountApi.md#authaccountsearchcursorpost) | **POST** /auth/account/search-cursor | Create cursor
+*AccountApi* | [**authAccountSearchCursorPost**](docs/Api/AccountApi.md#authaccountsearchcursorpost) | **POST** /auth/account/search-cursor | Create cursor accounts
 *AccountApi* | [**authAccountSearchPost**](docs/Api/AccountApi.md#authaccountsearchpost) | **POST** /auth/account/search | Search accounts
 *AccountApi* | [**authAccountStatsGet**](docs/Api/AccountApi.md#authaccountstatsget) | **GET** /auth/account/stats | Get accounts statistics
 *AccountApi* | [**authAccountStatsRecordGet**](docs/Api/AccountApi.md#authaccountstatsrecordget) | **GET** /auth/account/stats/record | Get accounts statistic records
@@ -150,7 +150,7 @@ Class | Method | HTTP request | Description
 *AccountApi* | [**authRegisterPost**](docs/Api/AccountApi.md#authregisterpost) | **POST** /auth/register | Registration
 *AdminAreaApi* | [**newsDefaultIdPreviewDesktopGet**](docs/Api/AdminAreaApi.md#newsdefaultidpreviewdesktopget) | **GET** /news/default/{id}/preview/desktop | Get article preview desktop
 *AdminAreaApi* | [**newsDefaultIdPreviewGet**](docs/Api/AdminAreaApi.md#newsdefaultidpreviewget) | **GET** /news/default/{id}/preview | Get article preview mobile
-*AdminAreaApi* | [**newsDefaultPreviewSearchPost**](docs/Api/AdminAreaApi.md#newsdefaultpreviewsearchpost) | **POST** /news/default/preview/search | Create cursor
+*AdminAreaApi* | [**newsDefaultPreviewSearchPost**](docs/Api/AdminAreaApi.md#newsdefaultpreviewsearchpost) | **POST** /news/default/preview/search | Create cursor articles
 *AdminAreaApi* | [**newsDefaultProjectIdPreviewGet**](docs/Api/AdminAreaApi.md#newsdefaultprojectidpreviewget) | **GET** /news/default/project/{id}/preview | Get article list preview for project
 *AdminAreaApi* | [**newsDefaultProjectIdPreviewIdsGet**](docs/Api/AdminAreaApi.md#newsdefaultprojectidpreviewidsget) | **GET** /news/default/project/{id}/preview/ids | Get article preview ids for project
 *AdminAreaApi* | [**pageDefaultIdPreviewDesktopGet**](docs/Api/AdminAreaApi.md#pagedefaultidpreviewdesktopget) | **GET** /page/default/{id}/preview/desktop | Get page preview desktop
@@ -164,7 +164,7 @@ Class | Method | HTTP request | Description
 *AppointmentDefaultApi* | [**calendarDefaultAppointmentGet**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentget) | **GET** /calendar/default/appointment | Get appointment list for cursor
 *AppointmentDefaultApi* | [**calendarDefaultAppointmentIdGet**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentidget) | **GET** /calendar/default/appointment/{id} | Get appointment
 *AppointmentDefaultApi* | [**calendarDefaultAppointmentPost**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentpost) | **POST** /calendar/default/appointment | Create appointment
-*AppointmentDefaultApi* | [**calendarDefaultAppointmentSearchPost**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentsearchpost) | **POST** /calendar/default/appointment/search | Create cursor
+*AppointmentDefaultApi* | [**calendarDefaultAppointmentSearchPost**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentsearchpost) | **POST** /calendar/default/appointment/search | Create cursor appointments
 *AppointmentDefaultApi* | [**calendarDefaultAppointmentSlotAllGet**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentslotallget) | **GET** /calendar/default/appointment/slot/all | Get all appointment slot options
 *AppointmentDefaultApi* | [**calendarDefaultAppointmentSlotSearchPost**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentslotsearchpost) | **POST** /calendar/default/appointment/slot/search | Get possible appointment slot options
 *AuthApi* | [**authAuthPost**](docs/Api/AuthApi.md#authauthpost) | **POST** /auth/auth | SCRAM First
@@ -276,7 +276,7 @@ Class | Method | HTTP request | Description
 *DirectoryAdminApi* | [**directoryAdminRowIdDelete**](docs/Api/DirectoryAdminApi.md#directoryadminrowiddelete) | **DELETE** /directory/admin/row/{id} | Delete directory content row
 *DirectoryAdminApi* | [**directoryAdminRowIdGet**](docs/Api/DirectoryAdminApi.md#directoryadminrowidget) | **GET** /directory/admin/row/{id} | Get directory content row
 *DirectoryAdminApi* | [**directoryAdminRowIdPut**](docs/Api/DirectoryAdminApi.md#directoryadminrowidput) | **PUT** /directory/admin/row/{id} | Update directory content row
-*DirectoryAdminApi* | [**directoryAdminSearchPost**](docs/Api/DirectoryAdminApi.md#directoryadminsearchpost) | **POST** /directory/admin/search | Create cursor
+*DirectoryAdminApi* | [**directoryAdminSearchPost**](docs/Api/DirectoryAdminApi.md#directoryadminsearchpost) | **POST** /directory/admin/search | Create cursor directories
 *DirectoryAdminApi* | [**directoryAdminTemplateGet**](docs/Api/DirectoryAdminApi.md#directoryadmintemplateget) | **GET** /directory/admin/template | Get directory template list
 *DirectoryDefaultApi* | [**directoryDefaultIdContentGet**](docs/Api/DirectoryDefaultApi.md#directorydefaultidcontentget) | **GET** /directory/default/{id}/content | Get directory content rows list
 *DirectoryDefaultApi* | [**directoryDefaultIdGet**](docs/Api/DirectoryDefaultApi.md#directorydefaultidget) | **GET** /directory/default/{id} | Get directory
@@ -290,6 +290,30 @@ Class | Method | HTTP request | Description
 *EmailAdminApi* | [**notificationAdminEmailPost**](docs/Api/EmailAdminApi.md#notificationadminemailpost) | **POST** /notification/admin/email | Create email
 *EmailAdminApi* | [**notificationAdminEmailProjectIdGet**](docs/Api/EmailAdminApi.md#notificationadminemailprojectidget) | **GET** /notification/admin/email/project/{id} | Get all project emails
 *EmailAdminApi* | [**notificationAdminEmailTestPost**](docs/Api/EmailAdminApi.md#notificationadminemailtestpost) | **POST** /notification/admin/email/test | Test email content
+*GamificationAdminApi* | [**reactionAdminGamificationBalanceGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationbalanceget) | **GET** /reaction/admin/gamification/balance | Get gamification balance entry list
+*GamificationAdminApi* | [**reactionAdminGamificationBalanceSearchPost**](docs/Api/GamificationAdminApi.md#reactionadmingamificationbalancesearchpost) | **POST** /reaction/admin/gamification/balance/search | Create cursor gamification balance entries
+*GamificationAdminApi* | [**reactionAdminGamificationEntryGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationentryget) | **GET** /reaction/admin/gamification/entry | Get leaderboard entry list
+*GamificationAdminApi* | [**reactionAdminGamificationEntrySearchPost**](docs/Api/GamificationAdminApi.md#reactionadmingamificationentrysearchpost) | **POST** /reaction/admin/gamification/entry/search | Create cursor leaderboard entries
+*GamificationAdminApi* | [**reactionAdminGamificationLeaderboardIdAccountAccountIdBonusPost**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardidaccountaccountidbonuspost) | **POST** /reaction/admin/gamification/leaderboard/{id}/account/{accountId}/bonus | Add gamification bonus
+*GamificationAdminApi* | [**reactionAdminGamificationLeaderboardIdAccountAccountIdResetPut**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardidaccountaccountidresetput) | **PUT** /reaction/admin/gamification/leaderboard/{id}/account/{accountId}/reset | Reset account gamification balance
+*GamificationAdminApi* | [**reactionAdminGamificationLeaderboardIdGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardidget) | **GET** /reaction/admin/gamification/leaderboard/{id} | Get leaderboard
+*GamificationAdminApi* | [**reactionAdminGamificationLeaderboardIdPatch**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardidpatch) | **PATCH** /reaction/admin/gamification/leaderboard/{id} | Update leaderboard
+*GamificationAdminApi* | [**reactionAdminGamificationLeaderboardIdResetPut**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardidresetput) | **PUT** /reaction/admin/gamification/leaderboard/{id}/reset | Reset gamification balance
+*GamificationAdminApi* | [**reactionAdminGamificationLeaderboardIdSyncPut**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardidsyncput) | **PUT** /reaction/admin/gamification/leaderboard/{id}/sync | Sync gamification balance
+*GamificationAdminApi* | [**reactionAdminGamificationLeaderboardProjectProjectIdGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardprojectprojectidget) | **GET** /reaction/admin/gamification/leaderboard/project/{projectId} | Get leaderboard list for project
+*GamificationAdminApi* | [**reactionAdminGamificationProjectProjectIdSettingsGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationprojectprojectidsettingsget) | **GET** /reaction/admin/gamification/project/{projectId}/settings | Get project settings
+*GamificationAdminApi* | [**reactionAdminGamificationProjectProjectIdSettingsPut**](docs/Api/GamificationAdminApi.md#reactionadmingamificationprojectprojectidsettingsput) | **PUT** /reaction/admin/gamification/project/{projectId}/settings | Get project settings
+*GamificationAdminApi* | [**reactionAdminGamificationRuleGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationruleget) | **GET** /reaction/admin/gamification/rule | Get gamification rule list
+*GamificationAdminApi* | [**reactionAdminGamificationRuleIdDelete**](docs/Api/GamificationAdminApi.md#reactionadmingamificationruleiddelete) | **DELETE** /reaction/admin/gamification/rule/{id} | Delete gamification rule
+*GamificationAdminApi* | [**reactionAdminGamificationRuleIdGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationruleidget) | **GET** /reaction/admin/gamification/rule/{id} | Get gamification rule
+*GamificationAdminApi* | [**reactionAdminGamificationRuleIdPatch**](docs/Api/GamificationAdminApi.md#reactionadmingamificationruleidpatch) | **PATCH** /reaction/admin/gamification/rule/{id} | Update gamification rule
+*GamificationAdminApi* | [**reactionAdminGamificationRulePost**](docs/Api/GamificationAdminApi.md#reactionadmingamificationrulepost) | **POST** /reaction/admin/gamification/rule | Create gamification rule
+*GamificationAdminApi* | [**reactionAdminGamificationRuleSearchPost**](docs/Api/GamificationAdminApi.md#reactionadmingamificationrulesearchpost) | **POST** /reaction/admin/gamification/rule/search | Create cursor gamification rules
+*GamificationDefaultApi* | [**reactionDefaultGamificationActionPost**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationactionpost) | **POST** /reaction/default/gamification/action | Score gamification action
+*GamificationDefaultApi* | [**reactionDefaultGamificationLeaderboardIdAccountAccountIdGet**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationleaderboardidaccountaccountidget) | **GET** /reaction/default/gamification/leaderboard/{id}/account/{accountId} | Get leaderboard entry for own account
+*GamificationDefaultApi* | [**reactionDefaultGamificationLeaderboardIdGet**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationleaderboardidget) | **GET** /reaction/default/gamification/leaderboard/{id} | Get leaderboard
+*GamificationDefaultApi* | [**reactionDefaultGamificationLeaderboardProjectProjectIdGet**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationleaderboardprojectprojectidget) | **GET** /reaction/default/gamification/leaderboard/project/{projectId} | Get leaderboard list for project
+*GamificationDefaultApi* | [**reactionDefaultGamificationProjectProjectIdSettingsGet**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationprojectprojectidsettingsget) | **GET** /reaction/default/gamification/project/{projectId}/settings | Get project settings
 *GroupApi* | [**authGroupGet**](docs/Api/GroupApi.md#authgroupget) | **GET** /auth/group | Get group list
 *GroupApi* | [**authGroupIdAccountDelete**](docs/Api/GroupApi.md#authgroupidaccountdelete) | **DELETE** /auth/group/{id}/account | remove accounts from group
 *GroupApi* | [**authGroupIdAccountGet**](docs/Api/GroupApi.md#authgroupidaccountget) | **GET** /auth/group/{id}/account | Get accounts of group
@@ -315,16 +339,16 @@ Class | Method | HTTP request | Description
 *I18nAdminApi* | [**configAdminLocalizationIdGet**](docs/Api/I18nAdminApi.md#configadminlocalizationidget) | **GET** /config/admin/localization/{id} | Get localization
 *I18nAdminApi* | [**configAdminLocalizationIdPatch**](docs/Api/I18nAdminApi.md#configadminlocalizationidpatch) | **PATCH** /config/admin/localization/{id} | Update localization
 *I18nAdminApi* | [**configAdminLocalizationKeysGet**](docs/Api/I18nAdminApi.md#configadminlocalizationkeysget) | **GET** /config/admin/localization/keys | Get localization keys
-*I18nAdminApi* | [**configAdminLocalizationSearchPost**](docs/Api/I18nAdminApi.md#configadminlocalizationsearchpost) | **POST** /config/admin/localization/search | Create cursor
+*I18nAdminApi* | [**configAdminLocalizationSearchPost**](docs/Api/I18nAdminApi.md#configadminlocalizationsearchpost) | **POST** /config/admin/localization/search | Create cursor localizations
 *I18nDefaultApi* | [**configDefaultLanguageGet**](docs/Api/I18nDefaultApi.md#configdefaultlanguageget) | **GET** /config/default/language | Get languages
 *I18nDefaultApi* | [**configDefaultLocalizationGet**](docs/Api/I18nDefaultApi.md#configdefaultlocalizationget) | **GET** /config/default/localization | Get localizations
 *IndexAdminApi* | [**indexAdminGet**](docs/Api/IndexAdminApi.md#indexadminget) | **GET** /index/admin | Get index items for cursor
 *IndexAdminApi* | [**indexAdminObjectTypeObjectIdGet**](docs/Api/IndexAdminApi.md#indexadminobjecttypeobjectidget) | **GET** /index/admin/{objectType}/{objectId} | Get index
 *IndexAdminApi* | [**indexAdminObjectTypeObjectIdLinkedGet**](docs/Api/IndexAdminApi.md#indexadminobjecttypeobjectidlinkedget) | **GET** /index/admin/{objectType}/{objectId}/linked | Get linked items
-*IndexAdminApi* | [**indexAdminSearchPost**](docs/Api/IndexAdminApi.md#indexadminsearchpost) | **POST** /index/admin/search | Create cursor
+*IndexAdminApi* | [**indexAdminSearchPost**](docs/Api/IndexAdminApi.md#indexadminsearchpost) | **POST** /index/admin/search | Create cursor index items
 *IndexDefaultApi* | [**indexDefaultGet**](docs/Api/IndexDefaultApi.md#indexdefaultget) | **GET** /index/default | Get index items for cursor
 *IndexDefaultApi* | [**indexDefaultObjectTypeObjectIdLinkedGet**](docs/Api/IndexDefaultApi.md#indexdefaultobjecttypeobjectidlinkedget) | **GET** /index/default/{objectType}/{objectId}/linked | Get linked items
-*IndexDefaultApi* | [**indexDefaultSearchPost**](docs/Api/IndexDefaultApi.md#indexdefaultsearchpost) | **POST** /index/default/search | Create cursor
+*IndexDefaultApi* | [**indexDefaultSearchPost**](docs/Api/IndexDefaultApi.md#indexdefaultsearchpost) | **POST** /index/default/search | Create cursor index items
 *JourneyAdminApi* | [**reactionAdminJourneyAccountAccountIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyaccountaccountidget) | **GET** /reaction/admin/journey/account/{accountId} | Get all journey processes of account
 *JourneyAdminApi* | [**reactionAdminJourneyIdAccountAccountIdGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidaccountaccountidget) | **GET** /reaction/admin/journey/{id}/account/{accountId} | Get journey processes of account
 *JourneyAdminApi* | [**reactionAdminJourneyIdAccountGet**](docs/Api/JourneyAdminApi.md#reactionadminjourneyidaccountget) | **GET** /reaction/admin/journey/{id}/account | Get journey processes of journey
@@ -344,7 +368,7 @@ Class | Method | HTTP request | Description
 *JourneyDefaultApi* | [**reactionDefaultJourneyIdGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyidget) | **GET** /reaction/default/journey/{id} | Get journey
 *JourneyDefaultApi* | [**reactionDefaultJourneyIdProcessGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyidprocessget) | **GET** /reaction/default/journey/{id}/process | Get journey process
 *JourneyDefaultApi* | [**reactionDefaultJourneyIdStageStageIdPatch**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneyidstagestageidpatch) | **PATCH** /reaction/default/journey/{id}/stage/{stageId} | Update stage status
-*JourneyDefaultApi* | [**reactionDefaultJourneySearchPost**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneysearchpost) | **POST** /reaction/default/journey/search | Create cursor
+*JourneyDefaultApi* | [**reactionDefaultJourneySearchPost**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneysearchpost) | **POST** /reaction/default/journey/search | Create cursor journeys
 *JourneyDefaultApi* | [**reactionDefaultJourneyStatsGet**](docs/Api/JourneyDefaultApi.md#reactiondefaultjourneystatsget) | **GET** /reaction/default/journey/stats | Get journey stats
 *KeywordAdminApi* | [**keywordAdminCategoryGet**](docs/Api/KeywordAdminApi.md#keywordadmincategoryget) | **GET** /keyword/admin/category | Get keyword category list
 *KeywordAdminApi* | [**keywordAdminCategoryIdDelete**](docs/Api/KeywordAdminApi.md#keywordadmincategoryiddelete) | **DELETE** /keyword/admin/category/{id} | Delete keyword category
@@ -383,14 +407,14 @@ Class | Method | HTTP request | Description
 *LocationAdminApi* | [**locationAdminPlaceConfigGet**](docs/Api/LocationAdminApi.md#locationadminplaceconfigget) | **GET** /location/admin/place/config | Get places config
 *LocationAdminApi* | [**locationAdminPost**](docs/Api/LocationAdminApi.md#locationadminpost) | **POST** /location/admin | Create location
 *LocationAdminApi* | [**locationAdminProjectIdGet**](docs/Api/LocationAdminApi.md#locationadminprojectidget) | **GET** /location/admin/project/{id} | Get location list for project
-*LocationAdminApi* | [**locationAdminSearchPost**](docs/Api/LocationAdminApi.md#locationadminsearchpost) | **POST** /location/admin/search | Create cursor
+*LocationAdminApi* | [**locationAdminSearchPost**](docs/Api/LocationAdminApi.md#locationadminsearchpost) | **POST** /location/admin/search | Create cursor locations
 *LocationDefaultApi* | [**locationDefaultGet**](docs/Api/LocationDefaultApi.md#locationdefaultget) | **GET** /location/default | Get location list
 *LocationDefaultApi* | [**locationDefaultIdGet**](docs/Api/LocationDefaultApi.md#locationdefaultidget) | **GET** /location/default/{id} | Get location
 *LocationDefaultApi* | [**locationDefaultIdReservationPost**](docs/Api/LocationDefaultApi.md#locationdefaultidreservationpost) | **POST** /location/default/{id}/reservation | Create location reservation
 *LocationDefaultApi* | [**locationDefaultPlaceConfigGet**](docs/Api/LocationDefaultApi.md#locationdefaultplaceconfigget) | **GET** /location/default/place/config | Get places config
 *LocationDefaultApi* | [**locationDefaultProjectIdGet**](docs/Api/LocationDefaultApi.md#locationdefaultprojectidget) | **GET** /location/default/project/{id} | Get location list for project
 *LocationDefaultApi* | [**locationDefaultReservationDelete**](docs/Api/LocationDefaultApi.md#locationdefaultreservationdelete) | **DELETE** /location/default/reservation | Delete location reservation
-*LocationDefaultApi* | [**locationDefaultSearchPost**](docs/Api/LocationDefaultApi.md#locationdefaultsearchpost) | **POST** /location/default/search | Create cursor
+*LocationDefaultApi* | [**locationDefaultSearchPost**](docs/Api/LocationDefaultApi.md#locationdefaultsearchpost) | **POST** /location/default/search | Create cursor locations
 *MapAdminApi* | [**locationAdminMapIdAccessGet**](docs/Api/MapAdminApi.md#locationadminmapidaccessget) | **GET** /location/admin/map/{id}/access | Get map access configuration
 *MapAdminApi* | [**locationAdminMapIdAccessPatch**](docs/Api/MapAdminApi.md#locationadminmapidaccesspatch) | **PATCH** /location/admin/map/{id}/access | Update map access configuration
 *MapAdminApi* | [**locationAdminMapIdDelete**](docs/Api/MapAdminApi.md#locationadminmapiddelete) | **DELETE** /location/admin/map/{id} | Delete map
@@ -419,7 +443,7 @@ Class | Method | HTTP request | Description
 *MediaAdminApi* | [**mediaAdminIdPermalinkGet**](docs/Api/MediaAdminApi.md#mediaadminidpermalinkget) | **GET** /media/admin/{id}/permalink | Get permalink
 *MediaAdminApi* | [**mediaAdminIdThumbnailGet**](docs/Api/MediaAdminApi.md#mediaadminidthumbnailget) | **GET** /media/admin/{id}/thumbnail | Get thumbnail
 *MediaAdminApi* | [**mediaAdminPost**](docs/Api/MediaAdminApi.md#mediaadminpost) | **POST** /media/admin | Upload file &amp; create media item
-*MediaAdminApi* | [**mediaAdminSearchPost**](docs/Api/MediaAdminApi.md#mediaadminsearchpost) | **POST** /media/admin/search | Create cursor
+*MediaAdminApi* | [**mediaAdminSearchPost**](docs/Api/MediaAdminApi.md#mediaadminsearchpost) | **POST** /media/admin/search | Create cursor media items
 *MediaDefaultApi* | [**configDefaultMediaGet**](docs/Api/MediaDefaultApi.md#configdefaultmediaget) | **GET** /config/default/media | Get media configuration
 *MediaDefaultApi* | [**mediaDefaultDownloadGet**](docs/Api/MediaDefaultApi.md#mediadefaultdownloadget) | **GET** /media/default/download | Download media items
 *MediaDefaultApi* | [**mediaDefaultDownloadIdGet**](docs/Api/MediaDefaultApi.md#mediadefaultdownloadidget) | **GET** /media/default/download/{id} | Get download status
@@ -433,7 +457,7 @@ Class | Method | HTTP request | Description
 *MediaDefaultApi* | [**mediaDefaultIdThumbnailGet**](docs/Api/MediaDefaultApi.md#mediadefaultidthumbnailget) | **GET** /media/default/{id}/thumbnail | Get thumbnail
 *MediaDefaultApi* | [**mediaDefaultIdsGet**](docs/Api/MediaDefaultApi.md#mediadefaultidsget) | **GET** /media/default/ids | Get media item ids
 *MediaDefaultApi* | [**mediaDefaultPost**](docs/Api/MediaDefaultApi.md#mediadefaultpost) | **POST** /media/default | Upload file &amp; create media item
-*MediaDefaultApi* | [**mediaDefaultSearchPost**](docs/Api/MediaDefaultApi.md#mediadefaultsearchpost) | **POST** /media/default/search | Create cursor
+*MediaDefaultApi* | [**mediaDefaultSearchPost**](docs/Api/MediaDefaultApi.md#mediadefaultsearchpost) | **POST** /media/default/search | Create cursor media items
 *MenuAdminApi* | [**menuAdminProjectIdAccessGet**](docs/Api/MenuAdminApi.md#menuadminprojectidaccessget) | **GET** /menu/admin/project/{id}/access | Get menu access configuration
 *MenuAdminApi* | [**menuAdminProjectIdAccessPatch**](docs/Api/MenuAdminApi.md#menuadminprojectidaccesspatch) | **PATCH** /menu/admin/project/{id}/access | Update menu access configuration
 *MenuAdminApi* | [**menuAdminProjectIdContentGet**](docs/Api/MenuAdminApi.md#menuadminprojectidcontentget) | **GET** /menu/admin/project/{id}/content | Get menu content
@@ -459,7 +483,7 @@ Class | Method | HTTP request | Description
 *NewsAdminApi* | [**newsAdminPost**](docs/Api/NewsAdminApi.md#newsadminpost) | **POST** /news/admin | Create article
 *NewsAdminApi* | [**newsAdminPostCountProjectIdGet**](docs/Api/NewsAdminApi.md#newsadminpostcountprojectidget) | **GET** /news/admin/post-count/project/{id} | Get article post counts for project
 *NewsAdminApi* | [**newsAdminProjectIdGet**](docs/Api/NewsAdminApi.md#newsadminprojectidget) | **GET** /news/admin/project/{id} | Get article list for project
-*NewsAdminApi* | [**newsAdminSearchPost**](docs/Api/NewsAdminApi.md#newsadminsearchpost) | **POST** /news/admin/search | Create cursor
+*NewsAdminApi* | [**newsAdminSearchPost**](docs/Api/NewsAdminApi.md#newsadminsearchpost) | **POST** /news/admin/search | Create cursor articles
 *NewsAdminApi* | [**newsAdminSyncPut**](docs/Api/NewsAdminApi.md#newsadminsyncput) | **PUT** /news/admin/sync | Sync Operators for all articles
 *NewsDefaultApi* | [**newsDefaultGet**](docs/Api/NewsDefaultApi.md#newsdefaultget) | **GET** /news/default | Get published article list for cursor
 *NewsDefaultApi* | [**newsDefaultIdDesktopGet**](docs/Api/NewsDefaultApi.md#newsdefaultiddesktopget) | **GET** /news/default/{id}/desktop | Get article desktop
@@ -468,7 +492,7 @@ Class | Method | HTTP request | Description
 *NewsDefaultApi* | [**newsDefaultPostCountProjectIdGet**](docs/Api/NewsDefaultApi.md#newsdefaultpostcountprojectidget) | **GET** /news/default/post-count/project/{id} | Get article post counts for project
 *NewsDefaultApi* | [**newsDefaultProjectIdGet**](docs/Api/NewsDefaultApi.md#newsdefaultprojectidget) | **GET** /news/default/project/{id} | Get published article list for project
 *NewsDefaultApi* | [**newsDefaultProjectIdIdsGet**](docs/Api/NewsDefaultApi.md#newsdefaultprojectididsget) | **GET** /news/default/project/{id}/ids | Get published article ids for project
-*NewsDefaultApi* | [**newsDefaultSearchPost**](docs/Api/NewsDefaultApi.md#newsdefaultsearchpost) | **POST** /news/default/search | Create cursor
+*NewsDefaultApi* | [**newsDefaultSearchPost**](docs/Api/NewsDefaultApi.md#newsdefaultsearchpost) | **POST** /news/default/search | Create cursor articles
 *NotificationAdminApi* | [**configAdminNotificationCertificateInfoPost**](docs/Api/NotificationAdminApi.md#configadminnotificationcertificateinfopost) | **POST** /config/admin/notification/certificate/info | Get certificate info
 *NotificationAdminApi* | [**configAdminNotificationGet**](docs/Api/NotificationAdminApi.md#configadminnotificationget) | **GET** /config/admin/notification | Get notification configuration
 *NotificationAdminApi* | [**configAdminNotificationIosCertificateCsrGet**](docs/Api/NotificationAdminApi.md#configadminnotificationioscertificatecsrget) | **GET** /config/admin/notification/ios-certificate/csr | Create iOS push CSR
@@ -497,7 +521,7 @@ Class | Method | HTTP request | Description
 *NotificationJobAdminApi* | [**notificationAdminJobIdGet**](docs/Api/NotificationJobAdminApi.md#notificationadminjobidget) | **GET** /notification/admin/job/{id} | Get job
 *NotificationJobAdminApi* | [**notificationAdminJobIdPatch**](docs/Api/NotificationJobAdminApi.md#notificationadminjobidpatch) | **PATCH** /notification/admin/job/{id} | Update job
 *NotificationJobAdminApi* | [**notificationAdminJobPost**](docs/Api/NotificationJobAdminApi.md#notificationadminjobpost) | **POST** /notification/admin/job | Create job
-*NotificationJobAdminApi* | [**notificationAdminJobSearchPost**](docs/Api/NotificationJobAdminApi.md#notificationadminjobsearchpost) | **POST** /notification/admin/job/search | Create cursor
+*NotificationJobAdminApi* | [**notificationAdminJobSearchPost**](docs/Api/NotificationJobAdminApi.md#notificationadminjobsearchpost) | **POST** /notification/admin/job/search | Create cursor notification jobs
 *NotificationJobAdminApi* | [**notificationAdminJobTestPost**](docs/Api/NotificationJobAdminApi.md#notificationadminjobtestpost) | **POST** /notification/admin/job/test | Test job content
 *OneTimeTokenApi* | [**authOttValidatePost**](docs/Api/OneTimeTokenApi.md#authottvalidatepost) | **POST** /auth/ott/validate | Validate one time token
 *PageAdminApi* | [**pageAdminIdAccessGet**](docs/Api/PageAdminApi.md#pageadminidaccessget) | **GET** /page/admin/{id}/access | Get page access configuration
@@ -521,26 +545,26 @@ Class | Method | HTTP request | Description
 *PageDefaultApi* | [**pageDefaultIdGet**](docs/Api/PageDefaultApi.md#pagedefaultidget) | **GET** /page/default/{id} | Get page
 *PageDefaultApi* | [**pageDefaultPostCountIdGet**](docs/Api/PageDefaultApi.md#pagedefaultpostcountidget) | **GET** /page/default/post-count/{id} | Get page post count
 *PageDefaultApi* | [**pageDefaultPostCountProjectIdGet**](docs/Api/PageDefaultApi.md#pagedefaultpostcountprojectidget) | **GET** /page/default/post-count/project/{id} | Get page post counts for project
-*PartyAdminApi* | [**partyAdminGet**](docs/Api/PartyAdminApi.md#partyadminget) | **GET** /party/admin | Get party list for cursor
-*PartyAdminApi* | [**partyAdminIdConfigPut**](docs/Api/PartyAdminApi.md#partyadminidconfigput) | **PUT** /party/admin/{id}/config | Update party configuration
-*PartyAdminApi* | [**partyAdminIdDelete**](docs/Api/PartyAdminApi.md#partyadminiddelete) | **DELETE** /party/admin/{id} | Delete party
-*PartyAdminApi* | [**partyAdminIdGet**](docs/Api/PartyAdminApi.md#partyadminidget) | **GET** /party/admin/{id} | Get party
 *PartyAdminApi* | [**partyAdminIdReactionPost**](docs/Api/PartyAdminApi.md#partyadminidreactionpost) | **POST** /party/admin/{id}/reaction | Create reaction
-*PartyAdminApi* | [**partyAdminPost**](docs/Api/PartyAdminApi.md#partyadminpost) | **POST** /party/admin | Create party
 *PartyAdminApi* | [**partyAdminReactionGet**](docs/Api/PartyAdminApi.md#partyadminreactionget) | **GET** /party/admin/reaction | Get reaction list for cursor
 *PartyAdminApi* | [**partyAdminReactionIdDelete**](docs/Api/PartyAdminApi.md#partyadminreactioniddelete) | **DELETE** /party/admin/reaction/{id} | Delete reaction
 *PartyAdminApi* | [**partyAdminReactionIdGet**](docs/Api/PartyAdminApi.md#partyadminreactionidget) | **GET** /party/admin/reaction/{id} | Get reaction
 *PartyAdminApi* | [**partyAdminReactionIdPut**](docs/Api/PartyAdminApi.md#partyadminreactionidput) | **PUT** /party/admin/reaction/{id} | Update reaction
-*PartyAdminApi* | [**partyAdminReactionSearchPost**](docs/Api/PartyAdminApi.md#partyadminreactionsearchpost) | **POST** /party/admin/reaction/search | Create cursor
-*PartyAdminApi* | [**partyAdminSearchPost**](docs/Api/PartyAdminApi.md#partyadminsearchpost) | **POST** /party/admin/search | Create cursor
-*PartyDefaultApi* | [**partyDefaultGet**](docs/Api/PartyDefaultApi.md#partydefaultget) | **GET** /party/default | Get party list for cursor
+*PartyAdminApi* | [**partyAdminReactionSearchPost**](docs/Api/PartyAdminApi.md#partyadminreactionsearchpost) | **POST** /party/admin/reaction/search | Create cursor party reactions
+*PartyBookingAdminApi* | [**partyAdminGet**](docs/Api/PartyBookingAdminApi.md#partyadminget) | **GET** /party/admin | Get party list for cursor
+*PartyBookingAdminApi* | [**partyAdminIdConfigPut**](docs/Api/PartyBookingAdminApi.md#partyadminidconfigput) | **PUT** /party/admin/{id}/config | Update party configuration
+*PartyBookingAdminApi* | [**partyAdminIdDelete**](docs/Api/PartyBookingAdminApi.md#partyadminiddelete) | **DELETE** /party/admin/{id} | Delete party
+*PartyBookingAdminApi* | [**partyAdminIdGet**](docs/Api/PartyBookingAdminApi.md#partyadminidget) | **GET** /party/admin/{id} | Get party
+*PartyBookingAdminApi* | [**partyAdminPost**](docs/Api/PartyBookingAdminApi.md#partyadminpost) | **POST** /party/admin | Create party
+*PartyBookingAdminApi* | [**partyAdminSearchPost**](docs/Api/PartyBookingAdminApi.md#partyadminsearchpost) | **POST** /party/admin/search | Create cursor parties
+*PartyBookingDefaultApi* | [**partyDefaultGet**](docs/Api/PartyBookingDefaultApi.md#partydefaultget) | **GET** /party/default | Get party list for cursor
+*PartyBookingDefaultApi* | [**partyDefaultObjectTypeObjectIdGet**](docs/Api/PartyBookingDefaultApi.md#partydefaultobjecttypeobjectidget) | **GET** /party/default/{objectType}/{objectId} | Get party
+*PartyBookingDefaultApi* | [**partyDefaultObjectTypeReferenceObjectIdGet**](docs/Api/PartyBookingDefaultApi.md#partydefaultobjecttypereferenceobjectidget) | **GET** /party/default/{objectType}/reference/{objectId} | Get parties for reference
+*PartyBookingDefaultApi* | [**partyDefaultSearchPost**](docs/Api/PartyBookingDefaultApi.md#partydefaultsearchpost) | **POST** /party/default/search | Create cursor parties
 *PartyDefaultApi* | [**partyDefaultIdReactionGet**](docs/Api/PartyDefaultApi.md#partydefaultidreactionget) | **GET** /party/default/{id}/reaction | Get reaction
 *PartyDefaultApi* | [**partyDefaultIdReactionPut**](docs/Api/PartyDefaultApi.md#partydefaultidreactionput) | **PUT** /party/default/{id}/reaction | Set reaction
-*PartyDefaultApi* | [**partyDefaultObjectTypeObjectIdGet**](docs/Api/PartyDefaultApi.md#partydefaultobjecttypeobjectidget) | **GET** /party/default/{objectType}/{objectId} | Get party
-*PartyDefaultApi* | [**partyDefaultObjectTypeReferenceObjectIdGet**](docs/Api/PartyDefaultApi.md#partydefaultobjecttypereferenceobjectidget) | **GET** /party/default/{objectType}/reference/{objectId} | Get parties for reference
 *PartyDefaultApi* | [**partyDefaultReactionGet**](docs/Api/PartyDefaultApi.md#partydefaultreactionget) | **GET** /party/default/reaction | Get reaction list for cursor
-*PartyDefaultApi* | [**partyDefaultReactionSearchPost**](docs/Api/PartyDefaultApi.md#partydefaultreactionsearchpost) | **POST** /party/default/reaction/search | Create cursor
-*PartyDefaultApi* | [**partyDefaultSearchPost**](docs/Api/PartyDefaultApi.md#partydefaultsearchpost) | **POST** /party/default/search | Create cursor
+*PartyDefaultApi* | [**partyDefaultReactionSearchPost**](docs/Api/PartyDefaultApi.md#partydefaultreactionsearchpost) | **POST** /party/default/reaction/search | Create cursor party reactions
 *PermissionApi* | [**authPermissionGet**](docs/Api/PermissionApi.md#authpermissionget) | **GET** /auth/permission | List permissions
 *PermissionApi* | [**authPermissionPermissionGet**](docs/Api/PermissionApi.md#authpermissionpermissionget) | **GET** /auth/permission/{permission} | Check permission existence
 *ProjectApi* | [**projectDefaultIdGuestVisitPut**](docs/Api/ProjectApi.md#projectdefaultidguestvisitput) | **PUT** /project/default/{id}/guest-visit | guest visit
@@ -560,7 +584,7 @@ Class | Method | HTTP request | Description
 *ProjectDefaultApi* | [**projectDefaultGet**](docs/Api/ProjectDefaultApi.md#projectdefaultget) | **GET** /project/default | Get published project list
 *ProjectDefaultApi* | [**projectDefaultIdGet**](docs/Api/ProjectDefaultApi.md#projectdefaultidget) | **GET** /project/default/{id} | Get project
 *ReactionAdminApi* | [**reactionAdminObjectTypeGet**](docs/Api/ReactionAdminApi.md#reactionadminobjecttypeget) | **GET** /reaction/admin/{objectType} | Get reactions of type
-*ReactionAdminApi* | [**reactionAdminObjectTypeSearchPost**](docs/Api/ReactionAdminApi.md#reactionadminobjecttypesearchpost) | **POST** /reaction/admin/{objectType}/search | Create cursor
+*ReactionAdminApi* | [**reactionAdminObjectTypeSearchPost**](docs/Api/ReactionAdminApi.md#reactionadminobjecttypesearchpost) | **POST** /reaction/admin/{objectType}/search | Create cursor reactions
 *ReactionDefaultApi* | [**reactionDefaultBookmarkGet**](docs/Api/ReactionDefaultApi.md#reactiondefaultbookmarkget) | **GET** /reaction/default/bookmark | Get bookmarks for current user
 *ReactionDefaultApi* | [**reactionDefaultBookmarkObjectTypeGet**](docs/Api/ReactionDefaultApi.md#reactiondefaultbookmarkobjecttypeget) | **GET** /reaction/default/bookmark/{objectType} | Get bookmarks for object type
 *ReactionDefaultApi* | [**reactionDefaultBookmarkObjectTypeObjectIdDelete**](docs/Api/ReactionDefaultApi.md#reactiondefaultbookmarkobjecttypeobjectiddelete) | **DELETE** /reaction/default/bookmark/{objectType}/{objectId} | Delete a bookmark
@@ -570,7 +594,7 @@ Class | Method | HTTP request | Description
 *ReactionDefaultApi* | [**reactionDefaultObjectTypeObjectIdDelete**](docs/Api/ReactionDefaultApi.md#reactiondefaultobjecttypeobjectiddelete) | **DELETE** /reaction/default/{objectType}/{objectId} | Delete your reaction
 *ReactionDefaultApi* | [**reactionDefaultObjectTypeObjectIdGet**](docs/Api/ReactionDefaultApi.md#reactiondefaultobjecttypeobjectidget) | **GET** /reaction/default/{objectType}/{objectId} | Get reactions of object
 *ReactionDefaultApi* | [**reactionDefaultObjectTypeObjectIdPost**](docs/Api/ReactionDefaultApi.md#reactiondefaultobjecttypeobjectidpost) | **POST** /reaction/default/{objectType}/{objectId} | Create or update your reaction
-*ReactionDefaultApi* | [**reactionDefaultObjectTypeSearchPost**](docs/Api/ReactionDefaultApi.md#reactiondefaultobjecttypesearchpost) | **POST** /reaction/default/{objectType}/search | Create cursor
+*ReactionDefaultApi* | [**reactionDefaultObjectTypeSearchPost**](docs/Api/ReactionDefaultApi.md#reactiondefaultobjecttypesearchpost) | **POST** /reaction/default/{objectType}/search | Create cursor reactions
 *ReactionDefaultApi* | [**reactionDefaultRatingObjectTypeObjectIdDelete**](docs/Api/ReactionDefaultApi.md#reactiondefaultratingobjecttypeobjectiddelete) | **DELETE** /reaction/default/rating/{objectType}/{objectId} | Delete a rating
 *ReactionDefaultApi* | [**reactionDefaultRatingObjectTypeObjectIdGet**](docs/Api/ReactionDefaultApi.md#reactiondefaultratingobjecttypeobjectidget) | **GET** /reaction/default/rating/{objectType}/{objectId} | Get rating of object for your account
 *ReactionDefaultApi* | [**reactionDefaultRatingObjectTypeObjectIdPost**](docs/Api/ReactionDefaultApi.md#reactiondefaultratingobjecttypeobjectidpost) | **POST** /reaction/default/rating/{objectType}/{objectId} | Create a rating
@@ -578,7 +602,7 @@ Class | Method | HTTP request | Description
 *RecommendationApi* | [**recommendationObjectTypeGet**](docs/Api/RecommendationApi.md#recommendationobjecttypeget) | **GET** /recommendation/{objectType} | Get recommendation sorted
 *RecommendationApi* | [**recommendationObjectTypeRandomGet**](docs/Api/RecommendationApi.md#recommendationobjecttyperandomget) | **GET** /recommendation/{objectType}/random | Get recommendation random
 *RecommendationApi* | [**recommendationObjectTypeRerollPost**](docs/Api/RecommendationApi.md#recommendationobjecttypererollpost) | **POST** /recommendation/{objectType}/reroll | Reroll account matches
-*RecommendationApi* | [**recommendationSearchPost**](docs/Api/RecommendationApi.md#recommendationsearchpost) | **POST** /recommendation/search | Create cursor
+*RecommendationApi* | [**recommendationSearchPost**](docs/Api/RecommendationApi.md#recommendationsearchpost) | **POST** /recommendation/search | Create cursor recommendations
 *RoleApi* | [**authRoleAllowedToSetGet**](docs/Api/RoleApi.md#authroleallowedtosetget) | **GET** /auth/role/allowed-to-set | Get roles allowed assigning
 *RoleApi* | [**authRoleGet**](docs/Api/RoleApi.md#authroleget) | **GET** /auth/role | Get roles
 *RoleApi* | [**authRoleIdDelete**](docs/Api/RoleApi.md#authroleiddelete) | **DELETE** /auth/role/{id} | Delete role
@@ -616,6 +640,26 @@ Class | Method | HTTP request | Description
 *StreamDefaultApi* | [**streamDefaultIdGet**](docs/Api/StreamDefaultApi.md#streamdefaultidget) | **GET** /stream/default/{id} | Get stream
 *StreamDefaultApi* | [**streamDefaultIdWatchGet**](docs/Api/StreamDefaultApi.md#streamdefaultidwatchget) | **GET** /stream/default/{id}/watch | Get stream viewer count
 *StreamDefaultApi* | [**streamDefaultIdWatchPut**](docs/Api/StreamDefaultApi.md#streamdefaultidwatchput) | **PUT** /stream/default/{id}/watch | Set stream viewer
+*SurveyAdminApi* | [**reactionAdminSurveyIdAccessGet**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidaccessget) | **GET** /reaction/admin/survey/{id}/access | Get survey access configuration
+*SurveyAdminApi* | [**reactionAdminSurveyIdAccessPatch**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidaccesspatch) | **PATCH** /reaction/admin/survey/{id}/access | Update survey access configuration
+*SurveyAdminApi* | [**reactionAdminSurveyIdAggregationGet**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidaggregationget) | **GET** /reaction/admin/survey/{id}/aggregation | Get survey aggregation
+*SurveyAdminApi* | [**reactionAdminSurveyIdAnswerGet**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidanswerget) | **GET** /reaction/admin/survey/{id}/answer | Get survey answers
+*SurveyAdminApi* | [**reactionAdminSurveyIdAnswerSearchPost**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidanswersearchpost) | **POST** /reaction/admin/survey/{id}/answer/search | Create survey answers cursor
+*SurveyAdminApi* | [**reactionAdminSurveyIdDelete**](docs/Api/SurveyAdminApi.md#reactionadminsurveyiddelete) | **DELETE** /reaction/admin/survey/{id} | Delete survey
+*SurveyAdminApi* | [**reactionAdminSurveyIdGet**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidget) | **GET** /reaction/admin/survey/{id} | Get survey
+*SurveyAdminApi* | [**reactionAdminSurveyIdItemsGet**](docs/Api/SurveyAdminApi.md#reactionadminsurveyiditemsget) | **GET** /reaction/admin/survey/{id}/items | Get items
+*SurveyAdminApi* | [**reactionAdminSurveyIdItemsPut**](docs/Api/SurveyAdminApi.md#reactionadminsurveyiditemsput) | **PUT** /reaction/admin/survey/{id}/items | Update items
+*SurveyAdminApi* | [**reactionAdminSurveyIdParticipationDelete**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidparticipationdelete) | **DELETE** /reaction/admin/survey/{id}/participation | Delete survey participations
+*SurveyAdminApi* | [**reactionAdminSurveyIdParticipationGet**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidparticipationget) | **GET** /reaction/admin/survey/{id}/participation | Get survey participations
+*SurveyAdminApi* | [**reactionAdminSurveyIdParticipationSearchPost**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidparticipationsearchpost) | **POST** /reaction/admin/survey/{id}/participation/search | Create survey participation cursor
+*SurveyAdminApi* | [**reactionAdminSurveyIdPatch**](docs/Api/SurveyAdminApi.md#reactionadminsurveyidpatch) | **PATCH** /reaction/admin/survey/{id} | Update survey
+*SurveyAdminApi* | [**reactionAdminSurveyPost**](docs/Api/SurveyAdminApi.md#reactionadminsurveypost) | **POST** /reaction/admin/survey | Create survey
+*SurveyAdminApi* | [**reactionAdminSurveyProjectIdGet**](docs/Api/SurveyAdminApi.md#reactionadminsurveyprojectidget) | **GET** /reaction/admin/survey/project/{id} | Get survey list for project
+*SurveyAdminApi* | [**reactionAdminSurveySearchPost**](docs/Api/SurveyAdminApi.md#reactionadminsurveysearchpost) | **POST** /reaction/admin/survey/search | Create survey cursor
+*SurveyAdminApi* | [**surveyAdminGet**](docs/Api/SurveyAdminApi.md#surveyadminget) | **GET** /survey/admin | Get survey list
+*SurveyDefaultApi* | [**reactionDefaultSurveyIdGet**](docs/Api/SurveyDefaultApi.md#reactiondefaultsurveyidget) | **GET** /reaction/default/survey/{id} | Get survey
+*SurveyDefaultApi* | [**reactionDefaultSurveyIdParticipationGet**](docs/Api/SurveyDefaultApi.md#reactiondefaultsurveyidparticipationget) | **GET** /reaction/default/survey/{id}/participation | Get own survey participations
+*SurveyDefaultApi* | [**reactionDefaultSurveyIdParticipationPost**](docs/Api/SurveyDefaultApi.md#reactiondefaultsurveyidparticipationpost) | **POST** /reaction/default/survey/{id}/participation | Submit survey participation
 *UtilApi* | [**configCspPost**](docs/Api/UtilApi.md#configcsppost) | **POST** /config/csp | Check csp of url
 *WebhookApi* | [**webhookGet**](docs/Api/WebhookApi.md#webhookget) | **GET** /webhook | Get all webhooks
 *WebhookApi* | [**webhookIdCallPost**](docs/Api/WebhookApi.md#webhookidcallpost) | **POST** /webhook/{id}/call | Call webhook
@@ -848,6 +892,23 @@ Class | Method | HTTP request | Description
 - [FolderPatchRequest](docs/Model/FolderPatchRequest.md)
 - [FolderRequest](docs/Model/FolderRequest.md)
 - [FolderResponse](docs/Model/FolderResponse.md)
+- [GamificationActionRequest](docs/Model/GamificationActionRequest.md)
+- [GamificationActionResponse](docs/Model/GamificationActionResponse.md)
+- [GamificationbalanceCursorFilterOption](docs/Model/GamificationbalanceCursorFilterOption.md)
+- [GamificationbalanceCursorRequest](docs/Model/GamificationbalanceCursorRequest.md)
+- [GamificationbalancePostBonusRequest](docs/Model/GamificationbalancePostBonusRequest.md)
+- [GamificationbalanceResponse](docs/Model/GamificationbalanceResponse.md)
+- [GamificationleaderboardPatchRequest](docs/Model/GamificationleaderboardPatchRequest.md)
+- [GamificationleaderboardResponseAdmin](docs/Model/GamificationleaderboardResponseAdmin.md)
+- [GamificationleaderboardResponseDefault](docs/Model/GamificationleaderboardResponseDefault.md)
+- [GamificationleaderboardentryCursorFilterOptionAdmin](docs/Model/GamificationleaderboardentryCursorFilterOptionAdmin.md)
+- [GamificationleaderboardentryCursorRequestAdmin](docs/Model/GamificationleaderboardentryCursorRequestAdmin.md)
+- [GamificationleaderboardentryResponse](docs/Model/GamificationleaderboardentryResponse.md)
+- [GamificationruleCursorFilterOption](docs/Model/GamificationruleCursorFilterOption.md)
+- [GamificationruleCursorRequest](docs/Model/GamificationruleCursorRequest.md)
+- [GamificationrulePatchRequest](docs/Model/GamificationrulePatchRequest.md)
+- [GamificationrulePostRequest](docs/Model/GamificationrulePostRequest.md)
+- [GamificationruleResponse](docs/Model/GamificationruleResponse.md)
 - [GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault](docs/Model/GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault.md)
 - [GitPlazzNetReposSandmannBackendServicesCalendarTemplateResponseAdmin](docs/Model/GitPlazzNetReposSandmannBackendServicesCalendarTemplateResponseAdmin.md)
 - [GitPlazzNetReposSandmannBackendServicesDirectoryTemplateResponseAdmin](docs/Model/GitPlazzNetReposSandmannBackendServicesDirectoryTemplateResponseAdmin.md)
@@ -1007,7 +1068,6 @@ Class | Method | HTTP request | Description
 - [ModelFeatureEnabled](docs/Model/ModelFeatureEnabled.md)
 - [ModelFeaturePaidUntil](docs/Model/ModelFeaturePaidUntil.md)
 - [ModelGeoInformation](docs/Model/ModelGeoInformation.md)
-- [ModelHistoryAction](docs/Model/ModelHistoryAction.md)
 - [ModelJourneyProcessStageStatus](docs/Model/ModelJourneyProcessStageStatus.md)
 - [ModelJourneyStageStartCondition](docs/Model/ModelJourneyStageStartCondition.md)
 - [ModelJourneyStageStartConditionOffset](docs/Model/ModelJourneyStageStartConditionOffset.md)
@@ -1038,6 +1098,7 @@ Class | Method | HTTP request | Description
 - [ModelProjectCopyProcessConfig](docs/Model/ModelProjectCopyProcessConfig.md)
 - [ModelProjectCopyProcessStatusDetail](docs/Model/ModelProjectCopyProcessStatusDetail.md)
 - [ModelProjectCopyProcessedData](docs/Model/ModelProjectCopyProcessedData.md)
+- [ModelProjectGamificationSettings](docs/Model/ModelProjectGamificationSettings.md)
 - [ModelProjectTranslation](docs/Model/ModelProjectTranslation.md)
 - [ModelPushSettings](docs/Model/ModelPushSettings.md)
 - [ModelRecommendationConfig](docs/Model/ModelRecommendationConfig.md)
@@ -1054,6 +1115,11 @@ Class | Method | HTTP request | Description
 - [ModelShippingConfig](docs/Model/ModelShippingConfig.md)
 - [ModelShippingProcess](docs/Model/ModelShippingProcess.md)
 - [ModelStreamTranslation](docs/Model/ModelStreamTranslation.md)
+- [ModelSurveyItemCondition](docs/Model/ModelSurveyItemCondition.md)
+- [ModelSurveyItemSettings](docs/Model/ModelSurveyItemSettings.md)
+- [ModelSurveyItemSettingsSelection](docs/Model/ModelSurveyItemSettingsSelection.md)
+- [ModelSurveyItemSettingsText](docs/Model/ModelSurveyItemSettingsText.md)
+- [ModelSurveyParticipationAnswer](docs/Model/ModelSurveyParticipationAnswer.md)
 - [ModelSwagErrorBadGateway](docs/Model/ModelSwagErrorBadGateway.md)
 - [ModelSwagErrorBadRequest](docs/Model/ModelSwagErrorBadRequest.md)
 - [ModelSwagErrorBadRequestWithErrorFields](docs/Model/ModelSwagErrorBadRequestWithErrorFields.md)
@@ -1212,6 +1278,30 @@ Class | Method | HTTP request | Description
 - [StreamResponseDefault](docs/Model/StreamResponseDefault.md)
 - [StreamResponseListAdmin](docs/Model/StreamResponseListAdmin.md)
 - [StreamResponseViewerCount](docs/Model/StreamResponseViewerCount.md)
+- [SurveyCursorFilterOptionAdmin](docs/Model/SurveyCursorFilterOptionAdmin.md)
+- [SurveyCursorRequestAdmin](docs/Model/SurveyCursorRequestAdmin.md)
+- [SurveyPatchRequest](docs/Model/SurveyPatchRequest.md)
+- [SurveyPostRequest](docs/Model/SurveyPostRequest.md)
+- [SurveyRequestItem](docs/Model/SurveyRequestItem.md)
+- [SurveyRequestItemOption](docs/Model/SurveyRequestItemOption.md)
+- [SurveyResponseAdmin](docs/Model/SurveyResponseAdmin.md)
+- [SurveyResponseDefault](docs/Model/SurveyResponseDefault.md)
+- [SurveyResponseItemAdmin](docs/Model/SurveyResponseItemAdmin.md)
+- [SurveyResponseItemDefault](docs/Model/SurveyResponseItemDefault.md)
+- [SurveyResponseItemOptionAdmin](docs/Model/SurveyResponseItemOptionAdmin.md)
+- [SurveyResponseItemOptionDefault](docs/Model/SurveyResponseItemOptionDefault.md)
+- [SurveyResponseListAdmin](docs/Model/SurveyResponseListAdmin.md)
+- [SurveyTranslationItemOptionResponse](docs/Model/SurveyTranslationItemOptionResponse.md)
+- [SurveyTranslationItemResponse](docs/Model/SurveyTranslationItemResponse.md)
+- [SurveyTranslationResponse](docs/Model/SurveyTranslationResponse.md)
+- [SurveyanswerCursorRequestAdmin](docs/Model/SurveyanswerCursorRequestAdmin.md)
+- [SurveyanswerResponseAdmin](docs/Model/SurveyanswerResponseAdmin.md)
+- [SurveyparticipationCursorFilterOptionAdmin](docs/Model/SurveyparticipationCursorFilterOptionAdmin.md)
+- [SurveyparticipationCursorRequestAdmin](docs/Model/SurveyparticipationCursorRequestAdmin.md)
+- [SurveyparticipationPostAnswer](docs/Model/SurveyparticipationPostAnswer.md)
+- [SurveyparticipationPostRequest](docs/Model/SurveyparticipationPostRequest.md)
+- [SurveyparticipationResponseAdmin](docs/Model/SurveyparticipationResponseAdmin.md)
+- [SurveyparticipationResponseDefault](docs/Model/SurveyparticipationResponseDefault.md)
 - [TranslationGlossaryEntry](docs/Model/TranslationGlossaryEntry.md)
 - [WebhookCallRequest](docs/Model/WebhookCallRequest.md)
 - [WebhookRequest](docs/Model/WebhookRequest.md)
@@ -1237,6 +1327,6 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `5.10.0`
-    - Generator version: `7.23.0`
+- API version: `5.11.0`
+    - Generator version: `7.24.0`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

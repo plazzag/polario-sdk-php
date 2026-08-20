@@ -22,7 +22,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**configAdminLocalizationIdGet()**](I18nAdminApi.md#configAdminLocalizationIdGet) | **GET** /config/admin/localization/{id} | Get localization |
 | [**configAdminLocalizationIdPatch()**](I18nAdminApi.md#configAdminLocalizationIdPatch) | **PATCH** /config/admin/localization/{id} | Update localization |
 | [**configAdminLocalizationKeysGet()**](I18nAdminApi.md#configAdminLocalizationKeysGet) | **GET** /config/admin/localization/keys | Get localization keys |
-| [**configAdminLocalizationSearchPost()**](I18nAdminApi.md#configAdminLocalizationSearchPost) | **POST** /config/admin/localization/search | Create cursor |
+| [**configAdminLocalizationSearchPost()**](I18nAdminApi.md#configAdminLocalizationSearchPost) | **POST** /config/admin/localization/search | Create cursor localizations |
 
 
 ## `configAdminLanguageDefaultPut()`
@@ -969,7 +969,7 @@ No authorization required
 configAdminLocalizationSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor localizations
 
 This endpoint returns a cursor for list localizations in admin representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageConfiguration\"`  _fully accessible with permission_ : `\"ManageConfiguration\"`
 

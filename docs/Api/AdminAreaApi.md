@@ -8,7 +8,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | ------------- | ------------- | ------------- |
 | [**newsDefaultIdPreviewDesktopGet()**](AdminAreaApi.md#newsDefaultIdPreviewDesktopGet) | **GET** /news/default/{id}/preview/desktop | Get article preview desktop |
 | [**newsDefaultIdPreviewGet()**](AdminAreaApi.md#newsDefaultIdPreviewGet) | **GET** /news/default/{id}/preview | Get article preview mobile |
-| [**newsDefaultPreviewSearchPost()**](AdminAreaApi.md#newsDefaultPreviewSearchPost) | **POST** /news/default/preview/search | Create cursor |
+| [**newsDefaultPreviewSearchPost()**](AdminAreaApi.md#newsDefaultPreviewSearchPost) | **POST** /news/default/preview/search | Create cursor articles |
 | [**newsDefaultProjectIdPreviewGet()**](AdminAreaApi.md#newsDefaultProjectIdPreviewGet) | **GET** /news/default/project/{id}/preview | Get article list preview for project |
 | [**newsDefaultProjectIdPreviewIdsGet()**](AdminAreaApi.md#newsDefaultProjectIdPreviewIdsGet) | **GET** /news/default/project/{id}/preview/ids | Get article preview ids for project |
 | [**pageDefaultIdPreviewDesktopGet()**](AdminAreaApi.md#pageDefaultIdPreviewDesktopGet) | **GET** /page/default/{id}/preview/desktop | Get page preview desktop |
@@ -142,7 +142,7 @@ No authorization required
 newsDefaultPreviewSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor articles
 
 This endpoint returns a cursor for preview list articles in default representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  For published list cursor use: GET /news/default/search  _only accessible with permission_ : `\"AccessPreview\" (counts also for linked projects)` `\"ManageContent\" (counts also for linked projects)` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\" (counts also for linked projects)` `\"ManageProjects\"`
 

@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **icon** | **string** | media id only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Support, Imprint, Recommendation, Settings and LeaveProject type | [optional]
 **id** | **string** |  | [optional]
 **image** | **string** | media id only for Image type | [optional]
+**is_translatable** | **bool** | only for ChatFeed, Folder, Gallery, IndexSearch, Link, News, Recommendation, Separator, Support, Imprint, Settings and LeaveProject type | [optional]
 **link_behavior** | **string** | only for Image, Link, Support, Imprint and Settings type; Has no effect if the url matches with the web app | [optional]
 **platforms** | **string[]** | platforms menu item should be visible for | [optional]
 **reference_ids** | **string[]** | only for ChatFeed and Gallery type | [optional]

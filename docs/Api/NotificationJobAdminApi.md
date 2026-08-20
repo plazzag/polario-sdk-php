@@ -12,7 +12,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**notificationAdminJobIdGet()**](NotificationJobAdminApi.md#notificationAdminJobIdGet) | **GET** /notification/admin/job/{id} | Get job |
 | [**notificationAdminJobIdPatch()**](NotificationJobAdminApi.md#notificationAdminJobIdPatch) | **PATCH** /notification/admin/job/{id} | Update job |
 | [**notificationAdminJobPost()**](NotificationJobAdminApi.md#notificationAdminJobPost) | **POST** /notification/admin/job | Create job |
-| [**notificationAdminJobSearchPost()**](NotificationJobAdminApi.md#notificationAdminJobSearchPost) | **POST** /notification/admin/job/search | Create cursor |
+| [**notificationAdminJobSearchPost()**](NotificationJobAdminApi.md#notificationAdminJobSearchPost) | **POST** /notification/admin/job/search | Create cursor notification jobs |
 | [**notificationAdminJobTestPost()**](NotificationJobAdminApi.md#notificationAdminJobTestPost) | **POST** /notification/admin/job/test | Test job content |
 
 
@@ -378,7 +378,7 @@ No authorization required
 notificationAdminJobSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
 ```
 
-Create cursor
+Create cursor notification jobs
 
 This endpoint returns a cursor for notification jobs in admin representation with applied filter and sort options. In case of cursor response total will be 0 the status 204 with not content is returned instead.  _only accessible with permission_ : `\"ManageConfiguration\"`  _fully accessible with permission_ : `\"ManageConfiguration\"`
 
