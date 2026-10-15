@@ -19,7 +19,7 @@ keywordDefaultCategoryGet($cursor, $limit, $page): \OpenAPI\Client\Model\Keyword
 
 Get keyword category list
 
-This endpoint returns a list of all keyword categories in default representation.  _accessible without permission_
+This endpoint returns a list of all keyword categories in default representation. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  _accessible without permission_
 
 ### Example
 

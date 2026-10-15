@@ -811,7 +811,7 @@ No authorization required
 ## `mediaDefaultSearchPost()`
 
 ```php
-mediaDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
+mediaDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor media items
@@ -853,7 +853,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

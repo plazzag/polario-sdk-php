@@ -77,7 +77,7 @@ No authorization required
 ## `reactionAdminObjectTypeSearchPost()`
 
 ```php
-reactionAdminObjectTypeSearchPost($object_type, $session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+reactionAdminObjectTypeSearchPost($object_type, $session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor reactions
@@ -119,7 +119,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

@@ -10,8 +10,8 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**authConnectedAppIdDelete()**](ConnectedAppApi.md#authConnectedAppIdDelete) | **DELETE** /auth/connected-app/{id} | Delete connected app |
 | [**authConnectedAppIdGet()**](ConnectedAppApi.md#authConnectedAppIdGet) | **GET** /auth/connected-app/{id} | get connected app |
 | [**authConnectedAppIdPatch()**](ConnectedAppApi.md#authConnectedAppIdPatch) | **PATCH** /auth/connected-app/{id} | Update connected app |
-| [**authConnectedAppIdSecretDelete()**](ConnectedAppApi.md#authConnectedAppIdSecretDelete) | **DELETE** /auth/connected-app/{id}/secret | Remove secret |
 | [**authConnectedAppIdSecretPost()**](ConnectedAppApi.md#authConnectedAppIdSecretPost) | **POST** /auth/connected-app/{id}/secret | Add secret |
+| [**authConnectedAppIdSecretSecretIdDelete()**](ConnectedAppApi.md#authConnectedAppIdSecretSecretIdDelete) | **DELETE** /auth/connected-app/{id}/secret/{secretId} | Remove secret |
 | [**authConnectedAppIdSessionPost()**](ConnectedAppApi.md#authConnectedAppIdSessionPost) | **POST** /auth/connected-app/{id}/session | Create session |
 | [**authConnectedAppPost()**](ConnectedAppApi.md#authConnectedAppPost) | **POST** /auth/connected-app | Create connected app |
 
@@ -248,66 +248,6 @@ No authorization required
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `authConnectedAppIdSecretDelete()`
-
-```php
-authConnectedAppIdSecretDelete($id, $session, $request): \OpenAPI\Client\Model\ModelSwagStatusOk
-```
-
-Remove secret
-
-Deletes a secret by given of a connected app  _only accessible with permission_ : `\"ManageApps\"`  _fully accessible with permission_ : `\"ManageApps\"`
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-
-$apiInstance = new OpenAPI\Client\Api\ConnectedAppApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-$id = 'id_example'; // string | Connected App ID
-$session = 'session_example'; // string | JWT
-$request = new \OpenAPI\Client\Model\ConnectedappSecretRequest(); // \OpenAPI\Client\Model\ConnectedappSecretRequest | secret to be removed
-
-try {
-    $result = $apiInstance->authConnectedAppIdSecretDelete($id, $session, $request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling ConnectedAppApi->authConnectedAppIdSecretDelete: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| Connected App ID | |
-| **session** | **string**| JWT | |
-| **request** | [**\OpenAPI\Client\Model\ConnectedappSecretRequest**](../Model/ConnectedappSecretRequest.md)| secret to be removed | |
-
-### Return type
-
-[**\OpenAPI\Client\Model\ModelSwagStatusOk**](../Model/ModelSwagStatusOk.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
 ## `authConnectedAppIdSecretPost()`
 
 ```php
@@ -362,6 +302,66 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `authConnectedAppIdSecretSecretIdDelete()`
+
+```php
+authConnectedAppIdSecretSecretIdDelete($id, $secret_id, $session): \OpenAPI\Client\Model\ModelSwagStatusOk
+```
+
+Remove secret
+
+Deletes a secret of a connected app by its ID.  _only accessible with permission_ : `\"ManageApps\"`  _fully accessible with permission_ : `\"ManageApps\"`
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new OpenAPI\Client\Api\ConnectedAppApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$id = 'id_example'; // string | Connected App ID
+$secret_id = 'secret_id_example'; // string | Connected App Secret ID
+$session = 'session_example'; // string | JWT
+
+try {
+    $result = $apiInstance->authConnectedAppIdSecretSecretIdDelete($id, $secret_id, $session);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ConnectedAppApi->authConnectedAppIdSecretSecretIdDelete: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **string**| Connected App ID | |
+| **secret_id** | **string**| Connected App Secret ID | |
+| **session** | **string**| JWT | |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ModelSwagStatusOk**](../Model/ModelSwagStatusOk.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
@@ -429,7 +429,7 @@ No authorization required
 ## `authConnectedAppPost()`
 
 ```php
-authConnectedAppPost($session, $request): \OpenAPI\Client\Model\ConnectedappResponse
+authConnectedAppPost($session, $request): \OpenAPI\Client\Model\ConnectedappCreateResponse
 ```
 
 Create connected app
@@ -469,7 +469,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ConnectedappResponse**](../Model/ConnectedappResponse.md)
+[**\OpenAPI\Client\Model\ConnectedappCreateResponse**](../Model/ConnectedappCreateResponse.md)
 
 ### Authorization
 

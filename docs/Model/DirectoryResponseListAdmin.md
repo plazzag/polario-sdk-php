@@ -14,6 +14,6 @@ Name | Type | Description | Notes
 **items** | **object** |  | [optional]
 **title** | **string** |  | [optional]
 **type** | **string** |  | [optional]
-**type_reference_id** | **string** |  | [optional]
+**type_reference_id** | **string** | partyID for AccountParty, projectID for AccountProject, directoryID for Account and Static | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

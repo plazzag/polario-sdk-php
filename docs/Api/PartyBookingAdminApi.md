@@ -313,7 +313,7 @@ No authorization required
 ## `partyAdminSearchPost()`
 
 ```php
-partyAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+partyAdminSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor parties
@@ -353,7 +353,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

@@ -195,7 +195,7 @@ No authorization required
 ## `partyDefaultReactionSearchPost()`
 
 ```php
-partyDefaultReactionSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+partyDefaultReactionSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor party reactions
@@ -235,7 +235,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

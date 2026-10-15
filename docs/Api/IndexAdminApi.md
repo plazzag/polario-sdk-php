@@ -203,7 +203,7 @@ No authorization required
 ## `indexAdminSearchPost()`
 
 ```php
-indexAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+indexAdminSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor index items
@@ -243,7 +243,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

@@ -380,7 +380,7 @@ No authorization required
 ## `locationDefaultSearchPost()`
 
 ```php
-locationDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
+locationDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor locations
@@ -422,7 +422,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

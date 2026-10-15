@@ -26,7 +26,7 @@ keywordAdminCategoryGet($session, $cursor, $limit, $page): \OpenAPI\Client\Model
 
 Get keyword category list
 
-This endpoint returns a list of all keyword categories in admin representation.  _accessible without permission_  _fully accessible with permission_ : `\"ManageProjects\"`
+This endpoint returns a list of all keyword categories in admin representation. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  _accessible without permission_  _fully accessible with permission_ : `\"ManageProjects\"`
 
 ### Example
 

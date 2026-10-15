@@ -168,6 +168,7 @@ Class | Method | HTTP request | Description
 *AppointmentDefaultApi* | [**calendarDefaultAppointmentSlotAllGet**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentslotallget) | **GET** /calendar/default/appointment/slot/all | Get all appointment slot options
 *AppointmentDefaultApi* | [**calendarDefaultAppointmentSlotSearchPost**](docs/Api/AppointmentDefaultApi.md#calendardefaultappointmentslotsearchpost) | **POST** /calendar/default/appointment/slot/search | Get possible appointment slot options
 *AuthApi* | [**authAuthPost**](docs/Api/AuthApi.md#authauthpost) | **POST** /auth/auth | SCRAM First
+*CalendarAdminApi* | [**calendarAdminEntryGet**](docs/Api/CalendarAdminApi.md#calendaradminentryget) | **GET** /calendar/admin/entry | Get calendar entries list for cursor
 *CalendarAdminApi* | [**calendarAdminEntryIdAccessGet**](docs/Api/CalendarAdminApi.md#calendaradminentryidaccessget) | **GET** /calendar/admin/entry/{id}/access | Get calendar entry access configuration
 *CalendarAdminApi* | [**calendarAdminEntryIdAccessPatch**](docs/Api/CalendarAdminApi.md#calendaradminentryidaccesspatch) | **PATCH** /calendar/admin/entry/{id}/access | Update calendar entry access configuration
 *CalendarAdminApi* | [**calendarAdminEntryIdBookingAccountAccountIdDelete**](docs/Api/CalendarAdminApi.md#calendaradminentryidbookingaccountaccountiddelete) | **DELETE** /calendar/admin/entry/{id}/booking/account/{accountId} | Delete booking
@@ -175,6 +176,7 @@ Class | Method | HTTP request | Description
 *CalendarAdminApi* | [**calendarAdminEntryIdDelete**](docs/Api/CalendarAdminApi.md#calendaradminentryiddelete) | **DELETE** /calendar/admin/entry/{id} | Delete calendar entry
 *CalendarAdminApi* | [**calendarAdminEntryIdGet**](docs/Api/CalendarAdminApi.md#calendaradminentryidget) | **GET** /calendar/admin/entry/{id} | Get calendar entry
 *CalendarAdminApi* | [**calendarAdminEntryIdPut**](docs/Api/CalendarAdminApi.md#calendaradminentryidput) | **PUT** /calendar/admin/entry/{id} | Update calendar entry
+*CalendarAdminApi* | [**calendarAdminEntrySearchPost**](docs/Api/CalendarAdminApi.md#calendaradminentrysearchpost) | **POST** /calendar/admin/entry/search | Create entry cursor
 *CalendarAdminApi* | [**calendarAdminIdAccessGet**](docs/Api/CalendarAdminApi.md#calendaradminidaccessget) | **GET** /calendar/admin/{id}/access | Get calendar access configuration
 *CalendarAdminApi* | [**calendarAdminIdAccessPatch**](docs/Api/CalendarAdminApi.md#calendaradminidaccesspatch) | **PATCH** /calendar/admin/{id}/access | Update calendar access configuration
 *CalendarAdminApi* | [**calendarAdminIdContentGet**](docs/Api/CalendarAdminApi.md#calendaradminidcontentget) | **GET** /calendar/admin/{id}/content | Get calendar entries list for calendar
@@ -250,8 +252,8 @@ Class | Method | HTTP request | Description
 *ConnectedAppApi* | [**authConnectedAppIdDelete**](docs/Api/ConnectedAppApi.md#authconnectedappiddelete) | **DELETE** /auth/connected-app/{id} | Delete connected app
 *ConnectedAppApi* | [**authConnectedAppIdGet**](docs/Api/ConnectedAppApi.md#authconnectedappidget) | **GET** /auth/connected-app/{id} | get connected app
 *ConnectedAppApi* | [**authConnectedAppIdPatch**](docs/Api/ConnectedAppApi.md#authconnectedappidpatch) | **PATCH** /auth/connected-app/{id} | Update connected app
-*ConnectedAppApi* | [**authConnectedAppIdSecretDelete**](docs/Api/ConnectedAppApi.md#authconnectedappidsecretdelete) | **DELETE** /auth/connected-app/{id}/secret | Remove secret
 *ConnectedAppApi* | [**authConnectedAppIdSecretPost**](docs/Api/ConnectedAppApi.md#authconnectedappidsecretpost) | **POST** /auth/connected-app/{id}/secret | Add secret
+*ConnectedAppApi* | [**authConnectedAppIdSecretSecretIdDelete**](docs/Api/ConnectedAppApi.md#authconnectedappidsecretsecretiddelete) | **DELETE** /auth/connected-app/{id}/secret/{secretId} | Remove secret
 *ConnectedAppApi* | [**authConnectedAppIdSessionPost**](docs/Api/ConnectedAppApi.md#authconnectedappidsessionpost) | **POST** /auth/connected-app/{id}/session | Create session
 *ConnectedAppApi* | [**authConnectedAppPost**](docs/Api/ConnectedAppApi.md#authconnectedapppost) | **POST** /auth/connected-app | Create connected app
 *DirectoryAdminApi* | [**directoryAdminGet**](docs/Api/DirectoryAdminApi.md#directoryadminget) | **GET** /directory/admin | Get directory list for cursor
@@ -302,7 +304,7 @@ Class | Method | HTTP request | Description
 *GamificationAdminApi* | [**reactionAdminGamificationLeaderboardIdSyncPut**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardidsyncput) | **PUT** /reaction/admin/gamification/leaderboard/{id}/sync | Sync gamification balance
 *GamificationAdminApi* | [**reactionAdminGamificationLeaderboardProjectProjectIdGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationleaderboardprojectprojectidget) | **GET** /reaction/admin/gamification/leaderboard/project/{projectId} | Get leaderboard list for project
 *GamificationAdminApi* | [**reactionAdminGamificationProjectProjectIdSettingsGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationprojectprojectidsettingsget) | **GET** /reaction/admin/gamification/project/{projectId}/settings | Get project settings
-*GamificationAdminApi* | [**reactionAdminGamificationProjectProjectIdSettingsPut**](docs/Api/GamificationAdminApi.md#reactionadmingamificationprojectprojectidsettingsput) | **PUT** /reaction/admin/gamification/project/{projectId}/settings | Get project settings
+*GamificationAdminApi* | [**reactionAdminGamificationProjectProjectIdSettingsPut**](docs/Api/GamificationAdminApi.md#reactionadmingamificationprojectprojectidsettingsput) | **PUT** /reaction/admin/gamification/project/{projectId}/settings | Update project settings
 *GamificationAdminApi* | [**reactionAdminGamificationRuleGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationruleget) | **GET** /reaction/admin/gamification/rule | Get gamification rule list
 *GamificationAdminApi* | [**reactionAdminGamificationRuleIdDelete**](docs/Api/GamificationAdminApi.md#reactionadmingamificationruleiddelete) | **DELETE** /reaction/admin/gamification/rule/{id} | Delete gamification rule
 *GamificationAdminApi* | [**reactionAdminGamificationRuleIdGet**](docs/Api/GamificationAdminApi.md#reactionadmingamificationruleidget) | **GET** /reaction/admin/gamification/rule/{id} | Get gamification rule
@@ -310,6 +312,8 @@ Class | Method | HTTP request | Description
 *GamificationAdminApi* | [**reactionAdminGamificationRulePost**](docs/Api/GamificationAdminApi.md#reactionadmingamificationrulepost) | **POST** /reaction/admin/gamification/rule | Create gamification rule
 *GamificationAdminApi* | [**reactionAdminGamificationRuleSearchPost**](docs/Api/GamificationAdminApi.md#reactionadmingamificationrulesearchpost) | **POST** /reaction/admin/gamification/rule/search | Create cursor gamification rules
 *GamificationDefaultApi* | [**reactionDefaultGamificationActionPost**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationactionpost) | **POST** /reaction/default/gamification/action | Score gamification action
+*GamificationDefaultApi* | [**reactionDefaultGamificationEntryGet**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationentryget) | **GET** /reaction/default/gamification/entry | Get leaderboard entry list
+*GamificationDefaultApi* | [**reactionDefaultGamificationEntrySearchPost**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationentrysearchpost) | **POST** /reaction/default/gamification/entry/search | Create cursor leaderboard entries
 *GamificationDefaultApi* | [**reactionDefaultGamificationLeaderboardIdAccountAccountIdGet**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationleaderboardidaccountaccountidget) | **GET** /reaction/default/gamification/leaderboard/{id}/account/{accountId} | Get leaderboard entry for own account
 *GamificationDefaultApi* | [**reactionDefaultGamificationLeaderboardIdGet**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationleaderboardidget) | **GET** /reaction/default/gamification/leaderboard/{id} | Get leaderboard
 *GamificationDefaultApi* | [**reactionDefaultGamificationLeaderboardProjectProjectIdGet**](docs/Api/GamificationDefaultApi.md#reactiondefaultgamificationleaderboardprojectprojectidget) | **GET** /reaction/default/gamification/leaderboard/project/{projectId} | Get leaderboard list for project
@@ -819,10 +823,10 @@ Class | Method | HTTP request | Description
 - [ConfigurationTermsResponse](docs/Model/ConfigurationTermsResponse.md)
 - [ConfigurationTrackingLegalResponse](docs/Model/ConfigurationTrackingLegalResponse.md)
 - [ConnectedappAddSecretRequest](docs/Model/ConnectedappAddSecretRequest.md)
+- [ConnectedappCreateResponse](docs/Model/ConnectedappCreateResponse.md)
 - [ConnectedappRequest](docs/Model/ConnectedappRequest.md)
 - [ConnectedappResponse](docs/Model/ConnectedappResponse.md)
 - [ConnectedappResponseList](docs/Model/ConnectedappResponseList.md)
-- [ConnectedappSecretRequest](docs/Model/ConnectedappSecretRequest.md)
 - [ConnectedappSecretResponse](docs/Model/ConnectedappSecretResponse.md)
 - [ContentDeprecatedCalendarEntryValue](docs/Model/ContentDeprecatedCalendarEntryValue.md)
 - [ContentDeprecatedEntryResponseListDefault](docs/Model/ContentDeprecatedEntryResponseListDefault.md)
@@ -894,6 +898,7 @@ Class | Method | HTTP request | Description
 - [FolderResponse](docs/Model/FolderResponse.md)
 - [GamificationActionRequest](docs/Model/GamificationActionRequest.md)
 - [GamificationActionResponse](docs/Model/GamificationActionResponse.md)
+- [GamificationSettingsRequest](docs/Model/GamificationSettingsRequest.md)
 - [GamificationbalanceCursorFilterOption](docs/Model/GamificationbalanceCursorFilterOption.md)
 - [GamificationbalanceCursorRequest](docs/Model/GamificationbalanceCursorRequest.md)
 - [GamificationbalancePostBonusRequest](docs/Model/GamificationbalancePostBonusRequest.md)
@@ -902,14 +907,19 @@ Class | Method | HTTP request | Description
 - [GamificationleaderboardResponseAdmin](docs/Model/GamificationleaderboardResponseAdmin.md)
 - [GamificationleaderboardResponseDefault](docs/Model/GamificationleaderboardResponseDefault.md)
 - [GamificationleaderboardentryCursorFilterOptionAdmin](docs/Model/GamificationleaderboardentryCursorFilterOptionAdmin.md)
+- [GamificationleaderboardentryCursorFilterOptionDefault](docs/Model/GamificationleaderboardentryCursorFilterOptionDefault.md)
 - [GamificationleaderboardentryCursorRequestAdmin](docs/Model/GamificationleaderboardentryCursorRequestAdmin.md)
+- [GamificationleaderboardentryCursorRequestDefault](docs/Model/GamificationleaderboardentryCursorRequestDefault.md)
 - [GamificationleaderboardentryResponse](docs/Model/GamificationleaderboardentryResponse.md)
 - [GamificationruleCursorFilterOption](docs/Model/GamificationruleCursorFilterOption.md)
 - [GamificationruleCursorRequest](docs/Model/GamificationruleCursorRequest.md)
 - [GamificationrulePatchRequest](docs/Model/GamificationrulePatchRequest.md)
 - [GamificationrulePostRequest](docs/Model/GamificationrulePostRequest.md)
 - [GamificationruleResponse](docs/Model/GamificationruleResponse.md)
+- [GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionAdmin](docs/Model/GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionAdmin.md)
 - [GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault](docs/Model/GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault.md)
+- [GitPlazzNetReposSandmannBackendServicesCalendarContentCursorRequestAdmin](docs/Model/GitPlazzNetReposSandmannBackendServicesCalendarContentCursorRequestAdmin.md)
+- [GitPlazzNetReposSandmannBackendServicesCalendarContentCursorRequestDefault](docs/Model/GitPlazzNetReposSandmannBackendServicesCalendarContentCursorRequestDefault.md)
 - [GitPlazzNetReposSandmannBackendServicesCalendarTemplateResponseAdmin](docs/Model/GitPlazzNetReposSandmannBackendServicesCalendarTemplateResponseAdmin.md)
 - [GitPlazzNetReposSandmannBackendServicesDirectoryTemplateResponseAdmin](docs/Model/GitPlazzNetReposSandmannBackendServicesDirectoryTemplateResponseAdmin.md)
 - [GitPlazzNetReposSandmannBackendServicesPartyReactionCursorFilterOptionAdmin](docs/Model/GitPlazzNetReposSandmannBackendServicesPartyReactionCursorFilterOptionAdmin.md)
@@ -1050,7 +1060,6 @@ Class | Method | HTTP request | Description
 - [ModelChatFeedTranslation](docs/Model/ModelChatFeedTranslation.md)
 - [ModelChatSettings](docs/Model/ModelChatSettings.md)
 - [ModelCoords](docs/Model/ModelCoords.md)
-- [ModelCursorResponse](docs/Model/ModelCursorResponse.md)
 - [ModelDatePeriod](docs/Model/ModelDatePeriod.md)
 - [ModelDateTime](docs/Model/ModelDateTime.md)
 - [ModelDeeplinkObject](docs/Model/ModelDeeplinkObject.md)
@@ -1211,6 +1220,7 @@ Class | Method | HTTP request | Description
 - [PageSwagPageSectionAdmin](docs/Model/PageSwagPageSectionAdmin.md)
 - [PageSwagPageSectionDefault](docs/Model/PageSwagPageSectionDefault.md)
 - [PageTranslationResponse](docs/Model/PageTranslationResponse.md)
+- [PaginationCursorResponse](docs/Model/PaginationCursorResponse.md)
 - [PartyCursorFilterOptionAdmin](docs/Model/PartyCursorFilterOptionAdmin.md)
 - [PartyCursorFilterOptionDefault](docs/Model/PartyCursorFilterOptionDefault.md)
 - [PartyCursorRequestAdmin](docs/Model/PartyCursorRequestAdmin.md)
@@ -1327,6 +1337,6 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `5.11.0`
-    - Generator version: `7.24.0`
+- API version: `5.12.0`
+    - Generator version: `7.25.0`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

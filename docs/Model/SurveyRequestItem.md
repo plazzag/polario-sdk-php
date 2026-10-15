@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **description** | **string** |  | [optional]
 **id** | **string** |  | [optional]
 **options** | [**\OpenAPI\Client\Model\SurveyRequestItemOption[]**](SurveyRequestItemOption.md) |  | [optional]
+**representation_config** | **string** |  | [optional]
 **required** | **bool** |  | [optional]
 **settings** | [**\OpenAPI\Client\Model\ModelSurveyItemSettings**](ModelSurveyItemSettings.md) |  | [optional]
 **title** | **string** |  | [optional]

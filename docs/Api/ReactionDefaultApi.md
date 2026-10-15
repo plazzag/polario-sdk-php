@@ -576,7 +576,7 @@ No authorization required
 ## `reactionDefaultObjectTypeSearchPost()`
 
 ```php
-reactionDefaultObjectTypeSearchPost($object_type, $request, $session): \OpenAPI\Client\Model\ModelCursorResponse
+reactionDefaultObjectTypeSearchPost($object_type, $request, $session): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor reactions
@@ -618,7 +618,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

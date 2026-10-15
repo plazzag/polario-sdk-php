@@ -22,7 +22,7 @@ reactionDefaultJourneyGet($session, $cursor, $page, $limit, $accept_language): \
 
 Get journey processes list for cursor
 
-This endpoint returns a list of all journey processes for account without content in default representation.  __Note:__ Journeys is a premium feature and requires a valid subscription.  Cursor could be created here: POST /reaction/default/journey/search  _accessible without permission_
+This endpoint returns a list of all journey processes for account without content in default representation. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  __Note:__ Journeys is a premium feature and requires a valid subscription.  Cursor could be created here: POST /reaction/default/journey/search  _accessible without permission_
 
 ### Example
 
@@ -265,7 +265,7 @@ No authorization required
 ## `reactionDefaultJourneySearchPost()`
 
 ```php
-reactionDefaultJourneySearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+reactionDefaultJourneySearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor journeys
@@ -305,7 +305,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

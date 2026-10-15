@@ -375,7 +375,7 @@ No authorization required
 ## `notificationAdminJobSearchPost()`
 
 ```php
-notificationAdminJobSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+notificationAdminJobSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor notification jobs
@@ -415,7 +415,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

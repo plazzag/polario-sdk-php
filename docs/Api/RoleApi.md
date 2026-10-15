@@ -78,7 +78,7 @@ authRoleGet($session, $accept_language): \OpenAPI\Client\Model\RoleResponse[]
 
 Get roles
 
-This endpoint returns all roles of the system (filtered by permissions)  _only accessible with permission_ : `\"ManageAccounts\"` `\"ManageGlobalRoles\"`  _fully accessible with permission_ : `\"ManageAccounts\"` `\"ManageGlobalRoles\"`
+This endpoint returns all roles of the system  _only accessible with permission_ : `\"ManageAccounts\"` `\"ManageGlobalRoles\"`  _fully accessible with permission_ : `\"ManageAccounts\"` `\"ManageGlobalRoles\"`
 
 ### Example
 
