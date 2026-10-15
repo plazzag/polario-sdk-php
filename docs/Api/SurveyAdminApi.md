@@ -209,7 +209,7 @@ reactionAdminSurveyIdAnswerGet($id, $session, $cursor, $limit, $page): \OpenAPI\
 
 Get survey answers
 
-This endpoint returns all answer records for the given survey.  __Note:__ Surveys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns all answer records for the given survey. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  __Note:__ Surveys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -268,7 +268,7 @@ No authorization required
 ## `reactionAdminSurveyIdAnswerSearchPost()`
 
 ```php
-reactionAdminSurveyIdAnswerSearchPost($id, $session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+reactionAdminSurveyIdAnswerSearchPost($id, $session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create survey answers cursor
@@ -310,7 +310,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 
@@ -625,7 +625,7 @@ reactionAdminSurveyIdParticipationGet($id, $session, $cursor, $limit, $page): \O
 
 Get survey participations
 
-This endpoint returns all participation records for the given survey.  __Note:__ Surveys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns all participation records for the given survey. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  __Note:__ Surveys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -684,7 +684,7 @@ No authorization required
 ## `reactionAdminSurveyIdParticipationSearchPost()`
 
 ```php
-reactionAdminSurveyIdParticipationSearchPost($id, $session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+reactionAdminSurveyIdParticipationSearchPost($id, $session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create survey participation cursor
@@ -726,7 +726,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 
@@ -926,7 +926,7 @@ No authorization required
 ## `reactionAdminSurveySearchPost()`
 
 ```php
-reactionAdminSurveySearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+reactionAdminSurveySearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create survey cursor
@@ -966,7 +966,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

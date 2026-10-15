@@ -146,7 +146,7 @@ No authorization required
 ## `indexDefaultSearchPost()`
 
 ```php
-indexDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
+indexDefaultSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor index items
@@ -188,7 +188,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

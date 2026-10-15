@@ -142,7 +142,7 @@ partyDefaultObjectTypeReferenceObjectIdGet($object_type, $object_id, $session, $
 
 Get parties for reference
 
-This endpoint returns all parties for the provided reference in default representation. If the limit is set, a cursor for this endpoint may be created to iterate over all locations.  __Note:__ for objectType `CalendarEntry` _config.bookingSlots.dateEnd_ and _config.bookingSlots.timeEnd_ will not be null; objectId is calendarId (referenceId)  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint returns all parties for the provided reference in default representation. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  __Note:__ for objectType `CalendarEntry` _config.bookingSlots.dateEnd_ and _config.bookingSlots.timeEnd_ will not be null; objectId is calendarId (referenceId)  _accessible without permission_  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -203,7 +203,7 @@ No authorization required
 ## `partyDefaultSearchPost()`
 
 ```php
-partyDefaultSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+partyDefaultSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor parties
@@ -243,7 +243,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

@@ -267,7 +267,7 @@ reactionAdminJourneyIdAttendeeGet($id, $session, $cursor, $limit, $page): \OpenA
 
 Get attendees
 
-This endpoint is for retrieving attendees from journey processes.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for retrieving attendees from journey processes. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -331,7 +331,7 @@ reactionAdminJourneyIdAttendeePatch($id, $session, $request, $ids): \OpenAPI\Cli
 
 Update attendees
 
-This endpoint is for updating journey processes. Note: when no query parameter is set, all attendees will be updated.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for updating journey processes.  __Note:__ when no query parameter is set, all attendees will be updated.  __Note:__ Journeys is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 

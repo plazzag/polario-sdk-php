@@ -909,7 +909,7 @@ configAdminLocalizationKeysGet($session, $cursor, $page, $limit): string[]
 
 Get localization keys
 
-This endpoint returns a list of localization keys.  Cursor could be created here: POST /config/admin/localization/search  _accessible without permission_
+This endpoint returns a list of localization keys. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  Cursor could be created here: POST /config/admin/localization/search  _accessible without permission_
 
 ### Example
 
@@ -966,7 +966,7 @@ No authorization required
 ## `configAdminLocalizationSearchPost()`
 
 ```php
-configAdminLocalizationSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+configAdminLocalizationSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor localizations
@@ -1006,7 +1006,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

@@ -29,7 +29,7 @@ projectAdminCopyGet($session, $cursor, $limit, $page): \OpenAPI\Client\Model\Cop
 
 Get project copy processes
 
-This endpoint returns an array of all project copy processes. The output is in administrative representation and filtered for the user permissions.  _only accessible with permission_ : `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageProjects\"`
+This endpoint returns an array of all project copy processes. The output is in administrative representation and filtered for the user permissions. If a limit is set, a cursor for this endpoint may be created to iterate over all groups.  _only accessible with permission_ : `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageProjects\"`
 
 ### Example
 

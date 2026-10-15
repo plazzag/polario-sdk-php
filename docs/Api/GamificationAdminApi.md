@@ -18,7 +18,7 @@ All URIs are relative to https://custom.polario.de/api, except if the operation 
 | [**reactionAdminGamificationLeaderboardIdSyncPut()**](GamificationAdminApi.md#reactionAdminGamificationLeaderboardIdSyncPut) | **PUT** /reaction/admin/gamification/leaderboard/{id}/sync | Sync gamification balance |
 | [**reactionAdminGamificationLeaderboardProjectProjectIdGet()**](GamificationAdminApi.md#reactionAdminGamificationLeaderboardProjectProjectIdGet) | **GET** /reaction/admin/gamification/leaderboard/project/{projectId} | Get leaderboard list for project |
 | [**reactionAdminGamificationProjectProjectIdSettingsGet()**](GamificationAdminApi.md#reactionAdminGamificationProjectProjectIdSettingsGet) | **GET** /reaction/admin/gamification/project/{projectId}/settings | Get project settings |
-| [**reactionAdminGamificationProjectProjectIdSettingsPut()**](GamificationAdminApi.md#reactionAdminGamificationProjectProjectIdSettingsPut) | **PUT** /reaction/admin/gamification/project/{projectId}/settings | Get project settings |
+| [**reactionAdminGamificationProjectProjectIdSettingsPut()**](GamificationAdminApi.md#reactionAdminGamificationProjectProjectIdSettingsPut) | **PUT** /reaction/admin/gamification/project/{projectId}/settings | Update project settings |
 | [**reactionAdminGamificationRuleGet()**](GamificationAdminApi.md#reactionAdminGamificationRuleGet) | **GET** /reaction/admin/gamification/rule | Get gamification rule list |
 | [**reactionAdminGamificationRuleIdDelete()**](GamificationAdminApi.md#reactionAdminGamificationRuleIdDelete) | **DELETE** /reaction/admin/gamification/rule/{id} | Delete gamification rule |
 | [**reactionAdminGamificationRuleIdGet()**](GamificationAdminApi.md#reactionAdminGamificationRuleIdGet) | **GET** /reaction/admin/gamification/rule/{id} | Get gamification rule |
@@ -92,7 +92,7 @@ No authorization required
 ## `reactionAdminGamificationBalanceSearchPost()`
 
 ```php
-reactionAdminGamificationBalanceSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+reactionAdminGamificationBalanceSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor gamification balance entries
@@ -132,7 +132,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ No authorization required
 ## `reactionAdminGamificationEntrySearchPost()`
 
 ```php
-reactionAdminGamificationEntrySearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+reactionAdminGamificationEntrySearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor leaderboard entries
@@ -252,7 +252,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 
@@ -750,9 +750,9 @@ No authorization required
 reactionAdminGamificationProjectProjectIdSettingsPut($project_id, $session, $request): \OpenAPI\Client\Model\ModelProjectGamificationSettings
 ```
 
-Get project settings
+Update project settings
 
-This endpoint is for updating gamification settings of an existing project.  __Note:__ Gamification is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for updating gamification settings of an existing project. `scoreActions: true` pauses gains while leaderboard visibility remains when `showLeaderboardEntries: true`.  __Note:__ Gamification is a premium feature and requires a valid subscription.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -769,7 +769,7 @@ $apiInstance = new OpenAPI\Client\Api\GamificationAdminApi(
 );
 $project_id = 'project_id_example'; // string | Project ID
 $session = 'session_example'; // string | JWT
-$request = new \OpenAPI\Client\Model\ModelProjectGamificationSettings(); // \OpenAPI\Client\Model\ModelProjectGamificationSettings | gamification settings
+$request = new \OpenAPI\Client\Model\GamificationSettingsRequest(); // \OpenAPI\Client\Model\GamificationSettingsRequest | gamification settings
 
 try {
     $result = $apiInstance->reactionAdminGamificationProjectProjectIdSettingsPut($project_id, $session, $request);
@@ -785,7 +785,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **project_id** | **string**| Project ID | |
 | **session** | **string**| JWT | |
-| **request** | [**\OpenAPI\Client\Model\ModelProjectGamificationSettings**](../Model/ModelProjectGamificationSettings.md)| gamification settings | |
+| **request** | [**\OpenAPI\Client\Model\GamificationSettingsRequest**](../Model/GamificationSettingsRequest.md)| gamification settings | |
 
 ### Return type
 
@@ -1097,7 +1097,7 @@ No authorization required
 ## `reactionAdminGamificationRuleSearchPost()`
 
 ```php
-reactionAdminGamificationRuleSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+reactionAdminGamificationRuleSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor gamification rules
@@ -1137,7 +1137,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

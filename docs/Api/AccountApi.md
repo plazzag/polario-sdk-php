@@ -125,7 +125,7 @@ No authorization required
 ## `authAccountAnalyticsAccountSettingsSearchPost()`
 
 ```php
-authAccountAnalyticsAccountSettingsSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+authAccountAnalyticsAccountSettingsSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create account settings analytics cursor
@@ -165,7 +165,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 
@@ -2573,7 +2573,7 @@ No authorization required
 ## `authAccountSearchCursorPost()`
 
 ```php
-authAccountSearchCursorPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+authAccountSearchCursorPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor accounts
@@ -2613,7 +2613,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

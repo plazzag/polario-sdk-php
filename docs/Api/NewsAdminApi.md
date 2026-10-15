@@ -983,7 +983,7 @@ No authorization required
 ## `newsAdminSearchPost()`
 
 ```php
-newsAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+newsAdminSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor articles
@@ -1023,7 +1023,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

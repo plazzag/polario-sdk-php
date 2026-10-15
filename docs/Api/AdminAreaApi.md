@@ -139,7 +139,7 @@ No authorization required
 ## `newsDefaultPreviewSearchPost()`
 
 ```php
-newsDefaultPreviewSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
+newsDefaultPreviewSearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor articles
@@ -181,7 +181,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

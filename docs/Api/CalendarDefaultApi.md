@@ -201,7 +201,7 @@ No authorization required
 ## `calendarDefaultEntrySearchPost()`
 
 ```php
-calendarDefaultEntrySearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\ModelCursorResponse
+calendarDefaultEntrySearchPost($request, $accept_language, $session): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create entry cursor
@@ -221,7 +221,7 @@ $apiInstance = new OpenAPI\Client\Api\CalendarDefaultApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$request = new \OpenAPI\Client\Model\GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault(); // \OpenAPI\Client\Model\GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault | options to create cursor
+$request = new \OpenAPI\Client\Model\GitPlazzNetReposSandmannBackendServicesCalendarContentCursorRequestDefault(); // \OpenAPI\Client\Model\GitPlazzNetReposSandmannBackendServicesCalendarContentCursorRequestDefault | options to create cursor
 $accept_language = 'accept_language_example'; // string | client language(s)
 $session = 'session_example'; // string | JWT
 
@@ -237,13 +237,13 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **request** | [**\OpenAPI\Client\Model\GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault**](../Model/GitPlazzNetReposSandmannBackendServicesCalendarContentCursorFilterOptionDefault.md)| options to create cursor | |
+| **request** | [**\OpenAPI\Client\Model\GitPlazzNetReposSandmannBackendServicesCalendarContentCursorRequestDefault**](../Model/GitPlazzNetReposSandmannBackendServicesCalendarContentCursorRequestDefault.md)| options to create cursor | |
 | **accept_language** | **string**| client language(s) | [optional] |
 | **session** | **string**| JWT | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 

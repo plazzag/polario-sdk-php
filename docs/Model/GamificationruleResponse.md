@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **object_id** | **string** | must belong to project | [optional]
 **object_type** | **string** |  | [optional]
 **project_id** | **string** |  | [optional]
-**reference_id** | **string** | accountId, calendarId, chatFeedId, directoryId, surveyId or url | [optional]
+**reference_id** | **string** | accountId, calendarId, chatId (channelURL), chatFeedId, directoryId, journeyId, newsId, objectType, pageId, partyId, surveyId or url | [optional]
 **repetition** | **int** | null &#x3D; infinite | [optional]
 **value** | **int** |  | [optional]
 

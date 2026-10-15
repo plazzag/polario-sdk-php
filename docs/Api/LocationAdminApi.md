@@ -437,12 +437,12 @@ No authorization required
 ## `locationAdminNotationPost()`
 
 ```php
-locationAdminNotationPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+locationAdminNotationPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create locations with notation
 
-This endpoint is for creating multiple locations with optional `{a..b:c}` notation in title. In case of response status is 205 the request was only executed partial. Use GET to receive the stored configuration.  `a` is the number of the first location and must be smaller than `b` in valid notation  `b` is the number of the last location and must be bigger than `a` and the difference between `a` and `b` does not be bigger than 100 in valid notation  `:c` is the optional pad to add leading zeros to `a` and `b` and must be bigger than `0` in valid notation. e.g.: {-1..10:3} -> -01..010  __Note:__ if no valid notation is found, a single location with the provided title is created.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
+This endpoint is for creating multiple locations with optional `{a..b:c}` notation in title. In case of response status is 205 the request was only executed partial. Use GET to receive the stored configuration.  `a` is the number of the first location and must be smaller than `b`.  `b` is the number of the last location and must be bigger than `a` but lower than 9223372036854775807 and the difference between `a` and `b` does not be bigger than 100.  `:c` is the optional pad to add leading zeros to `a` and `b` and must be bigger than `0`. e.g.: {-1..10:3} -> -01..010  __Note:__ if no valid notation is found, a single location with the provided title is created.  _only accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`  _fully accessible with permission_ : `\"ManageContent\"` `\"ManageProjects\"`
 
 ### Example
 
@@ -477,7 +477,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 
@@ -673,7 +673,7 @@ No authorization required
 ## `locationAdminSearchPost()`
 
 ```php
-locationAdminSearchPost($session, $request): \OpenAPI\Client\Model\ModelCursorResponse
+locationAdminSearchPost($session, $request): \OpenAPI\Client\Model\PaginationCursorResponse
 ```
 
 Create cursor locations
@@ -713,7 +713,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelCursorResponse**](../Model/ModelCursorResponse.md)
+[**\OpenAPI\Client\Model\PaginationCursorResponse**](../Model/PaginationCursorResponse.md)
 
 ### Authorization
 
